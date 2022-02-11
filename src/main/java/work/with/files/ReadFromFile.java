@@ -3,6 +3,7 @@ package work.with.files;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.ArrayList;
 
 public class ReadFromFile {
     private BufferedReader fileReader;
@@ -22,20 +23,28 @@ public class ReadFromFile {
         }
     }
 
-    public String readFromFile(int i){
+    public ArrayList readFromFile(String str){
         String line = null;
+        ArrayList<String> workWithString = new ArrayList<>();
         try{
-            //String line;
             if(fileReader.ready()){
+                //получаем новые слова
                 line = fileReader.readLine();
-                System.out.println(line);
-            } else {
-                line = null;
+                String[] newWords = line.split(";");
+                for(int j = 0; j < newWords.length; j++){
+                    workWithString.add(newWords[j]);
+                }
+
             }
-        }catch(IOException e){
+            /*Iterator<String> iterator =  workWithString.iterator();
+            while(iterator.hasNext()){
+                System.out.println(iterator.next());
+                System.out.println("+");
+            }*/
+        }catch(NullPointerException | IOException e){
             System.err.print(e);
         }
-        return line;
+        return workWithString;
     }
 
     public void close() throws Exception{
