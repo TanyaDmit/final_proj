@@ -38,11 +38,6 @@ public class ReadFromFile {
                     workWithString.add(newWords[j]);
                 }
             }
-            /*Iterator<String> iterator =  workWithString.iterator();
-            while(iterator.hasNext()){
-                System.out.println(iterator.next());
-                System.out.println("+");
-            }*/
         }catch(NullPointerException | IOException e){
             System.err.print(e);
         }

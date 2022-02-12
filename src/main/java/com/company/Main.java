@@ -13,86 +13,71 @@ import java.util.Iterator;
 public class Main {
 
     public static void main(String[] args) {
-//        try{
-//            WriteInFile file1 = new WriteInFile("log.txt");
-//            file1.writeInFile("\n hello");
-//            System.out.println("hello");
-//            file1.close();
-//        } catch (IOException e){
-//            System.err.print(e);
-//        } catch (Exception e) {
-//            e.printStackTrace();
-//            System.err.print(e);
-//        }
-//        System.out.println("that`s ok");
-        readFile();
-    }
-
-    public static void readFile(){
         try {
             WriteInFile generalWriteInFile = new WriteInFile("log.txt");
             ReadFromFile generalReadFromFile = new ReadFromFile("test.txt", generalWriteInFile);
-            ArrayList<String> generalWorkWithString = generalReadFromFile.readFromFile("word");
-            Iterator<String> generalIter = generalWorkWithString.iterator();
+            ArrayList<String> generalWorkWithString;
+            Iterator<String> generalIter;
             //цикл начало
-            do {
-                if(generalIter.hasNext()){
-                    String tmp = generalIter.next();
-                    System.out.println(tmp);
-                    switch (tmp) {
-                        case "REGISTRPEOPLE":
-                            PostalClient postalClient = new PostalClient(generalWorkWithString, generalWriteInFile);
-                            System.out.println("1");
-                            break;
-                        case "REGISTRPOSTALOFFICE":
-                            PostalOffices postalOffice = new PostalOffices(generalWorkWithString, generalWriteInFile);
-                            System.out.println("2");
-                            break;
-                        case "REGISTRPACKAGE":
-                            PostalPackage postalPackage = new PostalPackage(generalWorkWithString, generalWriteInFile);
-                            System.out.println("3");
-                            break;
-                        default:
-                            System.out.println("i don`t know");
-                            break;
-                    }
-                } else {
-                    System.out.println("game over");
-                }
-                generalWorkWithString = generalReadFromFile.readFromFile("word");
+            while(true){
+                generalWorkWithString = readFile(generalReadFromFile);
                 generalIter =  generalWorkWithString.iterator();
-            } while(generalIter.hasNext());
-//            ArrayList<String> workWithString1 = file1.readFromFile("word");
-//            Iterator<String> iterator1 =  workWithString1.iterator();
-//            if(iterator1.hasNext()){
-//                String tmp = iterator1.next();
-//                System.out.println(tmp);
-//                switch (tmp) {
-//                    case "REGISTRPEOPLE":
-//                        PostalClient postalClient = new PostalClient(workWithString1);
-//                        //PostalClient postalClient1 = new PostalClient();
-//                        //postalClient.printClient();
-//                        System.out.println("1");
-//                        break;
-//                    case "REGISTRPOSTALOFFICE":
-//                        System.out.println("2");
-//                        break;
-//                    case "REGISTRPACKAGE":
-//                        System.out.println("3");
-//                        break;
-//                    default:
-//                        System.out.println("i don`t know");
-//                        break;
+                if(!generalIter.hasNext()){
+                    break;
+                } else{
+                    if(generalIter.hasNext()){
+                        String tmp = generalIter.next();
+                        System.out.println(tmp);
+                        switch (tmp) {
+                            case "REGISTRPEOPLE":
+                                PostalClient postalClient = new PostalClient(generalWorkWithString, generalWriteInFile);
+                                System.out.println("1");
+                                break;
+                            case "REGISTRPOSTALOFFICE":
+                                PostalOffices postalOffice = new PostalOffices(generalWorkWithString, generalWriteInFile);
+                                System.out.println("2");
+                                break;
+                            case "REGISTRPACKAGE":
+                                PostalPackage postalPackage = new PostalPackage(generalWorkWithString, generalWriteInFile);
+                                System.out.println("3");
+                                break;
+                            default:
+                                System.out.println("i don`t know");
+                                break;
+                        }
+                    } else {
+                        System.out.println("game over");
+                    }
+                }
+            }
+            //do {
+//                if(generalIter.hasNext()){
+//                    String tmp = generalIter.next();
+//                    System.out.println(tmp);
+//                    switch (tmp) {
+//                        case "REGISTRPEOPLE":
+//                            PostalClient postalClient = new PostalClient(generalWorkWithString, generalWriteInFile);
+//                            System.out.println("1");
+//                            break;
+//                        case "REGISTRPOSTALOFFICE":
+//                            PostalOffices postalOffice = new PostalOffices(generalWorkWithString, generalWriteInFile);
+//                            System.out.println("2");
+//                            break;
+//                        case "REGISTRPACKAGE":
+//                            PostalPackage postalPackage = new PostalPackage(generalWorkWithString, generalWriteInFile);
+//                            System.out.println("3");
+//                            break;
+//                        default:
+//                            System.out.println("i don`t know");
+//                            break;
+//                    }
+//                } else {
+//                    System.out.println("game over");
 //                }
-//            } else {
-//                System.out.println("game over");
-//            }
-//
+//                generalWorkWithString = readFile(generalReadFromFile);
+//                generalIter =  generalWorkWithString.iterator();
+           // } while(generalIter.hasNext());
             //цикл конец
-
-            /*while(iterator1.hasNext()){
-                System.out.println(iterator1.next());
-            }*/
             generalWriteInFile.close();
         } catch (IOException e){
             System.err.print(e);
@@ -100,5 +85,10 @@ public class Main {
             e.printStackTrace();
             System.err.print(e);
         }
+    }
+
+
+    public static ArrayList readFile(ReadFromFile generalReadFromFile){
+        return generalReadFromFile.readFromFile("word");
     }
 }
