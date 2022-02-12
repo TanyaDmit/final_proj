@@ -9,11 +9,12 @@ import java.util.ArrayList;
 public class ReadFromFile {
     private BufferedReader fileReader;
 
-    public ReadFromFile(String fileName) throws IOException {
+    public ReadFromFile(String fileName,WriteInFile generalWriteInFile) throws IOException {
         fileReader = new BufferedReader(new FileReader(fileName));
+        generalWriteInFile.writeInFile("file '" + fileName + "' is opened");
     }
 
-    public void readFromFile(){
+    public void readFromFile(WriteInFile generalWriteInFile){
         try{
             String line;
             while((line = fileReader.readLine()) != null) {
@@ -22,6 +23,7 @@ public class ReadFromFile {
         }catch(IOException e){
             System.err.print(e);
         }
+        generalWriteInFile.writeInFile("all file was read");
     }
 
     public ArrayList readFromFile(String str){
@@ -35,7 +37,6 @@ public class ReadFromFile {
                 for(int j = 0; j < newWords.length; j++){
                     workWithString.add(newWords[j]);
                 }
-
             }
             /*Iterator<String> iterator =  workWithString.iterator();
             while(iterator.hasNext()){

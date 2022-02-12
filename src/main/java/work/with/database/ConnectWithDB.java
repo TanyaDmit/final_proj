@@ -1,14 +1,16 @@
 package work.with.database;
 
+import work.with.files.WriteInFile;
+
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.Iterator;
 
 public class ConnectWithDB {
-    public ConnectWithDB(ArrayList<String> dataClient){
-        connect(dataClient);
+    public ConnectWithDB(ArrayList<String> dataClient, WriteInFile generalWriteInFile){
+        connect(dataClient, generalWriteInFile);
     }
-    private boolean connect(ArrayList<String> dataClient){
+    private boolean connect(ArrayList<String> dataClient, WriteInFile generalWriteInFile){
         Connection connection = null;
         PreparedStatement preparedStatement = null;
         try{
@@ -32,13 +34,13 @@ public class ConnectWithDB {
             System.out.println(tmp);
             switch (tmp) {
                 case "REGISTRPEOPLE":
-                    preparedStatement = insert_table_client(preparedStatement, connection, dataClient);
+                    preparedStatement = insert_table_client(preparedStatement, connection, dataClient, generalWriteInFile);
                     break;
                 case "REGISTRPOSTALOFFICE":
-                    preparedStatement = insert_table_office(preparedStatement, connection, dataClient);
+                    preparedStatement = insert_table_office(preparedStatement, connection, dataClient, generalWriteInFile);
                     break;
                 case "REGISTRPACKAGE":
-                    preparedStatement = insert_table_package(preparedStatement, connection, dataClient);
+                    preparedStatement = insert_table_package(preparedStatement, connection, dataClient, generalWriteInFile);
                     break;
                 default:
                     System.out.println("i don`t know, i can`t understand");
@@ -57,44 +59,61 @@ public class ConnectWithDB {
         return true;
     }
 
-    public static PreparedStatement insert_table_client(PreparedStatement prst, Connection conn, ArrayList<String> dataClient) throws SQLException {
+    public static PreparedStatement insert_table_client(PreparedStatement prst, Connection conn, ArrayList<String> dataClient, WriteInFile generalWriteInFile) throws SQLException {
         String sql = "INSERT INTO clients (last_name, first_name, patronymic, email, telephone) "
                 + "VALUES (?, ?, ?, ?, ?);";
         Iterator<String> iter =  dataClient.iterator();
         iter.next();
         int len = 5;
+        String line = " ";
+        String tmp = null;
         prst = conn.prepareStatement(sql);//создание connect
         for(int counter = 1; counter <= len; counter++){
-            prst.setString(counter, iter.next());
+            tmp = iter.next();
+            prst.setString(counter, tmp);
+            line = line + tmp + " ";
         }
         prst.executeUpdate();
+        generalWriteInFile.writeInFile("add the record in table clients: " + line);
         return prst;
     }
 
-    public static PreparedStatement insert_table_office(PreparedStatement prst, Connection conn, ArrayList<String> dataClient) throws SQLException {
+    public static PreparedStatement insert_table_office(PreparedStatement prst, Connection conn, ArrayList<String> dataClient, WriteInFile generalWriteInFile) throws SQLException {
         String sql = "INSERT INTO postal_offices (num_office, description_office) "
                 + "VALUES (?::int, ?);";
         Iterator<String> iter =  dataClient.iterator();
         iter.next();
+        int len = 2;
+        String line = " ";
+        String tmp = null;
         prst = conn.prepareStatement(sql);//создание connect
-        prst.setString(1, iter.next());
-        prst.setString(2, iter.next());
+        for(int counter = 1; counter <= len; counter++){
+            tmp = iter.next();
+            prst.setString(counter, tmp);
+            line = line + tmp + " ";
+        }
         prst.executeUpdate();
+        generalWriteInFile.writeInFile("add the record in table postal_offices: " + line);
         return prst;
     }
 
-    public static PreparedStatement insert_table_package(PreparedStatement prst, Connection conn, ArrayList<String> dataClient) throws SQLException {
+    public static PreparedStatement insert_table_package(PreparedStatement prst, Connection conn, ArrayList<String> dataClient, WriteInFile generalWriteInFile) throws SQLException {
         String sql = "INSERT INTO packages (telephone_sender, num_office_recipient, telephone, last_name, first_name, " +
                 "patronymic, date_of_create)"
                 + "VALUES (?, ?::int, ?, ?, ?, ?, ?::date);";
         Iterator<String> iter =  dataClient.iterator();
         iter.next();
         int len = 7;
+        String line = " ";
+        String tmp = null;
         prst = conn.prepareStatement(sql);//создание connect
         for(int counter = 1; counter <= len; counter++){
-            prst.setString(counter, iter.next());
+            tmp = iter.next();
+            prst.setString(counter, tmp);
+            line = line + tmp + " ";
         }
         prst.executeUpdate();
+        generalWriteInFile.writeInFile("add the record in table packages: " + line);
         return prst;
     }
 }

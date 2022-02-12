@@ -1,6 +1,7 @@
 package work.with.info;
 
 import work.with.database.ConnectWithDB;
+import work.with.files.WriteInFile;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -24,8 +25,8 @@ public class PostalClient {
         //this.clientPassword = clientPassword;
     }
 
-    public PostalClient(ArrayList<String> dataClient){
-        ConnectWithDB connectWithDB = new ConnectWithDB(dataClient);
+    public PostalClient(ArrayList<String> dataClient, WriteInFile generalWriteInFile){
+        ConnectWithDB connectWithDB = new ConnectWithDB(dataClient, generalWriteInFile);
     }
 
     public PostalClient transformation(String str){

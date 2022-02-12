@@ -1,6 +1,7 @@
 package work.with.info;
 
 import work.with.database.ConnectWithDB;
+import work.with.files.WriteInFile;
 
 import java.util.ArrayList;
 
@@ -16,8 +17,8 @@ public class PostalPackage {
     private String timeDateCreation;
     private String timeDateChange;
 
-    public PostalPackage(ArrayList<String> dataPackage){
-        ConnectWithDB connectWithDB = new ConnectWithDB(dataPackage);
+    public PostalPackage(ArrayList<String> dataPackage, WriteInFile generalWriteInFile){
+        ConnectWithDB connectWithDB = new ConnectWithDB(dataPackage, generalWriteInFile);
     }
 
 }

@@ -2,25 +2,27 @@ package work.with.files;
 
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.PrintWriter;
+import java.time.LocalDateTime;
 
 public class WriteInFile {
-    private FileWriter fileWriter;
+    private PrintWriter printWriter;
 
     public WriteInFile(String fileName) throws IOException{
-        fileWriter = new FileWriter(fileName, true);
+        printWriter = new PrintWriter(new FileWriter(fileName, true));
     }
 
     public void writeInFile(String text){
-        try{
-            fileWriter.write(text);
-        }catch(IOException e){
-            System.err.print(e);
-        }
+//      System.out.println("in writeinfile");
+        LocalDateTime localDateTime = LocalDateTime.now();
+//      System.out.println("in writeinfile");
+        printWriter.print(localDateTime + " " + text + "\n");
+
     }
 
     public void close() throws Exception{
-        if(fileWriter != null){
-            fileWriter.close();
+        if(printWriter != null){
+            printWriter.close();
         }
     }
 }

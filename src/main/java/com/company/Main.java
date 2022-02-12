@@ -13,25 +13,26 @@ import java.util.Iterator;
 public class Main {
 
     public static void main(String[] args) {
-        /*try{
-            WriteInFile file1 = new WriteInFile("test.txt");
-            file1.writeInFile("\n hello");
-            System.out.println("hello");
-            file1.close();
-        } catch (IOException e){
-            System.err.print(e);
-        } catch (Exception e) {
-            e.printStackTrace();
-            System.err.print(e);
-        }
-        System.out.println("that`s ok");*/
+//        try{
+//            WriteInFile file1 = new WriteInFile("log.txt");
+//            file1.writeInFile("\n hello");
+//            System.out.println("hello");
+//            file1.close();
+//        } catch (IOException e){
+//            System.err.print(e);
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//            System.err.print(e);
+//        }
+//        System.out.println("that`s ok");
         readFile();
     }
 
     public static void readFile(){
         try {
-            ReadFromFile generalReadFromFile = new ReadFromFile("test.txt");
-            ArrayList<String> generalWorkWithString = generalReadFromFile.readFromFile("word");;
+            WriteInFile generalWriteInFile = new WriteInFile("log.txt");
+            ReadFromFile generalReadFromFile = new ReadFromFile("test.txt", generalWriteInFile);
+            ArrayList<String> generalWorkWithString = generalReadFromFile.readFromFile("word");
             Iterator<String> generalIter = generalWorkWithString.iterator();
             //цикл начало
             do {
@@ -40,15 +41,15 @@ public class Main {
                     System.out.println(tmp);
                     switch (tmp) {
                         case "REGISTRPEOPLE":
-                            PostalClient postalClient = new PostalClient(generalWorkWithString);
+                            PostalClient postalClient = new PostalClient(generalWorkWithString, generalWriteInFile);
                             System.out.println("1");
                             break;
                         case "REGISTRPOSTALOFFICE":
-                            PostalOffices postalOffice = new PostalOffices(generalWorkWithString);
+                            PostalOffices postalOffice = new PostalOffices(generalWorkWithString, generalWriteInFile);
                             System.out.println("2");
                             break;
                         case "REGISTRPACKAGE":
-                            PostalPackage postalPackage = new PostalPackage(generalWorkWithString);
+                            PostalPackage postalPackage = new PostalPackage(generalWorkWithString, generalWriteInFile);
                             System.out.println("3");
                             break;
                         default:
@@ -92,7 +93,11 @@ public class Main {
             /*while(iterator1.hasNext()){
                 System.out.println(iterator1.next());
             }*/
+            generalWriteInFile.close();
         } catch (IOException e){
+            System.err.print(e);
+        } catch (Exception e) {
+            e.printStackTrace();
             System.err.print(e);
         }
     }
