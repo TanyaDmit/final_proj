@@ -1,5 +1,7 @@
 package work.with.info;
 
+import work.with.database.ConnectWithDB;
+
 import java.util.ArrayList;
 import java.util.Iterator;
 
@@ -32,6 +34,10 @@ public class PostalClient {
         this.clientTelephone = iter.next();
     }
 
+    public PostalClient(){
+        ConnectWithDB connectWithDB = new ConnectWithDB();
+    }
+
     public PostalClient transformation(String str){
         System.out.println(str);
         return null;
@@ -39,14 +45,6 @@ public class PostalClient {
 
     public void printClient(){
         System.out.println(clientFirstName+" "+clientSecondName+" "+clientPatronymic+" "+clientEmail+" "+clientTelephone+"\n");
-    }
-
-    public PostalClient(){
-        this.clientFirstName = null;
-        this.clientSecondName = null;
-        this.clientPatronymic = null;
-        this.clientEmail = null;
-        this.clientTelephone = null;
     }
 
     private boolean EmailValidation(String clientEmail){

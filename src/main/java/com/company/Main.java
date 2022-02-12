@@ -39,6 +39,7 @@ public class Main {
                 switch (tmp) {
                     case "REGISTRPEOPLE":
                         PostalClient postalClient = new PostalClient(workWithString1);
+                        PostalClient postalClient1 = new PostalClient();
                         postalClient.printClient();
                         System.out.println("1");
                         break;
