@@ -1,5 +1,5 @@
-REGISTRPEOPLE;xa;xaxa; ;xaxaxaxa;xaxaxaxaxa
+REGISTRPEOPLE;Дмитраш;Таня;Константиновна;ghost@gmail.com;+380661117744
 REGISTRPEOPLE;xu; ;xuxuxu;xuxuxuxu;xuxuxuxuxu
 REGISTRPEOPLE;xr;xrxr;xrxrxr;xrxrxrxr;xrxrxrxrxr
-REGISTRPOSTALOFFICE xaxa
-REGISTRPACKAGE xaxaxa
+REGISTRPOSTALOFFICE;xaxa
+REGISTRPACKAGE;xaxaxa

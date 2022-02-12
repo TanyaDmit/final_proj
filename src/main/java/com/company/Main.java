@@ -28,35 +28,62 @@ public class Main {
 
     public static void readFile(){
         try {
-            ReadFromFile file1 = new ReadFromFile("test.txt");
-            //file1.readFromFile("word");
-            //file1.readFromFile();
-            ArrayList<String> workWithString1 = file1.readFromFile("word");
-            Iterator<String> iterator1 =  workWithString1.iterator();
-            if(iterator1.hasNext()){
-                String tmp = iterator1.next();
-                System.out.println(tmp);
-                switch (tmp) {
-                    case "REGISTRPEOPLE":
-                        PostalClient postalClient = new PostalClient(workWithString1);
-                        PostalClient postalClient1 = new PostalClient();
-                        postalClient.printClient();
-                        System.out.println("1");
-                        break;
-                    case "REGISTRPOSTALOFFICE":
-                        System.out.println("2");
-                        break;
-                    case "REGISTRPACKAGE":
-                        System.out.println("3");
-                        break;
-                    default:
-                        System.out.println("i don`t know");
-                        break;
+            ReadFromFile generalReadFromFile = new ReadFromFile("test.txt");
+            ArrayList<String> generalWorkWithString = generalReadFromFile.readFromFile("word");;
+            Iterator<String> generalIter = generalWorkWithString.iterator();
+            //цикл начало
+            do {
+                if(generalIter.hasNext()){
+                    String tmp = generalIter.next();
+                    System.out.println(tmp);
+                    switch (tmp) {
+                        case "REGISTRPEOPLE":
+                            PostalClient postalClient = new PostalClient(generalWorkWithString);
+                            System.out.println("1");
+                            break;
+                        case "REGISTRPOSTALOFFICE":
+                            System.out.println("2");
+                            break;
+                        case "REGISTRPACKAGE":
+                            System.out.println("3");
+                            break;
+                        default:
+                            System.out.println("i don`t know");
+                            break;
+                    }
+                } else {
+                    System.out.println("game over");
                 }
-            } else {
-                System.out.println("game over");
-            }
-
+                generalWorkWithString = generalReadFromFile.readFromFile("word");
+                generalIter =  generalWorkWithString.iterator();
+            } while(generalIter.hasNext());
+//            ArrayList<String> workWithString1 = file1.readFromFile("word");
+//            Iterator<String> iterator1 =  workWithString1.iterator();
+//            if(iterator1.hasNext()){
+//                String tmp = iterator1.next();
+//                System.out.println(tmp);
+//                switch (tmp) {
+//                    case "REGISTRPEOPLE":
+//                        PostalClient postalClient = new PostalClient(workWithString1);
+//                        //PostalClient postalClient1 = new PostalClient();
+//                        //postalClient.printClient();
+//                        System.out.println("1");
+//                        break;
+//                    case "REGISTRPOSTALOFFICE":
+//                        System.out.println("2");
+//                        break;
+//                    case "REGISTRPACKAGE":
+//                        System.out.println("3");
+//                        break;
+//                    default:
+//                        System.out.println("i don`t know");
+//                        break;
+//                }
+//            } else {
+//                System.out.println("game over");
+//            }
+//
+            //цикл конец
 
             /*while(iterator1.hasNext()){
                 System.out.println(iterator1.next());

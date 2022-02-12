@@ -25,17 +25,7 @@ public class PostalClient {
     }
 
     public PostalClient(ArrayList<String> dataClient){
-        Iterator<String> iter =  dataClient.iterator();
-        iter.next();
-        this.clientFirstName = iter.next();
-        this.clientSecondName = iter.next();
-        this.clientPatronymic = iter.next();
-        this.clientEmail = iter.next();
-        this.clientTelephone = iter.next();
-    }
-
-    public PostalClient(){
-        ConnectWithDB connectWithDB = new ConnectWithDB();
+        ConnectWithDB connectWithDB = new ConnectWithDB(dataClient);
     }
 
     public PostalClient transformation(String str){
