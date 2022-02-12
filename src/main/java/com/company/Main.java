@@ -3,6 +3,7 @@ package com.company;
 import work.with.files.ReadFromFile;
 import work.with.files.WriteInFile;
 import work.with.info.PostalClient;
+import work.with.info.PostalOffices;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -42,6 +43,7 @@ public class Main {
                             System.out.println("1");
                             break;
                         case "REGISTRPOSTALOFFICE":
+                            PostalOffices postalOffice = new PostalOffices(generalWorkWithString);
                             System.out.println("2");
                             break;
                         case "REGISTRPACKAGE":
