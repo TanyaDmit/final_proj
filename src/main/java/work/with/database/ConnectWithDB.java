@@ -84,11 +84,12 @@ public class ConnectWithDB {
     }
 
     public static PreparedStatement insert_table_package(PreparedStatement prst, Connection conn, ArrayList<String> dataClient) throws SQLException {
-        String sql = "INSERT INTO clients (last_name, first_name, patronymic, email, telephone) "
-                + "VALUES (?, ?, ?, ?, ?);";
+        String sql = "INSERT INTO packages (telephone_sender, num_office_recipient, telephone, last_name, first_name, " +
+                "patronymic, date_of_create)"
+                + "VALUES (?, ?::int, ?, ?, ?, ?, ?::date);";
         Iterator<String> iter =  dataClient.iterator();
         iter.next();
-        int len = 5;
+        int len = 7;
         prst = conn.prepareStatement(sql);//создание connect
         for(int counter = 1; counter <= len; counter++){
             prst.setString(counter, iter.next());

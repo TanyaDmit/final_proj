@@ -10,4 +10,4 @@ REGISTRPOSTALOFFICE;27;длина посылки до 28 см
 REGISTRPOSTALOFFICE;5;работает улыбчивая команда
 REGISTRPOSTALOFFICE;11;при правильном ответе на вопрос: "как поймать тигра в клетку?", дают скидку 30% на доставку
 REGISTRPOSTALOFFICE;81;за качественные 20 приседаний угощают кофе
-REGISTRPACKAGE;xaxaxa
+REGISTRPACKAGE;+380665551177;11;+380969998877;Музалева;Елена;Ивановна;2022-02-12
