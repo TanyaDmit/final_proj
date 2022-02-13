@@ -3,6 +3,8 @@ package work.with.info;
 import work.with.database.ConnectWithDB;
 import work.with.files.WriteInFile;
 
+import java.sql.SQLException;
+import java.sql.SQLNonTransientException;
 import java.util.ArrayList;
 import java.util.Iterator;
 
@@ -27,6 +29,31 @@ public class PostalClient {
 
     public PostalClient(ArrayList<String> dataClient, WriteInFile generalWriteInFile){
         ConnectWithDB connectWithDB = new ConnectWithDB(dataClient, generalWriteInFile);
+    }
+
+    public PostalClient(ConnectWithDB generalConnectWithDB, ArrayList<String> dataClient, WriteInFile generalWriteInFile){
+        String sql = "INSERT INTO clients (last_name, first_name, patronymic, email, telephone) "
+                + "VALUES (?, ?, ?, ?, ?);";
+        Iterator<String> iter =  dataClient.iterator();
+        iter.next();
+        int len = 5;
+        String line = " ";
+        String tmp = null;
+        try{
+            generalConnectWithDB.prst = generalConnectWithDB.conn.prepareStatement(sql);//создание connect
+            for(int counter = 1; counter <= len; counter++){
+                tmp = iter.next();
+                generalConnectWithDB.prst.setString(counter, tmp);
+                line = line + tmp + " ";
+            }
+            generalConnectWithDB.prst.executeUpdate();
+            generalWriteInFile.writeInFile("add the record in table clients: " + line);
+        } catch(SQLNonTransientException eNTSQL){
+            System.out.println("печаль с данными");
+        }catch(SQLException eSQL) {
+            System.out.println("печаль в общем");
+        }
+
     }
 
     public PostalClient transformation(String str){

@@ -1,5 +1,6 @@
 package com.company;
 
+import work.with.database.ConnectWithDB;
 import work.with.files.ReadFromFile;
 import work.with.files.WriteInFile;
 import work.with.info.PostalClient;
@@ -18,6 +19,7 @@ public class Main {
             ReadFromFile generalReadFromFile = new ReadFromFile("test.txt", generalWriteInFile);
             ArrayList<String> generalWorkWithString;
             Iterator<String> generalIter;
+            ConnectWithDB generalConnectWithDB = new ConnectWithDB(generalWriteInFile);
             //цикл начало
             while(true){
                 generalWorkWithString = readFile(generalReadFromFile);
@@ -30,15 +32,15 @@ public class Main {
                         System.out.println(tmp);
                         switch (tmp) {
                             case "REGISTRPEOPLE":
-                                PostalClient postalClient = new PostalClient(generalWorkWithString, generalWriteInFile);
+                                PostalClient postalClient = new PostalClient(generalConnectWithDB, generalWorkWithString, generalWriteInFile);
                                 System.out.println("1");
                                 break;
                             case "REGISTRPOSTALOFFICE":
-                                PostalOffices postalOffice = new PostalOffices(generalWorkWithString, generalWriteInFile);
+                                PostalOffices postalOffice = new PostalOffices(generalConnectWithDB, generalWorkWithString, generalWriteInFile);
                                 System.out.println("2");
                                 break;
                             case "REGISTRPACKAGE":
-                                PostalPackage postalPackage = new PostalPackage(generalWorkWithString, generalWriteInFile);
+                                PostalPackage postalPackage = new PostalPackage(generalConnectWithDB, generalWorkWithString, generalWriteInFile);
                                 System.out.println("3");
                                 break;
                             default:
@@ -78,6 +80,7 @@ public class Main {
 //                generalIter =  generalWorkWithString.iterator();
            // } while(generalIter.hasNext());
             //цикл конец
+            generalConnectWithDB.setDisconnect(generalWriteInFile);
             generalWriteInFile.close();
         } catch (IOException e){
             System.err.print(e);

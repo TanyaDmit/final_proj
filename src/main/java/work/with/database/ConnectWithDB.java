@@ -7,16 +7,55 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 public class ConnectWithDB {
+    public Connection conn = null;
+    public PreparedStatement prst = null;
+
+    public ConnectWithDB(WriteInFile generalWriteInFile){
+        connectStart(generalWriteInFile);
+    }
+
     public ConnectWithDB(ArrayList<String> dataClient, WriteInFile generalWriteInFile){
         connectStart(dataClient, generalWriteInFile);
     }
-    private boolean connectStart(ArrayList<String> dataClient, WriteInFile generalWriteInFile){
-        Connection connection = null;
-        PreparedStatement preparedStatement = null;
+
+    private void connectStart(WriteInFile generalWriteInFile){
         try{
             Class.forName("org.postgresql.Driver");
-            connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/postgres", "postgres", "dtk13zpuub");
-            connection.setAutoCommit(false);
+            conn = DriverManager.getConnection("jdbc:postgresql://localhost:5432/postgres", "postgres", "dtk13zpuub");
+            conn.setAutoCommit(false);
+            System.out.println("Opened database successfully");
+            generalWriteInFile.writeInFile(" start connect with database");
+        } catch (Exception e) {
+            System.err.println( e.getClass().getName()+": "+ e.getMessage() );
+            System.out.println("error when program connect with database");
+            System.exit(0);
+        }
+    }
+
+    public void setDisconnect(WriteInFile generalWriteInFile){
+        connectEnd(generalWriteInFile);
+    }
+
+    private void connectEnd(WriteInFile generalWriteInFile){
+        try{
+            prst.close();
+            conn.commit();
+            conn.close();
+            generalWriteInFile.writeInFile(" end connect with database");
+        } catch (Exception e) {
+            System.err.println( e.getClass().getName()+": "+ e.getMessage() );
+            System.out.println("error when program connect with database");
+            System.exit(0);
+        }
+    }
+
+    private boolean connectStart(ArrayList<String> dataClient, WriteInFile generalWriteInFile){
+//        Connection connection = null;
+//        PreparedStatement preparedStatement = null;
+        try{
+            Class.forName("org.postgresql.Driver");
+            conn = DriverManager.getConnection("jdbc:postgresql://localhost:5432/postgres", "postgres", "dtk13zpuub");
+            conn.setAutoCommit(false);
             System.out.println("Opened database successfully");
 
             Iterator<String> iterconn =  dataClient.iterator();
@@ -24,13 +63,13 @@ public class ConnectWithDB {
             System.out.println(tmp);
             switch (tmp) {
                 case "REGISTRPEOPLE":
-                    preparedStatement = insert_table_client(preparedStatement, connection, dataClient, generalWriteInFile);
+                    prst = insert_table_client(prst, conn, dataClient, generalWriteInFile);
                     break;
                 case "REGISTRPOSTALOFFICE":
-                    preparedStatement = insert_table_office(preparedStatement, connection, dataClient, generalWriteInFile);
+                    prst = insert_table_office(prst, conn, dataClient, generalWriteInFile);
                     break;
                 case "REGISTRPACKAGE":
-                    preparedStatement = insert_table_package(preparedStatement, connection, dataClient, generalWriteInFile);
+                    prst = insert_table_package(prst, conn, dataClient, generalWriteInFile);
                     break;
                 default:
                     System.out.println("i don`t know, i can`t understand");
@@ -38,9 +77,9 @@ public class ConnectWithDB {
             }
 //            preparedStatement = insert_table(preparedStatement, connection, dataClient);
 
-            preparedStatement.close();
-            connection.commit();
-            connection.close();
+            prst.close();
+            conn.commit();
+            conn.close();
         } catch (Exception e) {
             System.err.println( e.getClass().getName()+": "+ e.getMessage() );
             System.out.println("error when program connect with database");
