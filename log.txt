@@ -1,14 +1,42 @@
-2022-02-13T00:22:40.420348 file 'test.txt' is opened
-2022-02-13T00:22:41.334737 add the record in table clients:  Дмитраш Таня Константиновна ghost@gmail.com +380661117744 
-2022-02-13T00:22:41.456045 add the record in table clients:  Веселовская Анастасия Сергеевна emailforpeople1@gmail.com +380962224433 
-2022-02-13T00:22:41.562088 add the record in table clients:  Фомина Елизавета Дмитриевна emailforpeople2@gmail.com +380503330011 
-2022-02-13T00:22:41.636327 add the record in table clients:  Скляр Николай Витальевич emailforpeople3@gmail.com +380965554411 
-2022-02-13T00:22:41.731849 add the record in table clients:  Русанов Александр Александрович emailforpeople4@gmail.com +380504448811 
-2022-02-13T00:22:41.824065 add the record in table clients:  Костенко Анатолий Владимирович emailforpeople5@gmail.com +380665551177 
-2022-02-13T00:22:41.890817 add the record in table postal_offices:  42 вес посылки до 30 кг 
-2022-02-13T00:22:41.963416 add the record in table postal_offices:  13 расположена возле кофетерия Pacamara 
-2022-02-13T00:22:42.030942 add the record in table postal_offices:  27 длина посылки до 28 см 
-2022-02-13T00:22:42.114800 add the record in table postal_offices:  5 работает улыбчивая команда 
-2022-02-13T00:22:42.190407 add the record in table postal_offices:  11 при правильном ответе на вопрос: "как поймать тигра в клетку?", дают скидку 30% на доставку 
-2022-02-13T00:22:42.285547 add the record in table postal_offices:  81 за качественные 20 приседаний угощают кофе 
-2022-02-13T00:22:42.347022 add the record in table packages:  +380665551177 11 +380969998877 Музалева Елена Ивановна 2022-02-12 
+2022-02-13T11:33:38.121389 file 'test.txt' is opened
+2022-02-13T11:33:39.458498 add the record in table clients:  Дмитраш Таня Константиновна ghost@gmail.com +380661117744 
+2022-02-13T11:33:39.610472 add the record in table clients:  Веселовская Анастасия Сергеевна emailforpeople1@gmail.com +380962224433 
+2022-02-13T11:33:39.831772 add the record in table clients:  Фомина Елизавета Дмитриевна emailforpeople2@gmail.com +380503330011 
+2022-02-13T11:33:40.008952 add the record in table clients:  Скляр Николай Витальевич emailforpeople3@gmail.com +380965554411 
+2022-02-13T11:33:40.091073 add the record in table clients:  Русанов Александр Александрович emailforpeople4@gmail.com +380504448811 
+2022-02-13T11:33:40.166437 add the record in table clients:  Костенко Анатолий Владимирович emailforpeople5@gmail.com +380665551177 
+2022-02-13T11:33:40.279766 add the record in table postal_offices:  42 вес посылки до 30 кг 
+2022-02-13T11:33:40.350450 add the record in table postal_offices:  13 расположена возле кофетерия Pacamara 
+2022-02-13T11:33:40.413411 add the record in table postal_offices:  27 длина посылки до 28 см 
+2022-02-13T11:33:40.480855 add the record in table postal_offices:  5 работает улыбчивая команда 
+2022-02-13T11:33:40.550095 add the record in table postal_offices:  11 при правильном ответе на вопрос: "как поймать тигра в клетку?", дают скидку 30% на доставку 
+2022-02-13T11:33:40.605908 add the record in table postal_offices:  81 за качественные 20 приседаний угощают кофе 
+2022-02-13T11:33:40.667950 add the record in table packages:  +380665551177 11 +380969998877 Музалева Елена Ивановна 2022-02-13 00:22:42.34 
+2022-02-13T11:34:57.886341 file 'test.txt' is opened
+2022-02-13T11:34:58.841640 add the record in table clients:  Дмитраш Таня Константиновна ghost@gmail.com +380661117744 
+2022-02-13T11:34:58.950168 add the record in table clients:  Веселовская Анастасия Сергеевна emailforpeople1@gmail.com +380962224433 
+2022-02-13T11:34:59.039284 add the record in table clients:  Фомина Елизавета Дмитриевна emailforpeople2@gmail.com +380503330011 
+2022-02-13T11:34:59.117473 add the record in table clients:  Скляр Николай Витальевич emailforpeople3@gmail.com +380965554411 
+2022-02-13T11:34:59.214824 add the record in table clients:  Русанов Александр Александрович emailforpeople4@gmail.com +380504448811 
+2022-02-13T11:34:59.297689 add the record in table clients:  Костенко Анатолий Владимирович emailforpeople5@gmail.com +380665551177 
+2022-02-13T11:34:59.378923 add the record in table postal_offices:  42 вес посылки до 30 кг 
+2022-02-13T11:34:59.516787 add the record in table postal_offices:  13 расположена возле кофетерия Pacamara 
+2022-02-13T11:34:59.644038 add the record in table postal_offices:  27 длина посылки до 28 см 
+2022-02-13T11:34:59.764598 add the record in table postal_offices:  5 работает улыбчивая команда 
+2022-02-13T11:34:59.848100 add the record in table postal_offices:  11 при правильном ответе на вопрос: "как поймать тигра в клетку?", дают скидку 30% на доставку 
+2022-02-13T11:34:59.916610 add the record in table postal_offices:  81 за качественные 20 приседаний угощают кофе 
+2022-02-13T11:35:00.024582 add the record in table packages:  +380665551177 11 +380969998877 Музалева Елена Ивановна 2022-02-13 00:22:42.343 
+2022-02-13T11:36:17.179526 file 'test.txt' is opened
+2022-02-13T11:36:18.034892 add the record in table clients:  Дмитраш Таня Константиновна ghost@gmail.com +380661117744 
+2022-02-13T11:36:18.133304 add the record in table clients:  Веселовская Анастасия Сергеевна emailforpeople1@gmail.com +380962224433 
+2022-02-13T11:36:18.220043 add the record in table clients:  Фомина Елизавета Дмитриевна emailforpeople2@gmail.com +380503330011 
+2022-02-13T11:36:18.326432 add the record in table clients:  Скляр Николай Витальевич emailforpeople3@gmail.com +380965554411 
+2022-02-13T11:36:18.411721 add the record in table clients:  Русанов Александр Александрович emailforpeople4@gmail.com +380504448811 
+2022-02-13T11:36:18.500933 add the record in table clients:  Костенко Анатолий Владимирович emailforpeople5@gmail.com +380665551177 
+2022-02-13T11:36:18.581558 add the record in table postal_offices:  42 вес посылки до 30 кг 
+2022-02-13T11:36:18.717556 add the record in table postal_offices:  13 расположена возле кофетерия Pacamara 
+2022-02-13T11:36:18.851248 add the record in table postal_offices:  27 длина посылки до 28 см 
+2022-02-13T11:36:19.014166 add the record in table postal_offices:  5 работает улыбчивая команда 
+2022-02-13T11:36:19.085003 add the record in table postal_offices:  11 при правильном ответе на вопрос: "как поймать тигра в клетку?", дают скидку 30% на доставку 
+2022-02-13T11:36:19.140889 add the record in table postal_offices:  81 за качественные 20 приседаний угощают кофе 
+2022-02-13T11:36:19.213159 add the record in table packages:  +380665551177 11 +380969998877 Музалева Елена Ивановна 2022-02-13 00:22:42.343 

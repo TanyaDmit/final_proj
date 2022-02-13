@@ -8,9 +8,9 @@ import java.util.Iterator;
 
 public class ConnectWithDB {
     public ConnectWithDB(ArrayList<String> dataClient, WriteInFile generalWriteInFile){
-        connect(dataClient, generalWriteInFile);
+        connectStart(dataClient, generalWriteInFile);
     }
-    private boolean connect(ArrayList<String> dataClient, WriteInFile generalWriteInFile){
+    private boolean connectStart(ArrayList<String> dataClient, WriteInFile generalWriteInFile){
         Connection connection = null;
         PreparedStatement preparedStatement = null;
         try{
@@ -19,16 +19,6 @@ public class ConnectWithDB {
             connection.setAutoCommit(false);
             System.out.println("Opened database successfully");
 
-//            String sql = "INSERT INTO clients (last_name, first_name, patronymic, email, telephone) "
-//                    + "VALUES (?, ?, ?, ?, ?);";
-
-//            preparedStatement = connection.prepareStatement(sql);//создание connect
-//            preparedStatement.setString(1, "Дмитраш");
-//            preparedStatement.setString(2, "Таня");
-//            preparedStatement.setString(3, "Константиновна");
-//            preparedStatement.setString(4, "gthyt@gmail.com");
-//            preparedStatement.setString(5, "+380661117744");
-//            preparedStatement.executeUpdate();
             Iterator<String> iterconn =  dataClient.iterator();
             String tmp = iterconn.next();
             System.out.println(tmp);
@@ -99,8 +89,8 @@ public class ConnectWithDB {
 
     public static PreparedStatement insert_table_package(PreparedStatement prst, Connection conn, ArrayList<String> dataClient, WriteInFile generalWriteInFile) throws SQLException {
         String sql = "INSERT INTO packages (telephone_sender, num_office_recipient, telephone, last_name, first_name, " +
-                "patronymic, date_of_create)"
-                + "VALUES (?, ?::int, ?, ?, ?, ?, ?::date);";
+                "patronymic, date_of_create, status)"
+                + "VALUES (?, ?::int, ?, ?, ?, ?, ?::timestamp,'new_package');";
         Iterator<String> iter =  dataClient.iterator();
         iter.next();
         int len = 7;

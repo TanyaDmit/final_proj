@@ -1,3 +1,5 @@
+drop table if exists packages;
+
 --table for client
 drop table if exists clients;
 
@@ -32,7 +34,7 @@ create table postal_offices (
 select * from postal_offices;
 
 --table for packages
-drop table if exists packages;
+--drop table if exists packages;
 
 drop sequence if exists packages_id;
 
@@ -40,10 +42,19 @@ create sequence packages_id start 10000000001;
 
 create table packages(
 	id_package bigint not null default nextval('packages_id'),
-	
+	telephone_sender varchar(20) references clients(telephone),
+	num_office_recipient int references postal_offices(num_office),
+	telephone varchar(20),
+	last_name varchar(50),
+	first_name varchar(50),
+	patronymic varchar(50),
+	status varchar(20),
+	date_of_create timestamp,
+	date_change_status timestamp not null default now()
 );
 
-create table packages ();
+select * from packages;
+
 
 --table for messages
 
