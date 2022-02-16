@@ -1,37 +1,25 @@
-2022-02-16T15:55:11.485797 file 'test.txt' is opened
-2022-02-16T15:55:12.410514  start connect with database
-2022-02-16T15:55:12.481930 add the record in table clients:  Дмитраш Таня Константиновна ghost@gmail.com +380661117744 
-2022-02-16T15:55:12.485223 add the record in table clients:  Веселовская Анастасия Сергеевна emailforpeople1@gmail.com +380962224433 
-2022-02-16T15:55:12.488597 add the record in table clients:  Фомина Елизавета Дмитриевна emailforpeople2@gmail.com +380503330011 
-2022-02-16T15:55:12.491327 add the record in table clients:  Скляр Николай Витальевич emailforpeople3@gmail.com +380965554411 
-2022-02-16T15:55:12.493480 add the record in table clients:  Русанов Александр Александрович emailforpeople4@gmail.com +380504448811 
-2022-02-16T15:55:12.495621 add the record in table clients:  Костенко Анатолий Владимирович emailforpeople5@gmail.com +380665551177 
-2022-02-16T15:55:12.499869 add the record in table postal_offices:  42 вес посылки до 30 кг 
-2022-02-16T15:55:12.501654 add the record in table postal_offices:  13 расположена возле кофетерия Pacamara 
-2022-02-16T15:55:12.511777 add the record in table postal_offices:  27 длина посылки до 28 см 
-2022-02-16T15:55:12.513345 add the record in table postal_offices:  5 работает улыбчивая команда 
-2022-02-16T15:55:12.520130 add the record in table postal_offices:  11 при правильном ответе на вопрос: "как поймать тигра в клетку?", дают скидку 30% на доставку 
-2022-02-16T15:55:12.523662 add the record in table postal_offices:  81 за качественные 20 приседаний угощают кофе 
-2022-02-16T15:55:12.540650 add the record in table packages:  +380665551177 42 +380969998877 Музалева Елена Ивановна 2022-02-13 00:22:42.343 
-2022-02-16T15:55:12.548586 add the record in table packages:  +380665551177 11 +380969998877 Музалева Елена Ивановна 2022-02-13 00:22:42.343 
-2022-02-16T15:55:12.554953 add the record in table packages:  +380665551177 5 +380969998877 Музалева Елена Ивановна 2022-02-13 00:22:42.343 
-2022-02-16T15:55:12.557088 add the record in table packages:  +380665551177 81 +380969998877 Музалева Елена Ивановна 2022-02-13 00:22:42.343 
-2022-02-16T15:55:12.590547  end connect with database
-2022-02-16T15:55:12.680802  start connect with database
-2022-02-16T15:55:12.851507 output packages on screen:10000000001 +380665551177 42 +380969998877 Музалева Елена Ивановна new_package 2022-02-13 00:22:42.343 2022-02-16 15:55:12.476701 
-2022-02-16T15:55:12.851994 output packages on screen:10000000002 +380665551177 11 +380969998877 Музалева Елена Ивановна new_package 2022-02-13 00:22:42.343 2022-02-16 15:55:12.476701 
-2022-02-16T15:55:12.852336 output packages on screen:10000000003 +380665551177 5 +380969998877 Музалева Елена Ивановна new_package 2022-02-13 00:22:42.343 2022-02-16 15:55:12.476701 
-2022-02-16T15:55:12.852671 output packages on screen:10000000004 +380665551177 81 +380969998877 Музалева Елена Ивановна new_package 2022-02-13 00:22:42.343 2022-02-16 15:55:12.476701 
-2022-02-16T15:55:12.921411 output clients on screen:100000001 +380661117744 Дмитраш Таня Константиновна ghost@gmail.com 
-2022-02-16T15:55:12.921801 output clients on screen:100000002 +380962224433 Веселовская Анастасия Сергеевна emailforpeople1@gmail.com 
-2022-02-16T15:55:12.922073 output clients on screen:100000003 +380503330011 Фомина Елизавета Дмитриевна emailforpeople2@gmail.com 
-2022-02-16T15:55:12.922314 output clients on screen:100000004 +380965554411 Скляр Николай Витальевич emailforpeople3@gmail.com 
-2022-02-16T15:55:12.922593 output clients on screen:100000005 +380504448811 Русанов Александр Александрович emailforpeople4@gmail.com 
-2022-02-16T15:55:12.923069 output clients on screen:100000006 +380665551177 Костенко Анатолий Владимирович emailforpeople5@gmail.com 
-2022-02-16T15:55:12.962468 output postal_offices on screen:10001 42 вес посылки до 30 кг
-2022-02-16T15:55:12.963711 output postal_offices on screen:10002 13 расположена возле кофетерия Pacamara
-2022-02-16T15:55:12.964003 output postal_offices on screen:10003 27 длина посылки до 28 см
-2022-02-16T15:55:12.964538 output postal_offices on screen:10004 5 работает улыбчивая команда
-2022-02-16T15:55:12.965873 output postal_offices on screen:10005 11 при правильном ответе на вопрос: "как поймать тигра в клетку?", дают скидку 30% на доставку
-2022-02-16T15:55:12.966170 output postal_offices on screen:10006 81 за качественные 20 приседаний угощают кофе
-2022-02-16T15:55:12.969555  end connect with database
+2022-02-17T01:02:07.121716 file 'test.txt' is opened
+2022-02-17T01:02:07.898080  start connect with database
+2022-02-17T01:02:07.957704 add the record in table clients:  Дмитраш Таня Константиновна ghost@gmail.com +380661117744 
+2022-02-17T01:02:07.960892 add the record in table clients:  Веселовская Анастасия Сергеевна emailforpeople1@gmail.com +380962224433 
+2022-02-17T01:02:07.963015 add the record in table clients:  Фомина Елизавета Дмитриевна emailforpeople2@gmail.com +380503330011 
+2022-02-17T01:02:07.964937 add the record in table clients:  Скляр Николай Витальевич emailforpeople3@gmail.com +380965554411 
+2022-02-17T01:02:07.966868 add the record in table clients:  Русанов Александр Александрович emailforpeople4@gmail.com +380504448811 
+2022-02-17T01:02:07.968805 add the record in table clients:  Костенко Анатолий Владимирович emailforpeople5@gmail.com +380665551177 
+2022-02-17T01:02:07.973222 add the record in table postal_offices:  42 вес посылки до 30 кг 
+2022-02-17T01:02:07.974965 add the record in table postal_offices:  13 расположена возле кофетерия Pacamara 
+2022-02-17T01:02:07.976591 add the record in table postal_offices:  27 длина посылки до 28 см 
+2022-02-17T01:02:07.986269 add the record in table postal_offices:  5 работает улыбчивая команда 
+2022-02-17T01:02:07.987896 add the record in table postal_offices:  11 при правильном ответе на вопрос: "как поймать тигра в клетку?", дают скидку 30% на доставку 
+2022-02-17T01:02:07.989315 add the record in table postal_offices:  81 за качественные 20 приседаний угощают кофе 
+2022-02-17T01:02:07.994677 add the record in table packages:  +380665551177 42 +380969998877 Музалева Елена Ивановна 
+2022-02-17T01:02:07.996996 add the record in table packages:  +380665551177 11 +380969998877 Музалева Елена Ивановна 
+2022-02-17T01:02:07.999787 add the record in table packages:  +380665551177 5 +380969998877 Музалева Елена Ивановна 
+2022-02-17T01:02:08.006184 add the record in table packages:  +380665551177 81 +380969998877 Музалева Елена Ивановна 
+2022-02-17T01:02:08.064366  end connect with database
+2022-02-17T01:02:08.126509  start connect with database
+2022-02-17T01:02:08.229406 read package to send and change status:10000000001 new_package 2022-02-17 01:02:07 
+2022-02-17T01:02:08.229586 read package to send and change status:10000000002 new_package 2022-02-17 01:02:07 
+2022-02-17T01:02:08.229682 read package to send and change status:10000000003 new_package 2022-02-17 01:02:07 
+2022-02-17T01:02:08.229769 read package to send and change status:10000000004 new_package 2022-02-17 01:02:07 
+2022-02-17T01:02:08.302138  end connect with database

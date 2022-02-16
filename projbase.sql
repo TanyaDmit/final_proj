@@ -55,9 +55,14 @@ create table packages(
 
 select * from packages;
 
+select to_char(date_of_create, 'YYYY-MM-DD HH24:MI:SS') as d1,
+	id_package,
+	status
+from packages;
+
 
 --table for messages
-drop table if exists messages;
+--drop table if exists messages;
 
 drop sequence if exists messages_id;
 
