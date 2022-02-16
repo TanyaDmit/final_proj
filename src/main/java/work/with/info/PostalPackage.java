@@ -54,32 +54,34 @@ public class PostalPackage {
         }catch(SQLException eSQL) {
             System.out.println("печаль в общем");
             generalWriteInFile.writeInFile("game over 0.3");
-            generalConnectWithDB.setReConnect(generalWriteInFile);
+            generalConnectWithDB.setReConnect(generalWriteInFile, true);
         }
 
     }
 
-    public static void coutPostalPackage(ConnectWithDB generalConnectWithDB, WriteInFile generalWriteInFile){
+    public static void coutPostalPackage(ConnectWithDB connectForRead, WriteInFile generalWriteInFile){
         try{
+            connectForRead.stmt = connectForRead.conn.createStatement();
             String sql = "SELECT * FROM packages;";
-            generalConnectWithDB.prst = generalConnectWithDB.conn.prepareStatement(sql);
-            ResultSet resultSet = generalConnectWithDB.prst.executeQuery();
+            String tmpLink = null;
+            ResultSet resultSet = connectForRead.stmt.executeQuery(sql);
             while(resultSet.next()){
                 long id_package = resultSet.getLong("id_package");
-                String telephone_sender = resultSet.getNString("telephone_sender");
+                String telephone_sender = resultSet.getString("telephone_sender");
                 long num_office_recipient = resultSet.getLong("num_office_recipient");
-                String telephone = resultSet.getNString("telephone");
-                String last_name = resultSet.getNString("last_name");
-                String first_name = resultSet.getNString("first_name");
-                String patronymic = resultSet.getNString("patronymic");
-                String status = resultSet.getNString("status");
-                String date_of_create = resultSet.getNString("date_of_create");//?
-                String date_change_status = resultSet.getNString("date_change_status");//?
+                String telephone = resultSet.getString("telephone");
+                String last_name = resultSet.getString("last_name");
+                String first_name = resultSet.getString("first_name");
+                String patronymic = resultSet.getString("patronymic");
+                String status = resultSet.getString("status");
+                String date_of_create = resultSet.getString("date_of_create");//?
+                String date_change_status = resultSet.getString("date_change_status");//?
 
-                System.out.println(id_package+" "+ telephone_sender+ " "+ num_office_recipient + " "+
+                tmpLink = (id_package+" "+ telephone_sender+ " "+ num_office_recipient + " "+
                         telephone + " "+last_name+" "+first_name+" "+patronymic+" "+status+" "+
                         date_of_create+" "+date_change_status+" ");
-                generalWriteInFile.writeInFile("yes");
+                System.out.println(tmpLink);
+                generalWriteInFile.writeInFile("output packages on screen:" + tmpLink);
             }
         } catch(SQLException eSQL){
             System.out.println("печаль в общем при вычитке");

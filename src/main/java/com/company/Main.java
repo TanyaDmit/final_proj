@@ -8,6 +8,8 @@ import work.with.info.PostalOffices;
 import work.with.info.PostalPackage;
 
 import java.io.IOException;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Iterator;
 
@@ -81,7 +83,10 @@ public class Main {
            // } while(generalIter.hasNext());
             //цикл конец
 
-            generalConnectWithDB.setDisconnect(generalWriteInFile);
+            generalConnectWithDB.setDisconnect(generalWriteInFile, true);
+            ConnectWithDB connectForRead = new ConnectWithDB(generalWriteInFile);
+            PostalPackage.coutPostalPackage(connectForRead,generalWriteInFile);
+            connectForRead.setDisconnect(generalWriteInFile, false);
             generalWriteInFile.close();
         } catch (IOException e){
             System.err.print(e);
@@ -90,18 +95,18 @@ public class Main {
             System.err.print(e);
         }
 
-        try{
-            WriteInFile generalWriteInFile = new WriteInFile("log.txt");
-            ConnectWithDB generalConnectWithDB = new ConnectWithDB(generalWriteInFile);
-            PostalPackage.coutPostalPackage(generalConnectWithDB, generalWriteInFile);
-            generalConnectWithDB.setDisconnect(generalWriteInFile);
-            generalWriteInFile.close();
-        } catch (IOException e){
-            System.err.print(e);
-        } catch (Exception e) {
-            e.printStackTrace();
-            System.err.print(e);
-        }
+//        try{
+//            WriteInFile generalWriteInFile = new WriteInFile("log.txt");
+//            ConnectWithDB generalConnectWithDB = new ConnectWithDB(generalWriteInFile);
+//            PostalPackage.coutPostalPackage(generalConnectWithDB, generalWriteInFile);
+//            generalConnectWithDB.setDisconnect(generalWriteInFile);
+//            generalWriteInFile.close();
+//        } catch (IOException e){
+//            System.err.print(e);
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//            System.err.print(e);
+//        }
     }
 
 
