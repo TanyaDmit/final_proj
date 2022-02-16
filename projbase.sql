@@ -41,9 +41,9 @@ drop sequence if exists packages_id;
 create sequence packages_id start 10000000001;
 
 create table packages(
-	id_package bigint not null default nextval('packages_id'),
+	id_package bigint primary key not null default nextval('packages_id'),
 	telephone_sender varchar(20) references clients(telephone),
-	num_office_recipient int references postal_offices(num_office),
+	num_office_recipient bigint references postal_offices(num_office),
 	telephone varchar(20),
 	last_name varchar(50),
 	first_name varchar(50),
@@ -57,30 +57,17 @@ select * from packages;
 
 
 --table for messages
+drop table if exists messages;
 
+drop sequence if exists messages_id;
 
+create sequence messages_id start 10000000001;
 
+create table messages(
+	messages_id bigint not null default nextval('messages_id'),
+	num_package bigint references packages(id_package),
+	text_message text,
+	status varchar(20)
+);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+select * from messages;
