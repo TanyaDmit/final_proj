@@ -80,6 +80,20 @@ public class Main {
 //                generalIter =  generalWorkWithString.iterator();
            // } while(generalIter.hasNext());
             //цикл конец
+
+            generalConnectWithDB.setDisconnect(generalWriteInFile);
+            generalWriteInFile.close();
+        } catch (IOException e){
+            System.err.print(e);
+        } catch (Exception e) {
+            e.printStackTrace();
+            System.err.print(e);
+        }
+
+        try{
+            WriteInFile generalWriteInFile = new WriteInFile("log.txt");
+            ConnectWithDB generalConnectWithDB = new ConnectWithDB(generalWriteInFile);
+            PostalPackage.coutPostalPackage(generalConnectWithDB, generalWriteInFile);
             generalConnectWithDB.setDisconnect(generalWriteInFile);
             generalWriteInFile.close();
         } catch (IOException e){

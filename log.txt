@@ -1,17 +1,22 @@
-2022-02-13T23:52:02.286959 file 'test.txt' is opened
-2022-02-13T23:52:03.148734  start connect with database
-2022-02-13T23:52:03.205508 add the record in table clients:  Дмитраш Таня Константиновна ghost@gmail.com +380661117744 
-2022-02-13T23:52:03.207794 add the record in table clients:  Веселовская Анастасия Сергеевна emailforpeople1@gmail.com +380962224433 
-2022-02-13T23:52:03.210044 add the record in table clients:  Фомина Елизавета Дмитриевна emailforpeople2@gmail.com +380503330011 
-2022-02-13T23:52:03.212063 add the record in table clients:  Скляр Николай Витальевич emailforpeople3@gmail.com +380965554411 
-2022-02-13T23:52:03.213946 add the record in table clients:  Русанов Александр Александрович emailforpeople4@gmail.com +380504448811 
-2022-02-13T23:52:03.217734 add the record in table clients:  Костенко Анатолий Владимирович emailforpeople5@gmail.com +380665551177 
-2022-02-13T23:52:03.224580 add the record in table postal_offices:  42 вес посылки до 30 кг 
-2022-02-13T23:52:03.230477 add the record in table postal_offices:  13 расположена возле кофетерия Pacamara 
-2022-02-13T23:52:03.233585 add the record in table postal_offices:  27 длина посылки до 28 см 
-2022-02-13T23:52:03.235535 add the record in table postal_offices:  5 работает улыбчивая команда 
-2022-02-13T23:52:03.237213 add the record in table postal_offices:  11 при правильном ответе на вопрос: "как поймать тигра в клетку?", дают скидку 30% на доставку 
-2022-02-13T23:52:03.238805 add the record in table postal_offices:  81 за качественные 20 приседаний угощают кофе 
-2022-02-13T23:52:03.243790 add the record in table packages:  +380665551177 11 +380969998877 Музалева Елена Ивановна 2022-02-13 00:22:42.343 
-2022-02-13T23:52:03.258372 game over 0.2
-2022-02-13T23:52:03.261989  end connect with database
+2022-02-16T02:15:17.838838 file 'test.txt' is opened
+2022-02-16T02:15:18.584788  start connect with database
+2022-02-16T02:15:18.644662 add the record in table clients:  Дмитраш Таня Константиновна ghost@gmail.com +380661117744 
+2022-02-16T02:15:18.647764 add the record in table clients:  Веселовская Анастасия Сергеевна emailforpeople1@gmail.com +380962224433 
+2022-02-16T02:15:18.650875 add the record in table clients:  Фомина Елизавета Дмитриевна emailforpeople2@gmail.com +380503330011 
+2022-02-16T02:15:18.657275 add the record in table clients:  Скляр Николай Витальевич emailforpeople3@gmail.com +380965554411 
+2022-02-16T02:15:18.660562 add the record in table clients:  Русанов Александр Александрович emailforpeople4@gmail.com +380504448811 
+2022-02-16T02:15:18.666037 add the record in table clients:  Костенко Анатолий Владимирович emailforpeople5@gmail.com +380665551177 
+2022-02-16T02:15:18.674723 add the record in table postal_offices:  42 вес посылки до 30 кг 
+2022-02-16T02:15:18.678537 add the record in table postal_offices:  13 расположена возле кофетерия Pacamara 
+2022-02-16T02:15:18.682717 add the record in table postal_offices:  27 длина посылки до 28 см 
+2022-02-16T02:15:18.694974 add the record in table postal_offices:  5 работает улыбчивая команда 
+2022-02-16T02:15:18.703475 add the record in table postal_offices:  11 при правильном ответе на вопрос: "как поймать тигра в клетку?", дают скидку 30% на доставку 
+2022-02-16T02:15:18.708530 add the record in table postal_offices:  81 за качественные 20 приседаний угощают кофе 
+2022-02-16T02:15:18.714220 add the record in table packages:  +380665551177 42 +380969998877 Музалева Елена Ивановна 2022-02-13 00:22:42.343 
+2022-02-16T02:15:18.720267 add the record in table packages:  +380665551177 11 +380969998877 Музалева Елена Ивановна 2022-02-13 00:22:42.343 
+2022-02-16T02:15:18.724253 add the record in table packages:  +380665551177 5 +380969998877 Музалева Елена Ивановна 2022-02-13 00:22:42.343 
+2022-02-16T02:15:18.728159 add the record in table packages:  +380665551177 81 +380969998877 Музалева Елена Ивановна 2022-02-13 00:22:42.343 
+2022-02-16T02:15:18.759774  end connect with database
+2022-02-16T02:15:18.856731  start connect with database
+2022-02-16T02:15:18.912298 game over 0.4
+2022-02-16T02:15:18.914080  end connect with database

@@ -36,6 +36,17 @@ public class ConnectWithDB {
         connectEnd(generalWriteInFile);
     }
 
+    public void setReConnect(WriteInFile generalWriteInFile){
+        connectEnd(generalWriteInFile);
+        conn = null;
+//        prst = null;
+//        connectStart(generalWriteInFile);
+    }
+
+    public void setConnect(WriteInFile generalWriteInFile){
+        connectStart(generalWriteInFile);
+    }
+
     private void connectEnd(WriteInFile generalWriteInFile){
         try{
             prst.close();
@@ -47,6 +58,8 @@ public class ConnectWithDB {
             System.out.println("error when program connect with database");
             System.exit(0);
         }
+        conn = null;
+        prst = null;
     }
 
     private boolean connectStart(ArrayList<String> dataClient, WriteInFile generalWriteInFile){

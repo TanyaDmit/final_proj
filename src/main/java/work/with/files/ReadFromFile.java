@@ -36,6 +36,7 @@ public class ReadFromFile {
                 String[] newWords = line.split(";");
                 for(int j = 0; j < newWords.length; j++){
                     workWithString.add(newWords[j]);
+                    System.out.println(newWords[j]+" ");
                 }
             }
         }catch(NullPointerException | IOException e){
