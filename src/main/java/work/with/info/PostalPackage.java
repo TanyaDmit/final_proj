@@ -85,7 +85,7 @@ public class PostalPackage {
             }
         } catch(SQLException eSQL){
             System.out.println("печаль в общем при вычитке");
-            generalWriteInFile.writeInFile("game over 0.4");
+            generalWriteInFile.writeInFile("error when we read from packages");
         }
     }
 }

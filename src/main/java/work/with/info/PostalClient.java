@@ -3,6 +3,7 @@ package work.with.info;
 import work.with.database.ConnectWithDB;
 import work.with.files.WriteInFile;
 
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.SQLNonTransientException;
 import java.util.ArrayList;
@@ -54,6 +55,30 @@ public class PostalClient {
             System.out.println("печаль в общем");
         }
 
+    }
+
+    public static void coutPostalClient(ConnectWithDB connectForRead, WriteInFile generalWriteInFile){
+        try{
+            connectForRead.stmt = connectForRead.conn.createStatement();
+            String sql = "SELECT * FROM clients;";
+            String tmpLink = null;
+            ResultSet resultSet = connectForRead.stmt.executeQuery(sql);
+            while(resultSet.next()){
+                long id_client = resultSet.getLong("id_client");
+                String telephone = resultSet.getString("telephone");
+                String last_name = resultSet.getString("last_name");
+                String first_name = resultSet.getString("first_name");
+                String patronymic = resultSet.getString("patronymic");
+                String email = resultSet.getString("email");
+
+                tmpLink = (id_client+" "+ telephone + " "+last_name+" "+first_name+" "+patronymic+" "+email+" ");
+                System.out.println(tmpLink);
+                generalWriteInFile.writeInFile("output clients on screen:" + tmpLink);
+            }
+        } catch(SQLException eSQL){
+            System.out.println("печаль в общем при вычитке");
+            generalWriteInFile.writeInFile("error when we read from clients");
+        }
     }
 
     public PostalClient transformation(String str){

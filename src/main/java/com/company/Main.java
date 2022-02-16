@@ -86,6 +86,8 @@ public class Main {
             generalConnectWithDB.setDisconnect(generalWriteInFile, true);
             ConnectWithDB connectForRead = new ConnectWithDB(generalWriteInFile);
             PostalPackage.coutPostalPackage(connectForRead,generalWriteInFile);
+            PostalClient.coutPostalClient(connectForRead,generalWriteInFile);
+            PostalOffices.coutPostalOffices(connectForRead,generalWriteInFile);
             connectForRead.setDisconnect(generalWriteInFile, false);
             generalWriteInFile.close();
         } catch (IOException e){

@@ -3,6 +3,7 @@ package work.with.info;
 import work.with.database.ConnectWithDB;
 import work.with.files.WriteInFile;
 
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.SQLNonTransientException;
 import java.util.ArrayList;
@@ -42,6 +43,27 @@ public class PostalOffices {
             System.out.println("печаль с данными");
         } catch (SQLException eSQL) {
             System.out.println("печаль в общем");
+        }
+    }
+
+    public static void coutPostalOffices(ConnectWithDB connectForRead, WriteInFile generalWriteInFile){
+        try{
+            connectForRead.stmt = connectForRead.conn.createStatement();
+            String sql = "SELECT * FROM postal_offices;";
+            String tmpLink = null;
+            ResultSet resultSet = connectForRead.stmt.executeQuery(sql);
+            while(resultSet.next()){
+                long id_office = resultSet.getLong("id_office");
+                long num_office = resultSet.getLong("num_office");
+                String description_office = resultSet.getString("description_office");
+
+                tmpLink = (id_office+" "+ num_office+ " "+ description_office);
+                System.out.println(tmpLink);
+                generalWriteInFile.writeInFile("output postal_offices on screen:" + tmpLink);
+            }
+        } catch(SQLException eSQL){
+            System.out.println("печаль в общем при вычитке");
+            generalWriteInFile.writeInFile("error when we read from postal_offices");
         }
     }
 }
