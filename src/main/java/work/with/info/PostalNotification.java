@@ -11,22 +11,22 @@ import java.util.Iterator;
 import java.util.Objects;
 
 public class PostalNotification {
-    private int notificationID;
+    private long notificationID;
     private String notificationText;
     private String notificationStatus;
 
-    public PostalNotification(ConnectWithDB generalConnectWithDB, int num_pac, WriteInFile generalWriteInFile){
+    public PostalNotification(ConnectWithDB generalConnectWithDB, long num_pac, String st_pac, WriteInFile generalWriteInFile){
         String sql = "INSERT INTO messages (num_package, text_message, status) "
                 + "VALUES (?, ?, ?);";
-        String line = " new message: created a package";
-        String tmp = null;
+        String line = " new message: ";
         try{
             generalConnectWithDB.prst = generalConnectWithDB.conn.prepareStatement(sql);//создание connect
-            generalConnectWithDB.prst.setInt(1, num_pac);
-            generalConnectWithDB.prst.setString(2, "created a package");
+            generalConnectWithDB.prst.setLong(1, num_pac);
+            generalConnectWithDB.prst.setString(2, st_pac);
             generalConnectWithDB.prst.setString(3, "new_message");
             generalConnectWithDB.prst.executeUpdate();
-            generalWriteInFile.writeInFile("add the record in table clients: " + line);
+            generalWriteInFile.writeInFile("add the record in table messages: " + line + num_pac + " " +
+                    st_pac + " status: new_message");
         } catch(SQLNonTransientException eNTSQL){
             System.out.println("печаль с данными");
         }catch(SQLException eSQL) {

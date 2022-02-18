@@ -64,10 +64,12 @@ public class Main {
 
             //отправки посылок
             ConnectWithDB connectForSend = new ConnectWithDB(generalWriteInFile);
-            ArrayList<PostalPackage> stPackage = PostalPackage.getSendPackage(connectForSend,generalWriteInFile);
+            ArrayList<PostalPackage> stPackage;
+            boolean acceptFlag;
             while(true){
-                PostalPackage.changeStatus(connectForSend, stPackage, generalWriteInFile);
-                if(){
+                stPackage = PostalPackage.getSendPackage(connectForSend,generalWriteInFile);
+                acceptFlag = PostalPackage.changeStatus(connectForSend, stPackage, generalWriteInFile);
+                if(!acceptFlag){
                     break;
                 }
             }
