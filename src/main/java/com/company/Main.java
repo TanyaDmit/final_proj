@@ -18,8 +18,6 @@ import java.util.Timer;
 public class Main {
 
     public static void main(String[] args) {
-        Timer timer = new Timer();
-        timer.schedule(new TimerRun(), 100,3000);
         try {
             WriteInFile generalWriteInFile = new WriteInFile("log.txt");
             ReadFromFile generalReadFromFile = new ReadFromFile("test.txt", generalWriteInFile);
@@ -63,22 +61,26 @@ public class Main {
             generalConnectWithDB.setDisconnect(generalWriteInFile, true);
 
             //отправки посылок
-            ConnectWithDB connectForSend = new ConnectWithDB(generalWriteInFile);
-            ArrayList<PostalPackage> stPackage;
-            boolean acceptFlag;
-            while(true){
-                stPackage = PostalPackage.getSendPackage(connectForSend,generalWriteInFile);
-                acceptFlag = PostalPackage.changeStatus(connectForSend, stPackage, generalWriteInFile);
-                if(!acceptFlag){
-                    break;
-                }
-            }
+//            ConnectWithDB connectForSend = new ConnectWithDB(generalWriteInFile);
+            Timer timer1 = new Timer();
+            timer1.schedule(new TimerRun(), 0,1000);
+            ArrayList<PostalPackage> stPackage = null;
+//            Timer timer = new Timer();
+//            timer.schedule(new TimerRun(connectForSend, stPackage, generalWriteInFile), 0,1000);
+//            boolean acceptFlag;
+//            while(true){
+//                stPackage = PostalPackage.getSendPackage(connectForSend,generalWriteInFile);
+//                acceptFlag = PostalPackage.changeStatus(connectForSend, stPackage, generalWriteInFile);
+//                if(!acceptFlag){
+//                    break;
+//                }
+//            }
 
-            Iterator<PostalPackage> statusIter = stPackage.iterator();
-            while(statusIter.hasNext()){
-                PostalPackage.coutPostalPackage(statusIter.next());
-            }
-            connectForSend.setDisconnect(generalWriteInFile, false);
+//            Iterator<PostalPackage> statusIter = stPackage.iterator();
+//            while(statusIter.hasNext()){
+//                PostalPackage.coutPostalPackage(statusIter.next());
+//            }
+//            connectForSend.setDisconnect(generalWriteInFile, false);
 
 //            //просто вычитка в самом конце
 //            ConnectWithDB connectForRead = new ConnectWithDB(generalWriteInFile);
@@ -95,35 +97,6 @@ public class Main {
         }
 
     }
-
-//    public static void sendPackage(ConnectWithDB connectForSend, WriteInFile generalWriteInFile){
-//        try{
-//            connectForSend.stmt = connectForSend.conn.createStatement();
-//            String sql = "SELECT id_package, " +
-//                    "status," +
-//                    "date_change_status FROM packages;";
-//            String tmpLink = null;
-//            ResultSet resultSet = connectForSend.stmt.executeQuery(sql);
-//            ArrayList<PostalPackage> statusPackage= new ArrayList<>();
-//            while(resultSet.next()){
-//                long idPackage = resultSet.getLong("id_package");
-//                String statusP = resultSet.getString("status");
-//                String dateChangeStatus = resultSet.getString("date_change_status");//?
-//
-//                statusPackage.add(new PostalPackage(idPackage, statusP, dateChangeStatus,generalWriteInFile));
-//                tmpLink = (idPackage+" "+ statusP+" " +dateChangeStatus+" ");
-////                System.out.println(tmpLink);
-//                generalWriteInFile.writeInFile("output packages on screen:" + tmpLink);
-//            }
-//            Iterator<PostalPackage> statusIter = statusPackage.iterator();
-//            while(statusIter.hasNext()){
-//                PostalPackage.coutPostalPackage(statusIter.next());
-//            }
-//        } catch(SQLException eSQL){
-//            System.out.println("печаль в общем при вычитке");
-//            generalWriteInFile.writeInFile("error when we read from packages");
-//        }
-//    }
 
     public static ArrayList readFile(ReadFromFile generalReadFromFile){
         return generalReadFromFile.readFromFile("word");

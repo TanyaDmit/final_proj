@@ -1,0 +1,18 @@
+2022-02-18T02:27:24.276781 file 'test.txt' is opened
+2022-02-18T02:27:25.026130  start connect with database
+2022-02-18T02:27:25.171060 game over 0.3
+2022-02-18T02:27:25.177837  end connect with database
+2022-02-18T02:27:25.259337  start connect with database
+2022-02-18T02:27:25.264428 add the record in table packages:  +380665551177 11 +380969998877 Музалева Елена Ивановна 
+2022-02-18T02:27:25.266841 add the record in table packages:  +380665551177 5 +380969998877 Музалева Елена Ивановна 
+2022-02-18T02:27:25.269114 add the record in table packages:  +380665551177 81 +380969998877 Музалева Елена Ивановна 
+2022-02-18T02:27:25.298069  end connect with database
+2022-02-18T02:28:17.283867 file 'test.txt' is opened
+2022-02-18T02:28:18.069302  start connect with database
+2022-02-18T02:28:18.215654 game over 0.3
+2022-02-18T02:28:18.219056  end connect with database
+2022-02-18T02:28:18.306002  start connect with database
+2022-02-18T02:28:18.311864 add the record in table packages:  +380665551177 11 +380969998877 Музалева Елена Ивановна 
+2022-02-18T02:28:18.319592 add the record in table packages:  +380665551177 5 +380969998877 Музалева Елена Ивановна 
+2022-02-18T02:28:18.324337 add the record in table packages:  +380665551177 81 +380969998877 Музалева Елена Ивановна 
+2022-02-18T02:28:18.350041  end connect with database
