@@ -5,41 +5,37 @@ import work.with.files.WriteInFile;
 import work.with.info.PostalPackage;
 
 import java.util.ArrayList;
+import java.util.Timer;
 import java.util.TimerTask;
 import java.util.concurrent.TimeUnit;
 
-public class TimerRun extends TimerTask {
-    private static int i;
+public class TimerRun {
+    Timer timer;
+    private int i;
     private ConnectWithDB connectForSend;
     private ArrayList<PostalPackage> stPackage;
-    private WriteInFile generalWriteInFile;
     private boolean acceptFlag;
+    private WriteInFile generalWriteInFile;
 
-    public TimerRun(ConnectWithDB connectForSend, ArrayList<PostalPackage> stPackage, WriteInFile generalWriteInFile){
-        System.out.println("i am here");
-        this.connectForSend = connectForSend;
-        this.stPackage = stPackage;
+    public TimerRun(int seconds,  WriteInFile generalWriteInFile) {
+        connectForSend = new ConnectWithDB(generalWriteInFile);
         this.generalWriteInFile = generalWriteInFile;
+        timer = new Timer();
+        timer.schedule(new RemindTask(), seconds*1000, 1000);
     }
 
-    public TimerRun(){
+    class RemindTask extends TimerTask {
 
-    }
-
-    @Override
-    public void run() {
-        try{
-//            while(true){
-//                stPackage = PostalPackage.getSendPackage(connectForSend,generalWriteInFile);
-//                acceptFlag = PostalPackage.changeStatus(connectForSend, stPackage, generalWriteInFile);
-//                if(!acceptFlag){
-//                    break;
-//                }
-//            }
-            TimeUnit.SECONDS.sleep(1);
-        } catch(InterruptedException e){
-            e.printStackTrace();
+        @Override
+        public void run() {
+            System.out.println("Time's up!");
+            i = 5;
+            stPackage = PostalPackage.getSendPackage(connectForSend,generalWriteInFile);
+            acceptFlag = PostalPackage.changeStatus(connectForSend, stPackage, generalWriteInFile);
+            if(!acceptFlag){
+                connectForSend.setDisconnect(generalWriteInFile, true);
+                timer.cancel(); //Terminate the timer thread
+            }
         }
-        System.out.println("hd \t " + i);
     }
 }

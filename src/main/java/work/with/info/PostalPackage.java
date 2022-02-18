@@ -72,13 +72,13 @@ public class PostalPackage {
 
     public static ArrayList getSendPackage(ConnectWithDB connectForSend, WriteInFile generalWriteInFile){
         ArrayList<PostalPackage> statusPackage= new ArrayList<>();
+        String sql = "SELECT to_char(date_of_create, 'YYYY-MM-DD HH24:MI:SS') as d1, " +
+                "status," +
+                "id_package FROM packages where status = 'new_package';";
         try{
-            connectForSend.stmt = connectForSend.conn.createStatement();
-            String sql = "SELECT to_char(date_of_create, 'YYYY-MM-DD HH24:MI:SS') as d1, " +
-                    "status," +
-                    "id_package FROM packages where status = 'new_package';";
             String tmpLink = null;
-            ResultSet resultSet = connectForSend.stmt.executeQuery(sql);
+            connectForSend.prst = connectForSend.conn.prepareStatement(sql);
+            ResultSet resultSet = connectForSend.prst.executeQuery();
             while(resultSet.next()){
                 long idPackage = resultSet.getLong("id_package");
                 String statusP = resultSet.getString("status");
@@ -112,7 +112,7 @@ public class PostalPackage {
             LocalDateTime dateTime = LocalDateTime.parse(statusPackage.get(i).date_change_status,dateTimeFormatter);
             int sec1 = ndt.getSecond();
             int sec2 = dateTime.getSecond();
-            if((sec1-sec2) <= 5){
+            if((sec1-sec2) <= 2){
                 System.out.println("2");
                 int myRand = (int)(Math.random()*2);
                 if(myRand == 1){

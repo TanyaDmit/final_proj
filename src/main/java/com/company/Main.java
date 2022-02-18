@@ -21,6 +21,8 @@ public class Main {
         try {
             WriteInFile generalWriteInFile = new WriteInFile("log.txt");
             ReadFromFile generalReadFromFile = new ReadFromFile("test.txt", generalWriteInFile);
+            new TimerRun(1, generalWriteInFile);
+            System.out.println("Task scheduled.");
             //запись данных в базу
             ArrayList<String> generalWorkWithString;
             Iterator<String> generalIter;
@@ -62,9 +64,16 @@ public class Main {
 
             //отправки посылок
 //            ConnectWithDB connectForSend = new ConnectWithDB(generalWriteInFile);
-            Timer timer1 = new Timer();
-            timer1.schedule(new TimerRun(), 0,1000);
-            ArrayList<PostalPackage> stPackage = null;
+//            ArrayList<PostalPackage> stPackage;
+//            boolean acceptFlag;
+//            while(true){
+//                stPackage = PostalPackage.getSendPackage(connectForSend,generalWriteInFile);
+//                acceptFlag = PostalPackage.changeStatus(connectForSend, stPackage, generalWriteInFile);
+//                if(!acceptFlag){
+//                    break;
+//                }
+//            }
+//            connectForSend.setDisconnect(generalWriteInFile, true);
 //            Timer timer = new Timer();
 //            timer.schedule(new TimerRun(connectForSend, stPackage, generalWriteInFile), 0,1000);
 //            boolean acceptFlag;
