@@ -15,9 +15,7 @@ public class PostalClient {
     private String clientPatronymic;
     private String clientEmail;//валидацию на @
     private String clientTelephone;//валидацию на + и 38
-    //?private int clientID;
 
-    //пока только идеальный вариант, без валидации
     public PostalClient(String clientFirstName, String clientSecondName, String clientPatronymic,
                         String clientEmail, String clientTelephone/*, String clientPassword*/){
         this.clientFirstName = clientFirstName;
@@ -49,20 +47,19 @@ public class PostalClient {
             }
             generalConnectWithDB.prst.executeUpdate();
             generalWriteInFile.writeInFile("add the record in table clients: " + line);
-        } catch(SQLNonTransientException eNTSQL){
-            System.out.println("печаль с данными");
-        }catch(SQLException eSQL) {
-            System.out.println("печаль в общем");
+        } catch(SQLException eSQL) {
+            System.out.println("can`t add data in table clients");
+            generalWriteInFile.writeInFile("can`t add data in table clients");
         }
 
     }
 
     public static void coutPostalClient(ConnectWithDB connectForRead, WriteInFile generalWriteInFile){
+        String sql = "SELECT * FROM clients;";
         try{
-            connectForRead.stmt = connectForRead.conn.createStatement();
-            String sql = "SELECT * FROM clients;";
             String tmpLink = null;
-            ResultSet resultSet = connectForRead.stmt.executeQuery(sql);
+            connectForRead.prst = connectForRead.conn.prepareStatement(sql);
+            ResultSet resultSet = connectForRead.prst.executeQuery();
             while(resultSet.next()){
                 long id_client = resultSet.getLong("id_client");
                 String telephone = resultSet.getString("telephone");
@@ -76,14 +73,9 @@ public class PostalClient {
                 generalWriteInFile.writeInFile("output clients on screen:" + tmpLink);
             }
         } catch(SQLException eSQL){
-            System.out.println("печаль в общем при вычитке");
-            generalWriteInFile.writeInFile("error when we read from clients");
+            System.out.println("error when we read from clients all data");
+            generalWriteInFile.writeInFile("error when we read from clients all data");
         }
-    }
-
-    public PostalClient transformation(String str){
-        System.out.println(str);
-        return null;
     }
 
     public void printClient(){

@@ -4,16 +4,14 @@ import work.with.database.ConnectWithDB;
 import work.with.files.ReadFromFile;
 import work.with.files.WriteInFile;
 import work.with.info.PostalClient;
+import work.with.info.PostalNotification;
 import work.with.info.PostalOffices;
 import work.with.info.PostalPackage;
 import work.with.thread.TimerRun;
 
 import java.io.IOException;
-import java.sql.ResultSet;
-import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Iterator;
-import java.util.Timer;
 
 public class Main {
 
@@ -22,7 +20,8 @@ public class Main {
             WriteInFile generalWriteInFile = new WriteInFile("log.txt");
             ReadFromFile generalReadFromFile = new ReadFromFile("test.txt", generalWriteInFile);
             new TimerRun(1, generalWriteInFile);
-            System.out.println("Task scheduled.");
+            new TimerRun(6, generalWriteInFile);
+//            System.out.println("Task scheduled.");
             //запись данных в базу
             ArrayList<String> generalWorkWithString;
             Iterator<String> generalIter;
@@ -62,41 +61,13 @@ public class Main {
             //цикл конец
             generalConnectWithDB.setDisconnect(generalWriteInFile, true);
 
-            //отправки посылок
-//            ConnectWithDB connectForSend = new ConnectWithDB(generalWriteInFile);
-//            ArrayList<PostalPackage> stPackage;
-//            boolean acceptFlag;
-//            while(true){
-//                stPackage = PostalPackage.getSendPackage(connectForSend,generalWriteInFile);
-//                acceptFlag = PostalPackage.changeStatus(connectForSend, stPackage, generalWriteInFile);
-//                if(!acceptFlag){
-//                    break;
-//                }
-//            }
-//            connectForSend.setDisconnect(generalWriteInFile, true);
-//            Timer timer = new Timer();
-//            timer.schedule(new TimerRun(connectForSend, stPackage, generalWriteInFile), 0,1000);
-//            boolean acceptFlag;
-//            while(true){
-//                stPackage = PostalPackage.getSendPackage(connectForSend,generalWriteInFile);
-//                acceptFlag = PostalPackage.changeStatus(connectForSend, stPackage, generalWriteInFile);
-//                if(!acceptFlag){
-//                    break;
-//                }
-//            }
-
-//            Iterator<PostalPackage> statusIter = stPackage.iterator();
-//            while(statusIter.hasNext()){
-//                PostalPackage.coutPostalPackage(statusIter.next());
-//            }
-//            connectForSend.setDisconnect(generalWriteInFile, false);
-
 //            //просто вычитка в самом конце
 //            ConnectWithDB connectForRead = new ConnectWithDB(generalWriteInFile);
 //            PostalClient.coutPostalClient(connectForRead,generalWriteInFile);
 //            PostalOffices.coutPostalOffices(connectForRead,generalWriteInFile);
 //            PostalPackage.coutPostalPackage(connectForRead,generalWriteInFile);
-//            connectForRead.setDisconnect(generalWriteInFile, false);
+//            PostalNotification.coutPostalNotification(connectForRead,generalWriteInFile);
+//            connectForRead.setDisconnect(generalWriteInFile, true);
             generalWriteInFile.close();
         } catch (IOException e){
             System.err.print(e);

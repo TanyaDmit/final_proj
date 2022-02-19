@@ -6,19 +6,16 @@ import work.with.files.WriteInFile;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.SQLNonTransientException;
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.Objects;
 
 public class PostalNotification {
     private long packageID;
     private long messageID;
     private String notificationText;
     private String notificationStatus;
+    private static WriteInFile messageWriteInFile = new WriteInFile("messageResult.txt");
 
-    public PostalNotification(long messageID, long packageID, String notificationText,String notificationStatus, WriteInFile generalWriteInFile){
+    public PostalNotification(long messageID, long packageID, String notificationText,String notificationStatus){
         this.messageID = messageID;
         this.packageID = packageID;
         this.notificationText = notificationText;
@@ -37,106 +34,102 @@ public class PostalNotification {
             generalConnectWithDB.prst.executeUpdate();
             generalWriteInFile.writeInFile("add the record in table messages: " + line + num_pac + " " +
                     st_pac + " status: new_message");
-        } catch(SQLNonTransientException eNTSQL){
-            System.out.println("печаль с данными");
-        }catch(SQLException eSQL) {
-            System.out.println("печаль в общем");
+        } catch(SQLException eSQL) {
+            System.out.println("error when i start add message in table messages");
+            generalWriteInFile.writeInFile("error when i start add message in table messages");
         }
 
     }
 
-    public static ArrayList getCreatedMessages(ConnectWithDB connectForSend, WriteInFile generalWriteInFile){
-        ArrayList<PostalNotification> statusPackage= new ArrayList<>();
+    public static ArrayList getSendNotifications(ConnectWithDB connectForSend, WriteInFile generalWriteInFile){
+        ArrayList<PostalNotification> stMessage= new ArrayList<>();
+        String sql = "SELECT * FROM messages where status = 'new_message';";
         try{
-            connectForSend.stmt = connectForSend.conn.createStatement();
-            String sql = "SELECT * FROM packages where status = 'new_message';";
             String tmpLink = null;
-            ResultSet resultSet = connectForSend.stmt.executeQuery(sql);
+            connectForSend.prst = connectForSend.conn.prepareStatement(sql);
+            ResultSet resultSet = connectForSend.prst.executeQuery();
             while(resultSet.next()){
                 long idMessage = resultSet.getLong("messages_id");
-                long idPackage = resultSet.getLong("id_package");
-                String statusMes = resultSet.getString("status");
+                long idPackage = resultSet.getLong("num_package");
                 String textMessage = resultSet.getString("text_message");
-
-                statusPackage.add(new PostalNotification(idMessage, idPackage, textMessage, statusMes, generalWriteInFile));
-                //должно создаваться сообщение в статусе новое
+                String statusMes = resultSet.getString("status");
+                stMessage.add(new PostalNotification(idMessage, idPackage, textMessage, statusMes));
                 tmpLink = ("messid: " + idMessage+" packid: "+ idPackage+" " +textMessage+" " + statusMes);
-                generalWriteInFile.writeInFile("read package to send and change status:" + tmpLink);
+                generalWriteInFile.writeInFile("read message to send and change status:" + tmpLink);
             }
         } catch(SQLException eSQL){
-            System.out.println("печаль в общем при вычитке");
-            generalWriteInFile.writeInFile("error when we read from packages");
+            System.out.println("error when we read from messages");
+            generalWriteInFile.writeInFile("error when we read from messages");
         }
-        return statusPackage;
+        return stMessage;
     }
 
-//    public static boolean changeStatus(ConnectWithDB connectForSend, ArrayList<PostalPackage> statusPackage, WriteInFile generalWriteInFile){
-//        boolean flag = false;
-////        Iterator<PostalPackage> statusIter = statusPackage.iterator();
-//        DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
-//        LocalDateTime ndt = LocalDateTime.now();
-//        for(int i = 0; i < statusPackage.size(); i++){
-//            flag = true;
-//            System.out.println("1");
-//            LocalDateTime dateTime = LocalDateTime.parse(statusPackage.get(i).date_change_status,dateTimeFormatter);
-//            int sec1 = ndt.getSecond();
-//            int sec2 = dateTime.getSecond();
-//            if((sec1-sec2) <= 5){
-//                System.out.println("2");
-//                int myRand = (int)(Math.random()*2);
-//                if(myRand == 1){
-//                    System.out.println("3");
-//                    PostalPackage tmp = new PostalPackage(statusPackage.get(i).id_package,
-//                            "delivered_package",statusPackage.get(i).date_change_status, generalWriteInFile);
-//                    statusPackage.set(i, tmp);
-//                    PostalNotification postalNotification = new PostalNotification(connectForSend,
-//                            statusPackage.get(i).id_package, "delivered_package", generalWriteInFile);
-//                }
-//            } else{
-//                PostalPackage tmp = new PostalPackage(statusPackage.get(i).id_package,
-//                        "overdue_package",statusPackage.get(i).date_change_status, generalWriteInFile);
-//                statusPackage.set(i, tmp);
-//                PostalNotification postalNotification = new PostalNotification(connectForSend,
-//                        statusPackage.get(i).id_package, "overdue_package", generalWriteInFile);
-//            }
-//        }
-//        flag = setChangeStatus(connectForSend, statusPackage,generalWriteInFile);
-//        return flag;
-//    }
+    public static boolean changeStatus(ConnectWithDB connectForSend, ArrayList<PostalNotification> stMessage, WriteInFile generalWriteInFile){
+        boolean flag = false;
+        for(int i = 0; i < stMessage.size(); i++){
+            flag = true;
+            PostalNotification tmp = new PostalNotification(stMessage.get(i).messageID,
+                    stMessage.get(i).packageID, stMessage.get(i).notificationText, "sent_message");
+            stMessage.set(i, tmp);
+            messageWriteInFile.writeInFile("notification: package with id " +
+                    stMessage.get(i).packageID + " is " + stMessage.get(i).notificationText);
+        }
+        flag = setChangeStatus(connectForSend, stMessage, generalWriteInFile);
+        return flag;
+    }
 
-//    private static boolean setChangeStatus(ConnectWithDB connectForSend, ArrayList<PostalPackage> statusPackage, WriteInFile generalWriteInFile){
-//        String sql = "update packages " +
-//                "set (status, date_change_status) = (?, ?::timestamp)" +
-//                "where id_package = ?";
-//        String line = " ";
-//        boolean flag = false;
-//        try{
-//            System.out.println("+1");
-//            connectForSend.prst = connectForSend.conn.prepareStatement(sql);//создание connect
-//            System.out.println("+2");
-//            for(int counter = 0; counter < statusPackage.size(); counter++){
-//                System.out.println("+3");
-//                connectForSend.prst.setLong(3, statusPackage.get(counter).id_package);
-//                System.out.println("+4");
-//                connectForSend.prst.setString(1, statusPackage.get(counter).status);
-//                System.out.println("+5");
-//                connectForSend.prst.setString(2, statusPackage.get(counter).date_change_status);
-//                line = statusPackage.get(counter).id_package + " " + statusPackage.get(counter).status + " " +
-//                        statusPackage.get(counter).date_change_status;
-//                System.out.println("+6");
-//                connectForSend.prst.addBatch();
-//                flag = true;
-//                generalWriteInFile.writeInFile("change status in table packages: " + line);
-//            }
-//            System.out.println("+7");
-//            connectForSend.prst.executeBatch();
-//            System.out.println("+8");
-//
-//        }catch(SQLException eSQL) {
-//            System.out.println("печаль в общем");
-//            generalWriteInFile.writeInFile("game over 0.3");
-//            flag = false;
-//        }
-//        return flag;
-//    }
+    private static boolean setChangeStatus(ConnectWithDB connectForSend, ArrayList<PostalNotification> stMessage, WriteInFile generalWriteInFile){
+        String sql = "update messages " +
+                "set status = ?" +
+                "where messages_id = ?";
+        String line = " ";
+        boolean flag = false;
+        try{
+            connectForSend.prst = connectForSend.conn.prepareStatement(sql);
+            for(int counter = 0; counter < stMessage.size(); counter++){
+                connectForSend.prst.setLong(2, stMessage.get(counter).messageID);
+                connectForSend.prst.setString(1, stMessage.get(counter).notificationStatus);
+                line = stMessage.get(counter).messageID + " " + stMessage.get(counter).notificationStatus;
+                connectForSend.prst.addBatch();
+                flag = true;
+                generalWriteInFile.writeInFile("change status in table messages: " + line);
+            }
+            connectForSend.prst.executeBatch();
+        }catch(SQLException eSQL) {
+            System.out.println("can`t sent changed status in table messages");
+            generalWriteInFile.writeInFile("can`t sent changed status in table messages");
+            flag = false;
+        }
+        if(!flag){
+            try {
+                messageWriteInFile.close();
+            } catch(Exception ex){
+                System.out.println("ошибка при закрытии файла для сообщений");
+            }
+        }
+        return flag;
+    }
+
+    public static void coutPostalNotification(ConnectWithDB connectForRead, WriteInFile generalWriteInFile){
+        String sql = "SELECT * FROM messages;";
+        try{
+            String tmpLink = null;
+            connectForRead.prst = connectForRead.conn.prepareStatement(sql);
+            ResultSet resultSet = connectForRead.prst.executeQuery();
+            while(resultSet.next()){
+                long messages_id = resultSet.getLong("messages_id");
+                long num_package = resultSet.getLong("num_package");
+                String text_message = resultSet.getString("text_message");
+                String status = resultSet.getString("status");
+
+                tmpLink = (messages_id+" " + num_package + " "+
+                        text_message + " "+status);
+                System.out.println(tmpLink);
+                generalWriteInFile.writeInFile("output messages on screen:" + tmpLink);
+            }
+        } catch(SQLException eSQL){
+            System.out.println("error when we read from messages all data");
+            generalWriteInFile.writeInFile("error when we read from messages all data");
+        }
+    }
 }

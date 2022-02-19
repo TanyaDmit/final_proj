@@ -8,14 +8,17 @@ import java.time.LocalDateTime;
 public class WriteInFile {
     private PrintWriter printWriter;
 
-    public WriteInFile(String fileName) throws IOException{
-        printWriter = new PrintWriter(new FileWriter(fileName, true));
+    public WriteInFile(String fileName){
+        try{
+            printWriter = new PrintWriter(new FileWriter(fileName, true));
+        } catch(IOException e) {
+            e.printStackTrace();
+            System.out.println("try to open the file for write");
+        }
     }
 
     public void writeInFile(String text){
-//      System.out.println("in writeinfile");
         LocalDateTime localDateTime = LocalDateTime.now();
-//      System.out.println("in writeinfile");
         printWriter.print(localDateTime + " " + text + "\n");
 
     }

@@ -10,7 +10,6 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 public class PostalOffices {
-    private int officeID;//?
     private String officeDescription;
 
     public PostalOffices(String officeDescription) {
@@ -39,19 +38,18 @@ public class PostalOffices {
             }
             generalConnectWithDB.prst.executeUpdate();
             generalWriteInFile.writeInFile("add the record in table postal_offices: " + line);
-        } catch (SQLNonTransientException eNTSQL) {
-            System.out.println("печаль с данными");
         } catch (SQLException eSQL) {
-            System.out.println("печаль в общем");
+            System.out.println("can`t add data in table postal_offices");
+            generalWriteInFile.writeInFile("can`t add data in table postal_offices");
         }
     }
 
     public static void coutPostalOffices(ConnectWithDB connectForRead, WriteInFile generalWriteInFile){
+        String sql = "SELECT * FROM postal_offices;";
         try{
-            connectForRead.stmt = connectForRead.conn.createStatement();
-            String sql = "SELECT * FROM postal_offices;";
             String tmpLink = null;
-            ResultSet resultSet = connectForRead.stmt.executeQuery(sql);
+            connectForRead.prst = connectForRead.conn.prepareStatement(sql);
+            ResultSet resultSet = connectForRead.prst.executeQuery();
             while(resultSet.next()){
                 long id_office = resultSet.getLong("id_office");
                 long num_office = resultSet.getLong("num_office");
@@ -62,8 +60,8 @@ public class PostalOffices {
                 generalWriteInFile.writeInFile("output postal_offices on screen:" + tmpLink);
             }
         } catch(SQLException eSQL){
-            System.out.println("печаль в общем при вычитке");
-            generalWriteInFile.writeInFile("error when we read from postal_offices");
+            System.out.println("error when we read from postal_offices all data");
+            generalWriteInFile.writeInFile("error when we read from postal_offices all data");
         }
     }
 }
