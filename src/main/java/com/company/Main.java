@@ -18,14 +18,14 @@ public class Main {
     public static void main(String[] args) {
         try {
             WriteInFile generalWriteInFile = new WriteInFile("log.txt");
-            ReadFromFile generalReadFromFile = new ReadFromFile("test.txt", generalWriteInFile);
             new TimerRun(1, generalWriteInFile);
             new TimerRun(8, generalWriteInFile);
-//            System.out.println("Task scheduled.");
+            ReadFromFile generalReadFromFile = new ReadFromFile("test.txt", generalWriteInFile);
             //запись данных в базу
             ArrayList<String> generalWorkWithString;
             Iterator<String> generalIter;
             ConnectWithDB generalConnectWithDB = new ConnectWithDB(generalWriteInFile);
+            int counterForPackage = 0;
             //цикл начало
             while(true){
                 generalWorkWithString = readFile(generalReadFromFile);
@@ -39,15 +39,20 @@ public class Main {
                         switch (tmp) {
                             case "REGISTRPEOPLE":
                                 PostalClient postalClient = new PostalClient(generalConnectWithDB, generalWorkWithString, generalWriteInFile);
-                                System.out.println("1");
                                 break;
                             case "REGISTRPOSTALOFFICE":
                                 PostalOffices postalOffice = new PostalOffices(generalConnectWithDB, generalWorkWithString, generalWriteInFile);
-                                System.out.println("2");
                                 break;
                             case "REGISTRPACKAGE":
                                 PostalPackage postalPackage = new PostalPackage(generalConnectWithDB, generalWorkWithString, generalWriteInFile);
-                                System.out.println("3");
+                                counterForPackage++;
+                                if(counterForPackage % 3 == 0) {
+                                    generalConnectWithDB.setDisconnect(generalWriteInFile, true);
+                                    do {
+                                        Thread.sleep(1000);
+                                    } while (TimerRun.activeWorkFlag);
+                                    generalConnectWithDB = new ConnectWithDB(generalWriteInFile);
+                                }
                                 break;
                             default:
                                 System.out.println("i don`t know");
@@ -61,13 +66,23 @@ public class Main {
             //цикл конец
             generalConnectWithDB.setDisconnect(generalWriteInFile, true);
 
-//            //просто вычитка в самом конце
-//            ConnectWithDB connectForRead = new ConnectWithDB(generalWriteInFile);
-//            PostalClient.coutPostalClient(connectForRead,generalWriteInFile);
-//            PostalOffices.coutPostalOffices(connectForRead,generalWriteInFile);
-//            PostalPackage.coutPostalPackage(connectForRead,generalWriteInFile);
-//            PostalNotification.coutPostalNotification(connectForRead,generalWriteInFile);
-//            connectForRead.setDisconnect(generalWriteInFile, true);
+            while(true) {
+                Thread.sleep(1000);
+                if(TimerRun.activeWorkFlag){
+                    break;
+                }
+            }
+            //просто вычитка в самом конце
+            ConnectWithDB connectForRead = new ConnectWithDB(generalWriteInFile);
+            System.out.println("Клиенты: ");
+            PostalClient.coutPostalClient(connectForRead,generalWriteInFile);
+            System.out.println("Офисы: ");
+            PostalOffices.coutPostalOffices(connectForRead,generalWriteInFile);
+            System.out.println("Посылки: ");
+            PostalPackage.coutPostalPackage(connectForRead,generalWriteInFile);
+            System.out.println("Сообщения: ");
+            PostalNotification.coutPostalNotification(connectForRead,generalWriteInFile);
+            connectForRead.setDisconnect(generalWriteInFile, true);
             generalWriteInFile.close();
         } catch (IOException e){
             System.err.print(e);

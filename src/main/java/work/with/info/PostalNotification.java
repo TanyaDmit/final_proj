@@ -100,14 +100,15 @@ public class PostalNotification {
             generalWriteInFile.writeInFile("can`t sent changed status in table messages");
             flag = false;
         }
-        if(!flag){
-            try {
-                messageWriteInFile.close();
-            } catch(Exception ex){
-                System.out.println("ошибка при закрытии файла для сообщений");
-            }
-        }
         return flag;
+    }
+
+    public static void closeFileMessages(){
+        try {
+            messageWriteInFile.close();
+        } catch(Exception ex){
+            System.out.println("ошибка при закрытии файла для сообщений");
+        }
     }
 
     public static void coutPostalNotification(ConnectWithDB connectForRead, WriteInFile generalWriteInFile){

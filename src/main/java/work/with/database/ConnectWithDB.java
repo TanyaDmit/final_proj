@@ -25,7 +25,7 @@ public class ConnectWithDB {
             Class.forName("org.postgresql.Driver");
             conn = DriverManager.getConnection("jdbc:postgresql://localhost:5432/postgres", "postgres", "dtk13zpuub");
             conn.setAutoCommit(false);
-            System.out.println("Opened database successfully");
+//            System.out.println("Opened database successfully");
             generalWriteInFile.writeInFile(" start connect with database");
         } catch (Exception e) {
             System.err.println( e.getClass().getName()+": "+ e.getMessage() );
@@ -36,7 +36,6 @@ public class ConnectWithDB {
 
     public void setDisconnect(WriteInFile generalWriteInFile,  boolean flag){
         connectEnd(generalWriteInFile, flag);
-        System.out.println("disconnect");
     }
 
     public void setReConnect(WriteInFile generalWriteInFile,  boolean flag){
@@ -67,42 +66,42 @@ public class ConnectWithDB {
         conn = null;
     }
 
-//    private boolean connectStart(ArrayList<String> dataClient, WriteInFile generalWriteInFile){
-//        try{
-//            Class.forName("org.postgresql.Driver");
-//            conn = DriverManager.getConnection("jdbc:postgresql://localhost:5432/postgres", "postgres", "dtk13zpuub");
-//            conn.setAutoCommit(false);
-//            System.out.println("Opened database successfully");
-//
-//            Iterator<String> iterconn =  dataClient.iterator();
-//            String tmp = iterconn.next();
-//            System.out.println(tmp);
-//            switch (tmp) {
-//                case "REGISTRPEOPLE":
-//                    prst = insert_table_client(prst, conn, dataClient, generalWriteInFile);
-//                    break;
-//                case "REGISTRPOSTALOFFICE":
-//                    prst = insert_table_office(prst, conn, dataClient, generalWriteInFile);
-//                    break;
-//                case "REGISTRPACKAGE":
-//                    prst = insert_table_package(prst, conn, dataClient, generalWriteInFile);
-//                    break;
-//                default:
-//                    System.out.println("i don`t know, i can`t understand");
-//                    break;
-//            }
-////            preparedStatement = insert_table(preparedStatement, connection, dataClient);
-//
-//            prst.close();
-//            conn.commit();
-//            conn.close();
-//        } catch (Exception e) {
-//            System.err.println( e.getClass().getName()+": "+ e.getMessage() );
-//            System.out.println("error when program connect with database");
-//            System.exit(0);
-//        }
-//        return true;
-//    }
+    private boolean connectStart(ArrayList<String> dataClient, WriteInFile generalWriteInFile){
+        try{
+            Class.forName("org.postgresql.Driver");
+            conn = DriverManager.getConnection("jdbc:postgresql://localhost:5432/postgres", "postgres", "dtk13zpuub");
+            conn.setAutoCommit(false);
+            System.out.println("Opened database successfully");
+
+            Iterator<String> iterconn =  dataClient.iterator();
+            String tmp = iterconn.next();
+            System.out.println(tmp);
+            switch (tmp) {
+                case "REGISTRPEOPLE":
+                    prst = insert_table_client(prst, conn, dataClient, generalWriteInFile);
+                    break;
+                case "REGISTRPOSTALOFFICE":
+                    prst = insert_table_office(prst, conn, dataClient, generalWriteInFile);
+                    break;
+                case "REGISTRPACKAGE":
+                    prst = insert_table_package(prst, conn, dataClient, generalWriteInFile);
+                    break;
+                default:
+                    System.out.println("i don`t know, i can`t understand");
+                    break;
+            }
+//            preparedStatement = insert_table(preparedStatement, connection, dataClient);
+
+            prst.close();
+            conn.commit();
+            conn.close();
+        } catch (Exception e) {
+            System.err.println( e.getClass().getName()+": "+ e.getMessage() );
+            System.out.println("error when program connect with database");
+            System.exit(0);
+        }
+        return true;
+    }
 
     public static PreparedStatement insert_table_client(PreparedStatement prst, Connection conn, ArrayList<String> dataClient, WriteInFile generalWriteInFile) throws SQLException {
         String sql = "INSERT INTO clients (last_name, first_name, patronymic, email, telephone) "

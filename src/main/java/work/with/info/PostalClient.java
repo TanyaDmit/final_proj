@@ -17,13 +17,12 @@ public class PostalClient {
     private String clientTelephone;//валидацию на + и 38
 
     public PostalClient(String clientFirstName, String clientSecondName, String clientPatronymic,
-                        String clientEmail, String clientTelephone/*, String clientPassword*/){
+                        String clientEmail, String clientTelephone){
         this.clientFirstName = clientFirstName;
         this.clientSecondName = clientSecondName;
         this.clientPatronymic = clientPatronymic;
         this.clientEmail = clientEmail;
         this.clientTelephone = clientTelephone;
-        //this.clientPassword = clientPassword;
     }
 
     public PostalClient(ArrayList<String> dataClient, WriteInFile generalWriteInFile){
