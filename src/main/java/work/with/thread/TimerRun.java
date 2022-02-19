@@ -23,7 +23,7 @@ public class TimerRun {
         if(seconds == 1){
             timer.schedule(new TimerSendPackage(), seconds*1000, 1000);
         } else {
-            timer.schedule(new TimerSendMessage(), seconds*1000, 8000);
+            timer.schedule(new TimerSendMessage(), seconds*1000, 5000);
         }
     }
 

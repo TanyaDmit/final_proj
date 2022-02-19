@@ -20,7 +20,7 @@ public class Main {
             WriteInFile generalWriteInFile = new WriteInFile("log.txt");
             ReadFromFile generalReadFromFile = new ReadFromFile("test.txt", generalWriteInFile);
             new TimerRun(1, generalWriteInFile);
-            new TimerRun(6, generalWriteInFile);
+            new TimerRun(8, generalWriteInFile);
 //            System.out.println("Task scheduled.");
             //запись данных в базу
             ArrayList<String> generalWorkWithString;
