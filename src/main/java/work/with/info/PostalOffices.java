@@ -36,9 +36,11 @@ public class PostalOffices {
                 generalConnectWithDB.prst.setString(2, dataOffice.get(i).officeDescription);
                 line = line + dataOffice.get(i).numberOffice + " " + dataOffice.get(i).officeDescription;
                 generalConnectWithDB.prst.addBatch();
+                generalWriteInFile.writeInFile("add the record in table postal_offices: " + line);
+                line = " ";
             }
             generalConnectWithDB.prst.executeBatch();
-            generalWriteInFile.writeInFile("add the record in table postal_offices: " + line);
+
         } catch (SQLException eSQL) {
             System.out.println("can`t add data in table postal_offices");
             generalWriteInFile.writeInFile("can`t add data in table postal_offices");
@@ -56,19 +58,16 @@ public class PostalOffices {
         String tmp = null;
         try {
             generalConnectWithDB.prst = generalConnectWithDB.conn.prepareStatement(sql);//создание connect
-            System.out.println("коннектимся");
             generalConnectWithDB.prst = generalConnectWithDB.conn.prepareStatement(sql);//создание connect
-            System.out.println("начинаем формировать строку");
             for (int counter = 1; counter <= len; counter++) {
                 tmp = iter.next();
                 System.out.println(tmp);
                 generalConnectWithDB.prst.setString(counter, tmp);
                 line = line + tmp + " ";
-            }
 
-            generalConnectWithDB.prst.executeUpdate();
-            System.out.println("обновили данные");
+            }
             generalWriteInFile.writeInFile("add the record in table postal_offices: " + line);
+            generalConnectWithDB.prst.executeUpdate();
         } catch (SQLException eSQL) {
             System.out.println("can`t add data in table postal_offices");
             generalWriteInFile.writeInFile("can`t add data in table postal_offices");

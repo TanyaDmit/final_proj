@@ -45,7 +45,7 @@ public class Main {
                                 break;
                             case "REGISTRPOSTALOFFICE":
                                 postalOfficesArrayList.add(new PostalOffices(generalIter.next(), generalIter.next()));
-//                                PostalOffices postalOffice = new PostalOffices(generalConnectWithDB, generalWorkWithString, generalWriteInFile);
+//                                PostalOffices postalOffice = new PostalOffices(generalConnectWithDB, generalWorkWithString, generalWriteInFile, "str");
                                 break;
                             case "REGISTRPACKAGE":
                                 if(postalOfficesPull) {
@@ -54,11 +54,13 @@ public class Main {
                                 }
                                 PostalPackage postalPackage = new PostalPackage(generalConnectWithDB, generalWorkWithString, generalWriteInFile);
                                 counterForPackage++;
-                                if(counterForPackage % 3 == 0) {
+                                if(counterForPackage % 7 == 0) {
                                     generalConnectWithDB.setDisconnect(generalWriteInFile, true);
+                                    generalWriteInFile.close();
                                     do {
                                         Thread.sleep(1000);
                                     } while (TimerRun.activeWorkFlag);
+                                    generalWriteInFile = new WriteInFile("log.txt");
                                     generalConnectWithDB = new ConnectWithDB(generalWriteInFile);
                                 }
                                 break;
@@ -92,7 +94,6 @@ public class Main {
             System.out.println("Сообщения: ");
             PostalNotification.coutPostalNotification(connectForRead,generalWriteInFile);
             connectForRead.setDisconnect(generalWriteInFile, true);
-            generalWriteInFile.close();
         } catch (IOException e){
             System.err.print(e);
         } catch (Exception e) {
