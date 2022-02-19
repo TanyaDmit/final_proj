@@ -1,7 +1,6 @@
 package work.with.files;
 
 import java.io.BufferedReader;
-import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -31,7 +30,6 @@ public class ReadFromFile {
         ArrayList<String> workWithString = new ArrayList<>();
         try{
             if(fileReader.ready()){
-                //получаем новые слова
                 line = fileReader.readLine();
                 String[] newWords = line.split(";");
                 for(int j = 0; j < newWords.length; j++){

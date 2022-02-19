@@ -1,139 +1,1366 @@
-2022-02-19T16:00:15.522594 read package to send and change status:10000000001 new_package 2022-02-19 16:00:14 
-2022-02-19T16:00:15.522860 read package to send and change status:10000000002 new_package 2022-02-19 16:00:14 
-2022-02-19T16:00:15.523008 read package to send and change status:10000000003 new_package 2022-02-19 16:00:14 
-2022-02-19T16:00:15.594532 add the record in table messages:  new message: 10000000001 delivered_package status: new_message
-2022-02-19T16:00:15.626701 change status in table packages: 10000000001 delivered_package 2022-02-19 16:00:14
-2022-02-19T16:00:15.626975 change status in table packages: 10000000002 new_package 2022-02-19 16:00:14
-2022-02-19T16:00:15.627138 change status in table packages: 10000000003 new_package 2022-02-19 16:00:14
-2022-02-19T16:00:16.387485 read package to send and change status:10000000002 new_package 2022-02-19 16:00:14 
-2022-02-19T16:00:16.387644 read package to send and change status:10000000003 new_package 2022-02-19 16:00:14 
-2022-02-19T16:00:16.388334 change status in table packages: 10000000002 new_package 2022-02-19 16:00:14
-2022-02-19T16:00:16.388503 change status in table packages: 10000000003 new_package 2022-02-19 16:00:14
-2022-02-19T16:00:17.387444 read package to send and change status:10000000002 new_package 2022-02-19 16:00:14 
-2022-02-19T16:00:17.387552 read package to send and change status:10000000003 new_package 2022-02-19 16:00:14 
-2022-02-19T16:00:17.389508 add the record in table messages:  new message: 10000000003 delivered_package status: new_message
-2022-02-19T16:00:17.389919 change status in table packages: 10000000002 new_package 2022-02-19 16:00:14
-2022-02-19T16:00:17.390031 change status in table packages: 10000000003 delivered_package 2022-02-19 16:00:14
-2022-02-19T16:00:18.388681 read package to send and change status:10000000002 new_package 2022-02-19 16:00:14 
-2022-02-19T16:00:18.390531 change status in table packages: 10000000002 new_package 2022-02-19 16:00:14
-2022-02-19T16:00:19.388230 read package to send and change status:10000000002 new_package 2022-02-19 16:00:14 
-2022-02-19T16:00:19.389576 change status in table packages: 10000000002 new_package 2022-02-19 16:00:14
-2022-02-19T16:00:20.388087 read package to send and change status:10000000002 new_package 2022-02-19 16:00:14 
-2022-02-19T16:00:20.391348 add the record in table messages:  new message: 10000000002 overdue_package status: new_message
-2022-02-19T16:00:20.391923 change status in table packages: 10000000002 overdue_package 2022-02-19 16:00:14
-2022-02-19T16:00:22.388261 read package to send and change status:10000000004 new_package 2022-02-19 16:00:21 
-2022-02-19T16:00:22.388572 read package to send and change status:10000000005 new_package 2022-02-19 16:00:21 
-2022-02-19T16:00:22.388753 read package to send and change status:10000000006 new_package 2022-02-19 16:00:21 
-2022-02-19T16:00:22.392257 add the record in table messages:  new message: 10000000006 delivered_package status: new_message
-2022-02-19T16:00:22.392769 change status in table packages: 10000000004 new_package 2022-02-19 16:00:21
-2022-02-19T16:00:22.392975 change status in table packages: 10000000005 new_package 2022-02-19 16:00:21
-2022-02-19T16:00:22.393260 change status in table packages: 10000000006 delivered_package 2022-02-19 16:00:21
-2022-02-19T16:00:23.389742 read package to send and change status:10000000004 new_package 2022-02-19 16:00:21 
-2022-02-19T16:00:23.390011 read package to send and change status:10000000005 new_package 2022-02-19 16:00:21 
-2022-02-19T16:00:23.390217 read package to send and change status:10000000007 new_package 2022-02-19 16:00:23 
-2022-02-19T16:00:23.390407 read package to send and change status:10000000008 new_package 2022-02-19 16:00:23 
-2022-02-19T16:00:23.393465 add the record in table messages:  new message: 10000000005 delivered_package status: new_message
-2022-02-19T16:00:23.394401 change status in table packages: 10000000004 new_package 2022-02-19 16:00:21
-2022-02-19T16:00:23.394616 change status in table packages: 10000000005 delivered_package 2022-02-19 16:00:21
-2022-02-19T16:00:23.394792 change status in table packages: 10000000007 new_package 2022-02-19 16:00:23
-2022-02-19T16:00:23.395011 change status in table packages: 10000000008 new_package 2022-02-19 16:00:23
-2022-02-19T16:00:24.389070 read package to send and change status:10000000004 new_package 2022-02-19 16:00:21 
-2022-02-19T16:00:24.389249 read package to send and change status:10000000007 new_package 2022-02-19 16:00:23 
-2022-02-19T16:00:24.389379 read package to send and change status:10000000008 new_package 2022-02-19 16:00:23 
-2022-02-19T16:00:24.391926 add the record in table messages:  new message: 10000000008 delivered_package status: new_message
-2022-02-19T16:00:24.392324 change status in table packages: 10000000004 new_package 2022-02-19 16:00:21
-2022-02-19T16:00:24.392539 change status in table packages: 10000000007 new_package 2022-02-19 16:00:23
-2022-02-19T16:00:24.392729 change status in table packages: 10000000008 delivered_package 2022-02-19 16:00:23
-2022-02-19T16:00:25.391485 read package to send and change status:10000000004 new_package 2022-02-19 16:00:21 
-2022-02-19T16:00:25.391908 read package to send and change status:10000000007 new_package 2022-02-19 16:00:23 
-2022-02-19T16:00:25.393571 change status in table packages: 10000000004 new_package 2022-02-19 16:00:21
-2022-02-19T16:00:25.393905 change status in table packages: 10000000007 new_package 2022-02-19 16:00:23
-2022-02-19T16:00:26.392057 read package to send and change status:10000000004 new_package 2022-02-19 16:00:21 
-2022-02-19T16:00:26.392567 read package to send and change status:10000000007 new_package 2022-02-19 16:00:23 
-2022-02-19T16:00:26.396431 add the record in table messages:  new message: 10000000004 delivered_package status: new_message
-2022-02-19T16:00:26.397263 change status in table packages: 10000000004 delivered_package 2022-02-19 16:00:21
-2022-02-19T16:00:26.397401 change status in table packages: 10000000007 new_package 2022-02-19 16:00:23
-2022-02-19T16:00:27.389397 read package to send and change status:10000000007 new_package 2022-02-19 16:00:23 
-2022-02-19T16:00:27.389852 change status in table packages: 10000000007 new_package 2022-02-19 16:00:23
-2022-02-19T16:00:28.390192 read package to send and change status:10000000007 new_package 2022-02-19 16:00:23 
-2022-02-19T16:00:28.390943 change status in table packages: 10000000007 new_package 2022-02-19 16:00:23
-2022-02-19T16:00:29.391527 read package to send and change status:10000000007 new_package 2022-02-19 16:00:23 
-2022-02-19T16:00:29.395674 add the record in table messages:  new message: 10000000007 overdue_package status: new_message
-2022-02-19T16:00:29.396128 change status in table packages: 10000000007 overdue_package 2022-02-19 16:00:23
-2022-02-19T16:00:39.427607  end connect with database
-2022-02-19T16:00:42.605743 read message to send and change status:messid: 10000000001 packid: 10000000001 delivered_package new_message
-2022-02-19T16:00:42.606010 read message to send and change status:messid: 10000000002 packid: 10000000003 delivered_package new_message
-2022-02-19T16:00:42.606132 read message to send and change status:messid: 10000000003 packid: 10000000002 overdue_package new_message
-2022-02-19T16:00:42.606210 read message to send and change status:messid: 10000000004 packid: 10000000006 delivered_package new_message
-2022-02-19T16:00:42.606268 read message to send and change status:messid: 10000000005 packid: 10000000005 delivered_package new_message
-2022-02-19T16:00:42.606325 read message to send and change status:messid: 10000000006 packid: 10000000008 delivered_package new_message
-2022-02-19T16:00:42.606378 read message to send and change status:messid: 10000000007 packid: 10000000004 delivered_package new_message
-2022-02-19T16:00:42.606431 read message to send and change status:messid: 10000000008 packid: 10000000007 overdue_package new_message
-2022-02-19T16:00:42.620947 change status in table messages: 10000000001 sent_message
-2022-02-19T16:00:42.621079 change status in table messages: 10000000002 sent_message
-2022-02-19T16:00:42.621154 change status in table messages: 10000000003 sent_message
-2022-02-19T16:00:42.621215 change status in table messages: 10000000004 sent_message
-2022-02-19T16:00:42.621274 change status in table messages: 10000000005 sent_message
-2022-02-19T16:00:42.621334 change status in table messages: 10000000006 sent_message
-2022-02-19T16:00:42.621392 change status in table messages: 10000000007 sent_message
-2022-02-19T16:00:42.621462 change status in table messages: 10000000008 sent_message
-2022-02-19T16:01:07.603888  end connect with database
-2022-02-19T16:00:14.259356  start connect with database
-2022-02-19T16:00:14.555976  start connect with database
-2022-02-19T16:00:14.565253 file 'test.txt' is opened
-2022-02-19T16:00:14.663342  start connect with database
-2022-02-19T16:00:14.780523 add the record in table clients:  Дмитраш Таня Константиновна ghost@gmail.com +380661117744 
-2022-02-19T16:00:14.782369 add the record in table clients:  Веселовская Анастасия Сергеевна emailforpeople1@gmail.com +380962224433 
-2022-02-19T16:00:14.784024 add the record in table clients:  Фомина Елизавета Дмитриевна emailforpeople2@gmail.com +380503330011 
-2022-02-19T16:00:14.787106 add the record in table clients:  Скляр Николай Витальевич emailforpeople3@gmail.com +380965554411 
-2022-02-19T16:00:14.791991 add the record in table clients:  Русанов Александр Александрович emailforpeople4@gmail.com +380504448811 
-2022-02-19T16:00:14.799070 add the record in table clients:  Костенко Анатолий Владимирович emailforpeople5@gmail.com +380665551177 
-2022-02-19T16:00:14.803651 add the record in table postal_offices:  42 вес посылки до 30 кг 
-2022-02-19T16:00:14.807273 add the record in table postal_offices:  13 расположена возле кофетерия Pacamara 
-2022-02-19T16:00:14.811208 add the record in table postal_offices:  27 длина посылки до 28 см 
-2022-02-19T16:00:14.813073 add the record in table postal_offices:  5 работает улыбчивая команда 
-2022-02-19T16:00:14.816197 add the record in table postal_offices:  11 при правильном ответе на вопрос: "как поймать тигра в клетку?", дают скидку 30% на доставку 
-2022-02-19T16:00:14.824658 add the record in table postal_offices:  81 за качественные 20 приседаний угощают кофе 
-2022-02-19T16:00:14.832639 add the record in table packages:  +380665551177 42 +380969998877 Музалева Елена Ивановна 
-2022-02-19T16:00:14.836144 add the record in table packages:  +380965554411 11 +380969938877 Шкарупа Елена Ивановна 
-2022-02-19T16:00:14.842539 add the record in table packages:  +380665551177 5 +380969998857 Савченко Любовь Михайловна 
-2022-02-19T16:00:14.874850  end connect with database
-2022-02-19T16:00:21.932179  start connect with database
-2022-02-19T16:00:21.936164 add the record in table packages:  +380965554411 81 +380969345877 Жосан Игорь Антонович 
-2022-02-19T16:00:21.938049 add the record in table packages:  +380665551177 13 +380969998877 Музалева Елена Ивановна 
-2022-02-19T16:00:21.939879 add the record in table packages:  +380965554411 11 +380969938877 Шкарупа Елена Ивановна 
-2022-02-19T16:00:21.965073  end connect with database
-2022-02-19T16:00:23.018906  start connect with database
-2022-02-19T16:00:23.022913 add the record in table packages:  +380665551177 5 +380969998857 Савченко Любовь Михайловна 
-2022-02-19T16:00:23.024604 add the record in table packages:  +380965554411 81 +380969345877 Жосан Игорь Антонович 
-2022-02-19T16:00:23.052842  end connect with database
-2022-02-19T16:01:08.163035  start connect with database
-2022-02-19T16:01:08.192396 output clients on screen:100000001 +380661117744 Дмитраш Таня Константиновна ghost@gmail.com 
-2022-02-19T16:01:08.192673 output clients on screen:100000002 +380962224433 Веселовская Анастасия Сергеевна emailforpeople1@gmail.com 
-2022-02-19T16:01:08.192918 output clients on screen:100000003 +380503330011 Фомина Елизавета Дмитриевна emailforpeople2@gmail.com 
-2022-02-19T16:01:08.193130 output clients on screen:100000004 +380965554411 Скляр Николай Витальевич emailforpeople3@gmail.com 
-2022-02-19T16:01:08.193308 output clients on screen:100000005 +380504448811 Русанов Александр Александрович emailforpeople4@gmail.com 
-2022-02-19T16:01:08.193493 output clients on screen:100000006 +380665551177 Костенко Анатолий Владимирович emailforpeople5@gmail.com 
-2022-02-19T16:01:08.204270 output postal_offices on screen:10001 42 вес посылки до 30 кг
-2022-02-19T16:01:08.204442 output postal_offices on screen:10002 13 расположена возле кофетерия Pacamara
-2022-02-19T16:01:08.204648 output postal_offices on screen:10003 27 длина посылки до 28 см
-2022-02-19T16:01:08.204834 output postal_offices on screen:10004 5 работает улыбчивая команда
-2022-02-19T16:01:08.204992 output postal_offices on screen:10005 11 при правильном ответе на вопрос: "как поймать тигра в клетку?", дают скидку 30% на доставку
-2022-02-19T16:01:08.205202 output postal_offices on screen:10006 81 за качественные 20 приседаний угощают кофе
-2022-02-19T16:01:08.243984 output packages on screen:10000000001 +380665551177 42 +380969998877 Музалева Елена Ивановна delivered_package 2022-02-19 16:00:14.776037 2022-02-19 16:00:14 
-2022-02-19T16:01:08.244454 output packages on screen:10000000003 +380665551177 5 +380969998857 Савченко Любовь Михайловна delivered_package 2022-02-19 16:00:14.776037 2022-02-19 16:00:14 
-2022-02-19T16:01:08.244748 output packages on screen:10000000002 +380965554411 11 +380969938877 Шкарупа Елена Ивановна overdue_package 2022-02-19 16:00:14.776037 2022-02-19 16:00:14 
-2022-02-19T16:01:08.244960 output packages on screen:10000000006 +380965554411 11 +380969938877 Шкарупа Елена Ивановна delivered_package 2022-02-19 16:00:21.932962 2022-02-19 16:00:21 
-2022-02-19T16:01:08.245156 output packages on screen:10000000005 +380665551177 13 +380969998877 Музалева Елена Ивановна delivered_package 2022-02-19 16:00:21.932962 2022-02-19 16:00:21 
-2022-02-19T16:01:08.245351 output packages on screen:10000000008 +380965554411 81 +380969345877 Жосан Игорь Антонович delivered_package 2022-02-19 16:00:23.019898 2022-02-19 16:00:23 
-2022-02-19T16:01:08.245537 output packages on screen:10000000004 +380965554411 81 +380969345877 Жосан Игорь Антонович delivered_package 2022-02-19 16:00:21.932962 2022-02-19 16:00:21 
-2022-02-19T16:01:08.245742 output packages on screen:10000000007 +380665551177 5 +380969998857 Савченко Любовь Михайловна overdue_package 2022-02-19 16:00:23.019898 2022-02-19 16:00:23 
-2022-02-19T16:01:08.267733 output messages on screen:10000000001 10000000001 delivered_package sent_message
-2022-02-19T16:01:08.267926 output messages on screen:10000000002 10000000003 delivered_package sent_message
-2022-02-19T16:01:08.268079 output messages on screen:10000000003 10000000002 overdue_package sent_message
-2022-02-19T16:01:08.268209 output messages on screen:10000000004 10000000006 delivered_package sent_message
-2022-02-19T16:01:08.268332 output messages on screen:10000000005 10000000005 delivered_package sent_message
-2022-02-19T16:01:08.268452 output messages on screen:10000000006 10000000008 delivered_package sent_message
-2022-02-19T16:01:08.268575 output messages on screen:10000000007 10000000004 delivered_package sent_message
-2022-02-19T16:01:08.268712 output messages on screen:10000000008 10000000007 overdue_package sent_message
-2022-02-19T16:01:08.270430  end connect with database
+2022-02-19T23:41:12.355920 read package to send and change status:10000000001 new_package 2022-02-19 23:41:11 
+2022-02-19T23:41:12.356107 read package to send and change status:10000000002 new_package 2022-02-19 23:41:11 
+2022-02-19T23:41:12.356226 read package to send and change status:10000000003 new_package 2022-02-19 23:41:11 
+2022-02-19T23:41:12.412763 change status in table packages: 10000000001 new_package 2022-02-19 23:41:11
+2022-02-19T23:41:12.412904 change status in table packages: 10000000002 new_package 2022-02-19 23:41:11
+2022-02-19T23:41:12.412995 change status in table packages: 10000000003 new_package 2022-02-19 23:41:11
+2022-02-19T23:41:13.265583 read package to send and change status:10000000001 new_package 2022-02-19 23:41:11 
+2022-02-19T23:41:13.265894 read package to send and change status:10000000002 new_package 2022-02-19 23:41:11 
+2022-02-19T23:41:13.266085 read package to send and change status:10000000003 new_package 2022-02-19 23:41:11 
+2022-02-19T23:41:13.293007 add the record in table messages:  new message: 10000000002 delivered_package status: new_message
+2022-02-19T23:41:13.295355 add the record in table messages:  new message: 10000000003 delivered_package status: new_message
+2022-02-19T23:41:13.295744 change status in table packages: 10000000001 new_package 2022-02-19 23:41:11
+2022-02-19T23:41:13.295924 change status in table packages: 10000000002 delivered_package 2022-02-19 23:41:11
+2022-02-19T23:41:13.296073 change status in table packages: 10000000003 delivered_package 2022-02-19 23:41:11
+2022-02-19T23:41:14.265455 read package to send and change status:10000000001 new_package 2022-02-19 23:41:11 
+2022-02-19T23:41:14.266339 change status in table packages: 10000000001 new_package 2022-02-19 23:41:11
+2022-02-19T23:41:15.266757 read package to send and change status:10000000001 new_package 2022-02-19 23:41:11 
+2022-02-19T23:41:15.267702 change status in table packages: 10000000001 new_package 2022-02-19 23:41:11
+2022-02-19T23:41:16.266843 read package to send and change status:10000000001 new_package 2022-02-19 23:41:11 
+2022-02-19T23:41:16.268022 change status in table packages: 10000000001 new_package 2022-02-19 23:41:11
+2022-02-19T23:41:17.266886 read package to send and change status:10000000001 new_package 2022-02-19 23:41:11 
+2022-02-19T23:41:17.270569 add the record in table messages:  new message: 10000000001 overdue_package status: new_message
+2022-02-19T23:41:17.271302 change status in table packages: 10000000001 overdue_package 2022-02-19 23:41:11
+2022-02-19T23:41:19.267231 read package to send and change status:10000000004 new_package 2022-02-19 23:41:18 
+2022-02-19T23:41:19.267681 read package to send and change status:10000000005 new_package 2022-02-19 23:41:18 
+2022-02-19T23:41:19.268045 read package to send and change status:10000000006 new_package 2022-02-19 23:41:18 
+2022-02-19T23:41:19.272058 add the record in table messages:  new message: 10000000006 delivered_package status: new_message
+2022-02-19T23:41:19.272590 change status in table packages: 10000000004 new_package 2022-02-19 23:41:18
+2022-02-19T23:41:19.272791 change status in table packages: 10000000005 new_package 2022-02-19 23:41:18
+2022-02-19T23:41:19.272977 change status in table packages: 10000000006 delivered_package 2022-02-19 23:41:18
+2022-02-19T23:41:20.266536 read package to send and change status:10000000004 new_package 2022-02-19 23:41:18 
+2022-02-19T23:41:20.266822 read package to send and change status:10000000005 new_package 2022-02-19 23:41:18 
+2022-02-19T23:41:20.267104 read package to send and change status:10000000007 new_package 2022-02-19 23:41:19 
+2022-02-19T23:41:20.267393 read package to send and change status:10000000008 new_package 2022-02-19 23:41:19 
+2022-02-19T23:41:20.267583 read package to send and change status:10000000009 new_package 2022-02-19 23:41:19 
+2022-02-19T23:41:20.272263 add the record in table messages:  new message: 10000000009 delivered_package status: new_message
+2022-02-19T23:41:20.272954 change status in table packages: 10000000004 new_package 2022-02-19 23:41:18
+2022-02-19T23:41:20.273220 change status in table packages: 10000000005 new_package 2022-02-19 23:41:18
+2022-02-19T23:41:20.273455 change status in table packages: 10000000007 new_package 2022-02-19 23:41:19
+2022-02-19T23:41:20.273701 change status in table packages: 10000000008 new_package 2022-02-19 23:41:19
+2022-02-19T23:41:20.274026 change status in table packages: 10000000009 delivered_package 2022-02-19 23:41:19
+2022-02-19T23:41:21.266691 read package to send and change status:10000000004 new_package 2022-02-19 23:41:18 
+2022-02-19T23:41:21.266939 read package to send and change status:10000000005 new_package 2022-02-19 23:41:18 
+2022-02-19T23:41:21.267239 read package to send and change status:10000000007 new_package 2022-02-19 23:41:19 
+2022-02-19T23:41:21.267502 read package to send and change status:10000000008 new_package 2022-02-19 23:41:19 
+2022-02-19T23:41:21.267682 read package to send and change status:10000000010 new_package 2022-02-19 23:41:20 
+2022-02-19T23:41:21.267871 read package to send and change status:10000000011 new_package 2022-02-19 23:41:20 
+2022-02-19T23:41:21.268052 read package to send and change status:10000000012 new_package 2022-02-19 23:41:20 
+2022-02-19T23:41:21.271067 add the record in table messages:  new message: 10000000005 delivered_package status: new_message
+2022-02-19T23:41:21.273604 add the record in table messages:  new message: 10000000007 delivered_package status: new_message
+2022-02-19T23:41:21.275957 add the record in table messages:  new message: 10000000008 delivered_package status: new_message
+2022-02-19T23:41:21.278335 add the record in table messages:  new message: 10000000011 delivered_package status: new_message
+2022-02-19T23:41:21.279004 change status in table packages: 10000000004 new_package 2022-02-19 23:41:18
+2022-02-19T23:41:21.279186 change status in table packages: 10000000005 delivered_package 2022-02-19 23:41:18
+2022-02-19T23:41:21.279345 change status in table packages: 10000000007 delivered_package 2022-02-19 23:41:19
+2022-02-19T23:41:21.279497 change status in table packages: 10000000008 delivered_package 2022-02-19 23:41:19
+2022-02-19T23:41:21.279647 change status in table packages: 10000000010 new_package 2022-02-19 23:41:20
+2022-02-19T23:41:21.279884 change status in table packages: 10000000011 delivered_package 2022-02-19 23:41:20
+2022-02-19T23:41:21.280189 change status in table packages: 10000000012 new_package 2022-02-19 23:41:20
+2022-02-19T23:41:22.266075 read package to send and change status:10000000004 new_package 2022-02-19 23:41:18 
+2022-02-19T23:41:22.266313 read package to send and change status:10000000010 new_package 2022-02-19 23:41:20 
+2022-02-19T23:41:22.266494 read package to send and change status:10000000012 new_package 2022-02-19 23:41:20 
+2022-02-19T23:41:22.266916 read package to send and change status:10000000013 new_package 2022-02-19 23:41:22 
+2022-02-19T23:41:22.267229 read package to send and change status:10000000014 new_package 2022-02-19 23:41:22 
+2022-02-19T23:41:22.267530 read package to send and change status:10000000015 new_package 2022-02-19 23:41:22 
+2022-02-19T23:41:22.269890 change status in table packages: 10000000004 new_package 2022-02-19 23:41:18
+2022-02-19T23:41:22.270163 change status in table packages: 10000000010 new_package 2022-02-19 23:41:20
+2022-02-19T23:41:22.270401 change status in table packages: 10000000012 new_package 2022-02-19 23:41:20
+2022-02-19T23:41:22.270673 change status in table packages: 10000000013 new_package 2022-02-19 23:41:22
+2022-02-19T23:41:22.270902 change status in table packages: 10000000014 new_package 2022-02-19 23:41:22
+2022-02-19T23:41:22.271137 change status in table packages: 10000000015 new_package 2022-02-19 23:41:22
+2022-02-19T23:41:23.264322 read package to send and change status:10000000004 new_package 2022-02-19 23:41:18 
+2022-02-19T23:41:23.264445 read package to send and change status:10000000010 new_package 2022-02-19 23:41:20 
+2022-02-19T23:41:23.264522 read package to send and change status:10000000012 new_package 2022-02-19 23:41:20 
+2022-02-19T23:41:23.264648 read package to send and change status:10000000013 new_package 2022-02-19 23:41:22 
+2022-02-19T23:41:23.264870 read package to send and change status:10000000014 new_package 2022-02-19 23:41:22 
+2022-02-19T23:41:23.264956 read package to send and change status:10000000015 new_package 2022-02-19 23:41:22 
+2022-02-19T23:41:23.266436 add the record in table messages:  new message: 10000000013 delivered_package status: new_message
+2022-02-19T23:41:23.266950 change status in table packages: 10000000004 new_package 2022-02-19 23:41:18
+2022-02-19T23:41:23.267037 change status in table packages: 10000000010 new_package 2022-02-19 23:41:20
+2022-02-19T23:41:23.267100 change status in table packages: 10000000012 new_package 2022-02-19 23:41:20
+2022-02-19T23:41:23.267160 change status in table packages: 10000000013 delivered_package 2022-02-19 23:41:22
+2022-02-19T23:41:23.267224 change status in table packages: 10000000014 new_package 2022-02-19 23:41:22
+2022-02-19T23:41:23.267283 change status in table packages: 10000000015 new_package 2022-02-19 23:41:22
+2022-02-19T23:41:24.267116 read package to send and change status:10000000016 new_package 2022-02-19 23:41:23 
+2022-02-19T23:41:24.267363 read package to send and change status:10000000017 new_package 2022-02-19 23:41:23 
+2022-02-19T23:41:24.267533 read package to send and change status:10000000018 new_package 2022-02-19 23:41:23 
+2022-02-19T23:41:24.267689 read package to send and change status:10000000004 new_package 2022-02-19 23:41:18 
+2022-02-19T23:41:24.267850 read package to send and change status:10000000010 new_package 2022-02-19 23:41:20 
+2022-02-19T23:41:24.268088 read package to send and change status:10000000012 new_package 2022-02-19 23:41:20 
+2022-02-19T23:41:24.268335 read package to send and change status:10000000014 new_package 2022-02-19 23:41:22 
+2022-02-19T23:41:24.268559 read package to send and change status:10000000015 new_package 2022-02-19 23:41:22 
+2022-02-19T23:41:24.272503 add the record in table messages:  new message: 10000000017 delivered_package status: new_message
+2022-02-19T23:41:24.275854 add the record in table messages:  new message: 10000000018 delivered_package status: new_message
+2022-02-19T23:41:24.278794 add the record in table messages:  new message: 10000000004 overdue_package status: new_message
+2022-02-19T23:41:24.282422 add the record in table messages:  new message: 10000000015 delivered_package status: new_message
+2022-02-19T23:41:24.282928 change status in table packages: 10000000016 new_package 2022-02-19 23:41:23
+2022-02-19T23:41:24.283171 change status in table packages: 10000000017 delivered_package 2022-02-19 23:41:23
+2022-02-19T23:41:24.283387 change status in table packages: 10000000018 delivered_package 2022-02-19 23:41:23
+2022-02-19T23:41:24.283593 change status in table packages: 10000000004 overdue_package 2022-02-19 23:41:18
+2022-02-19T23:41:24.283798 change status in table packages: 10000000010 new_package 2022-02-19 23:41:20
+2022-02-19T23:41:24.284017 change status in table packages: 10000000012 new_package 2022-02-19 23:41:20
+2022-02-19T23:41:24.284217 change status in table packages: 10000000014 new_package 2022-02-19 23:41:22
+2022-02-19T23:41:24.284421 change status in table packages: 10000000015 delivered_package 2022-02-19 23:41:22
+2022-02-19T23:41:25.268522 read package to send and change status:10000000016 new_package 2022-02-19 23:41:23 
+2022-02-19T23:41:25.268841 read package to send and change status:10000000010 new_package 2022-02-19 23:41:20 
+2022-02-19T23:41:25.269031 read package to send and change status:10000000012 new_package 2022-02-19 23:41:20 
+2022-02-19T23:41:25.269209 read package to send and change status:10000000014 new_package 2022-02-19 23:41:22 
+2022-02-19T23:41:25.269376 read package to send and change status:10000000019 new_package 2022-02-19 23:41:24 
+2022-02-19T23:41:25.269540 read package to send and change status:10000000020 new_package 2022-02-19 23:41:24 
+2022-02-19T23:41:25.269706 read package to send and change status:10000000021 new_package 2022-02-19 23:41:24 
+2022-02-19T23:41:25.272732 add the record in table messages:  new message: 10000000016 delivered_package status: new_message
+2022-02-19T23:41:25.274288 change status in table packages: 10000000016 delivered_package 2022-02-19 23:41:23
+2022-02-19T23:41:25.274551 change status in table packages: 10000000010 new_package 2022-02-19 23:41:20
+2022-02-19T23:41:25.274716 change status in table packages: 10000000012 new_package 2022-02-19 23:41:20
+2022-02-19T23:41:25.274869 change status in table packages: 10000000014 new_package 2022-02-19 23:41:22
+2022-02-19T23:41:25.275044 change status in table packages: 10000000019 new_package 2022-02-19 23:41:24
+2022-02-19T23:41:25.275178 change status in table packages: 10000000020 new_package 2022-02-19 23:41:24
+2022-02-19T23:41:25.275303 change status in table packages: 10000000021 new_package 2022-02-19 23:41:24
+2022-02-19T23:41:26.267915 read package to send and change status:10000000010 new_package 2022-02-19 23:41:20 
+2022-02-19T23:41:26.268159 read package to send and change status:10000000012 new_package 2022-02-19 23:41:20 
+2022-02-19T23:41:26.268331 read package to send and change status:10000000014 new_package 2022-02-19 23:41:22 
+2022-02-19T23:41:26.268491 read package to send and change status:10000000019 new_package 2022-02-19 23:41:24 
+2022-02-19T23:41:26.268648 read package to send and change status:10000000020 new_package 2022-02-19 23:41:24 
+2022-02-19T23:41:26.268880 read package to send and change status:10000000021 new_package 2022-02-19 23:41:24 
+2022-02-19T23:41:26.269177 read package to send and change status:10000000022 new_package 2022-02-19 23:41:25 
+2022-02-19T23:41:26.269426 read package to send and change status:10000000023 new_package 2022-02-19 23:41:25 
+2022-02-19T23:41:26.269617 read package to send and change status:10000000024 new_package 2022-02-19 23:41:25 
+2022-02-19T23:41:26.272341 add the record in table messages:  new message: 10000000010 overdue_package status: new_message
+2022-02-19T23:41:26.274681 add the record in table messages:  new message: 10000000012 overdue_package status: new_message
+2022-02-19T23:41:26.276749 add the record in table messages:  new message: 10000000014 delivered_package status: new_message
+2022-02-19T23:41:26.277961 change status in table packages: 10000000010 overdue_package 2022-02-19 23:41:20
+2022-02-19T23:41:26.278128 change status in table packages: 10000000012 overdue_package 2022-02-19 23:41:20
+2022-02-19T23:41:26.278254 change status in table packages: 10000000014 delivered_package 2022-02-19 23:41:22
+2022-02-19T23:41:26.278372 change status in table packages: 10000000019 new_package 2022-02-19 23:41:24
+2022-02-19T23:41:26.278489 change status in table packages: 10000000020 new_package 2022-02-19 23:41:24
+2022-02-19T23:41:26.278665 change status in table packages: 10000000021 new_package 2022-02-19 23:41:24
+2022-02-19T23:41:26.278803 change status in table packages: 10000000022 new_package 2022-02-19 23:41:25
+2022-02-19T23:41:26.278918 change status in table packages: 10000000023 new_package 2022-02-19 23:41:25
+2022-02-19T23:41:26.279031 change status in table packages: 10000000024 new_package 2022-02-19 23:41:25
+2022-02-19T23:41:27.268982 read package to send and change status:10000000019 new_package 2022-02-19 23:41:24 
+2022-02-19T23:41:27.269187 read package to send and change status:10000000020 new_package 2022-02-19 23:41:24 
+2022-02-19T23:41:27.269344 read package to send and change status:10000000021 new_package 2022-02-19 23:41:24 
+2022-02-19T23:41:27.269479 read package to send and change status:10000000022 new_package 2022-02-19 23:41:25 
+2022-02-19T23:41:27.269638 read package to send and change status:10000000023 new_package 2022-02-19 23:41:25 
+2022-02-19T23:41:27.269810 read package to send and change status:10000000024 new_package 2022-02-19 23:41:25 
+2022-02-19T23:41:27.269972 read package to send and change status:10000000025 new_package 2022-02-19 23:41:26 
+2022-02-19T23:41:27.270100 read package to send and change status:10000000026 new_package 2022-02-19 23:41:26 
+2022-02-19T23:41:27.270227 read package2022-02-19T23:41:11.182362  start connect with database
+2022-02-19T23:41:11.326041  start connect with database
+2022-02-19T23:41:11.341613 file 'input_data.txt' is opened
+2022-02-19T23:41:11.423779  start connect with database
+2022-02-19T23:41:11.462328 add the record in table clients:  Сорокина Алла Аркадьевна emailforpeople1@gmail.com +380967005418 
+2022-02-19T23:41:11.463852 add the record in table clients:  Беляева Алиса Петровна emailforpeople2@gmail.com +380509745099 
+2022-02-19T23:41:11.466320 add the record in table clients:  Козлова Яна Афанасьевна emailforpeople3@gmail.com +380969197167 
+2022-02-19T23:41:11.467968 add the record in table clients:  Васильева Алёна Валериевна emailforpeople4@gmail.com +380506177005 
+2022-02-19T23:41:11.469489 add the record in table clients:  Алексеева Алиса Владимировна emailforpeople5@gmail.com +380964300497 
+2022-02-19T23:41:11.470953 add the record in table clients:  Сорокина Светлана Владимировна emailforpeople6@gmail.com +380503908581 
+2022-02-19T23:41:11.530865 add the record in table postal_offices:  12 Когда дорога представляет собой загадку, попробуй шагать наобум. Несись по ветру.54 Надеюсь, все видели мой прыжок? Ибо я отказываюсь это повторять!39 Сходят с ума только те, у кого он есть.69 Я не сумасшедший, просто моя реальность отличается от твоей.66 Я спешу на рандеву с судьбой по ту сторону горизонта!3 Иногда отражение в зеркале более реально, чем сам объект.76 Как бы ты ни смотрела, ты должна смотреть в правильном направлении.35 Если Чеширский Кот улыбается, значит, это кому-нибудь нужно.15 Я полон оптимизма. Человечество преодолело законы морали, почему бы ему не преодолеть законы физики?33 Смотри, учись, действуй.
+2022-02-19T23:41:11.536364 add the record in table packages:  +380506177005 35 +380667433533 Белов Дмитрий Владимирович 
+2022-02-19T23:41:11.538136 add the record in table packages:  +380969197167 33 +380663524713 Борисов Артём Ярославович 
+2022-02-19T23:41:11.539874 add the record in table packages:  +380509745099 54 +380664722749 Макаров Борис Владимирович 
+2022-02-19T23:41:11.567022  end connect with database
+2022-02-19T23:41:18.654852  start connect with database
+2022-02-19T23:41:18.658353 add the record in table packages:  +380964300497 3 +380667310869 Новиков Дмитрий Ефимович 
+2022-02-19T23:41:18.660024 add the record in table packages:  +380509745099 66 +380669354896 Михайлов Марк Михайлович 
+2022-02-19T23:41:18.661406 add the record in table packages:  +380967005418 54 +380668539227 Титов Антон Кириллович 
+2022-02-19T23:41:18.726363  end connect with database
+2022-02-19T23:41:19.819699  start connect with database
+2022-02-19T23:41:19.823969 add the record in table packages:  +380509745099 12 +380665002811 Белов Лев Викторович 
+2022-02-19T23:41:19.825870 add the record in table packages:  +380506177005 54 +380661243381 Гусев Виталий Кириллович 
+2022-02-19T23:41:19.827257 add the record in table packages:  +380509745099 33 +380661753101 Сергеев Андрей Владимирович 
+2022-02-19T23:41:19.861850  end connect with database
+2022-02-19T23:41:20.923296  start connect with database
+2022-02-19T23:41:20.926443 add the record in table packages:  +380509745099 33 +380663858979 Королёв Вадим Андреевич 
+2022-02-19T23:41:20.927967 add the record in table packages:  +380969197167 69 +380668521271 Пономарёв Андрей Тимофеевич 
+2022-02-19T23:41:20.929426 add the record in table packages:  +380506177005 12 +380669985790 Баранов Николай Данилович 
+2022-02-19T23:41:20.971146  end connect with database
+2022-02-19T23:41:22.030505  start connect with database
+2022-02-19T23:41:22.033361 add the record in table packages:  +380509745099 33 +380662564814 Захаров Роман Сергеевич 
+2022-02-19T23:41:22.034903 add the record in table packages:  +380964300497 15 +380663133846 Комаров Антон Филиппович 
+2022-02-19T23:41:22.036177 add the record in table packages:  +380503908581 15 +380665888693 Белов Василий Георгиевич 
+2022-02-19T23:41:22.080629  end connect with database
+2022-02-19T23:41:23.133449  start connect with database
+2022-02-19T23:41:23.137041 add the record in table packages:  +380503908581 3 +380665037862 Макаров Леонид Алексеевич 
+2022-02-19T23:41:23.138749 add the record in table packages:  +380967005418 12 +380660640401 Попов Фёдор Русланович 
+2022-02-19T23:41:23.140221 add the record in table packages:  +380967005418 66 +380664137377 Морозов Виталий Михайлович 
+2022-02-19T23:41:23.299558  end connect with database
+2022-02-19T23:41:24.339895  start connect with database
+2022-02-19T23:41:24.343679 add the record in table packages:  +380509745099 15 +380668502818 Гусев Денис Васильевич 
+2022-02-19T23:41:24.345167 add the record in table packages:  +380509745099 54 +380669991472 Ковалёв Вадим Янович 
+2022-02-19T23:41:24.346780 add the record in table packages:  +380503908581 69 +380665134073 Гусев Роман Иванович 
+2022-02-19T23:41:24.423702  end connect with database
+2022-02-19T23:41:25.469645  start connect with database
+2022-02-19T23:41:25.472252 add the record in table packages:  +380509745099 15 +380660173146 Макаров Илья Константинович 
+2022-02-19T23:41:25.473283 add the record in table packages:  +380503908581 33 +380665302595 Пономарёв Константин Егорович 
+2022-02-19T23:41:25.474237 add the record in table packages:  +380509745099 66 +380669901534 Белов Иван Михайлович 
+2022-02-19T23:41:25.517222  end connect with database
+2022-02-19T23:41:26.560074  start connect with database
+2022-02-19T23:41:26.562548 add the record in table packages:  +380506177005 3 +380667283154 Куликов Антон Михайлович 
+2022-02-19T23:41:26.563525 add the record in table packages:  +380503908581 76 +380669385832 Герасимов Максим Ильич 
+2022-02-19T23:41:26.564426 add the record in table packages:  +380964300497 76 +380661046348 Соколов Фёдор Вячеславович 
+2022-02-19T23:41:26.619172  end connect with database
+2022-02-19T23:41:27.671343  start connect with database
+2022-02-19T23:41:27.673972 add the record in table packages:  +380509745099 33 +380662955223 Королёв Иван Викторович 
+2022-02-19T23:41:27.675245 add the record in table packages:  +380964300497 76 +380668533740 Кудрявцев Арсений Геннадьевич 
+2022-02-19T23:41:27.676442 add the record in table packages:  +380509745099 15 +380667455146 Соловьёв Леонид Кириллович 
+2022-02-19T23:41:27.700898  end connect with database
+2022-02-19T23:41:28.754017  start connect with database
+2022-02-19T23:41:28.757707 add the record in table packages:  +380503908581 39 +380666889956 Белов Пётр Михайлович 
+2022-02-19T23:41:28.758996 add the record in table packages:  +380503908581 54 +380664461863 Яковлев Леонид Макарович 
+2022-02-19T23:41:28.759992 add the record in table packages:  +380969197167 33 +380662743686 Романов Владимир Ефимович 
+2022-02-19T23:41:28.784468  end connect with database
+2022-02-19T23:41:29.834836  start connect  to send and change status:10000000027 new_package 2022-02-19 23:41:26 
+2022-02-19T23:41:27.273144 add the record in table messages:  new message: 10000000020 delivered_package status: new_message
+2022-02-19T23:41:27.274458 change status in table packages: 10000000019 new_package 2022-02-19 23:41:24
+2022-02-19T23:41:27.274659 change status in table packages: 10000000020 delivered_package 2022-02-19 23:41:24
+2022-02-19T23:41:27.274782 change status in table packages: 10000000021 new_package 2022-02-19 23:41:24
+2022-02-19T23:41:27.274894 change status in table packages: 10000000022 new_package 2022-02-19 23:41:25
+2022-02-19T23:41:27.275 change status in table packages: 10000000023 new_package 2022-02-19 23:41:25
+2022-02-19T23:41:27.275105 change status in table packages: 10000000024 new_package 2022-02-19 23:41:25
+2022-02-19T23:41:27.275211 change status in table packages: 10000000025 new_package 2022-02-19 23:41:26
+2022-02-19T23:41:27.275315 change status in table packages: 10000000026 new_package 2022-02-19 23:41:26
+2022-02-19T23:41:27.275418 change status in table packages: 10000000027 new_package 2022-02-19 23:41:26
+2022-02-19T23:41:28.270062 read package to send and change status:10000000019 new_package 2022-02-19 23:41:24 
+2022-02-19T23:41:28.270317 read package to send and change status:10000000021 new_package 2022-02-19 23:41:24 
+2022-02-19T23:41:28.270480 read package to send and change status:10000000022 new_package 2022-02-19 23:41:25 
+2022-02-19T23:41:28.270629 read package to send and change status:10000000023 new_package 2022-02-19 23:41:25 
+2022-02-19T23:41:28.270785 read package to send and change status:10000000024 new_package 2022-02-19 23:41:25 
+2022-02-19T23:41:28.270928 read package to send and change status:10000000025 new_package 2022-02-19 23:41:26 
+2022-02-19T23:41:28.271083 read package to send and change status:10000000026 new_package 2022-02-19 23:41:26 
+2022-02-19T23:41:28.271223 read package to send and change status:10000000027 new_package 2022-02-19 23:41:26 
+2022-02-19T23:41:28.271422 read package to send and change status:10000000028 new_package 2022-02-19 23:41:27 
+2022-02-19T23:41:28.271589 read package to send and change status:10000000029 new_package 2022-02-19 23:41:27 
+2022-02-19T23:41:28.271731 read package to send and change status:10000000030 new_package 2022-02-19 23:41:27 
+2022-02-19T23:41:28.275147 add the record in table messages:  new message: 10000000022 delivered_package status: new_message
+2022-02-19T23:41:28.278089 add the record in table messages:  new message: 10000000026 delivered_package status: new_message
+2022-02-19T23:41:28.280879 add the record in table messages:  new message: 10000000029 delivered_package status: new_message
+2022-02-19T23:41:28.281409 change status in table packages: 10000000019 new_package 2022-02-19 23:41:24
+2022-02-19T23:41:28.281542 change status in table packages: 10000000021 new_package 2022-02-19 23:41:24
+2022-02-19T23:41:28.281669 change status in table packages: 10000000022 delivered_package 2022-02-19 23:41:25
+2022-02-19T23:41:28.281830 change status in table packages: 10000000023 new_package 2022-02-19 23:41:25
+2022-02-19T23:41:28.281955 change status in table packages: 10000000024 new_package 2022-02-19 23:41:25
+2022-02-19T23:41:28.282082 change status in table packages: 10000000025 new_package 2022-02-19 23:41:26
+2022-02-19T23:41:28.282190 change status in table packages: 10000000026 delivered_package 2022-02-19 23:41:26
+2022-02-19T23:41:28.282302 change status in table packages: 10000000027 new_package 2022-02-19 23:41:26
+2022-02-19T23:41:28.282402 change status in table packages: 10000000028 new_package 2022-02-19 23:41:27
+2022-02-19T23:41:28.282501 change status in table packages: 10000000029 delivered_package 2022-02-19 23:41:27
+2022-02-19T23:41:28.282613 change status in table packages: 10000000030 new_package 2022-02-19 23:41:27
+2022-02-19T23:41:29.269838 read package to send and change status:10000000019 new_package 2022-02-19 23:41:24 
+2022-02-19T23:41:29.270035 read package to send and change status:10000000021 new_package 2022-02-19 23:41:24 
+2022-02-19T23:41:29.270184 read package to send and change status:10000000023 new_package 2022-02-19 23:41:25 
+2022-02-19T23:41:29.270310 read package to send and change status:10000000024 new_package 2022-02-19 23:41:25 
+2022-02-19T23:41:29.270527 read package to send and change status:10000000025 new_package 2022-02-19 23:41:26 
+2022-02-19T23:41:29.270670 read package to send and change status:10000000027 new_package 2022-02-19 23:41:26 
+2022-02-19T23:41:29.270853 read package to send and change status:10000000028 new_package 2022-02-19 23:41:27 
+2022-02-19T23:41:29.271032 read package to send and change status:10000000030 new_package 2022-02-19 23:41:27 
+2022-02-19T23:41:29.271181 read package to send and change status:10000000031 new_package 2022-02-19 23:41:28 
+2022-02-19T23:41:29.271306 read package to send and change status:10000000032 new_package 2022-02-19 23:41:28 
+2022-02-19T23:41:29.271484 read package to send and change status:10000000033 new_package 2022-02-19 23:41:28 
+2022-02-19T23:41:29.272932 change status in table packages: 10000000019 new_package 2022-02-19 23:41:24
+2022-02-19T23:41:29.273076 change status in table packages: 10000000021 new_package 2022-02-19 23:41:24
+2022-02-19T23:41:29.273193 change status in table packages: 10000000023 new_package 2022-02-19 23:41:25
+2022-02-19T23:41:29.273309 change status in table packages: 10000000024 new_package 2022-02-19 23:41:25
+2022-02-19T23:41:29.273410 change status in table packages: 10000000025 new_package 2022-02-19 23:41:26
+2022-02-19T23:41:29.273528 change status in table packages: 10000000027 new_package 2022-02-19 23:41:26
+2022-02-19T23:41:29.273635 change status in table packages: 10000000028 new_package 2022-02-19 23:41:27
+2022-02-19T23:41:29.273734 change status in table packages: 10000000030 new_package 2022-02-19 23:41:27
+2022-02-19T23:41:29.273875 change status in table packages: 10000000031 new_package 2022-02-19 23:41:28
+2022-02-19T23:41:29.273975 change status in table packages: 10000000032 new_package 2022-02-19 23:41:28
+2022-02-19T23:41:29.274084 change status in table packages: 10000000033 new_package 2022-02-19 23:41:28
+2022-02-19T23:41:30.270865 read package to send and change status:10000000019 new_package 2022-02-19 23:41:24 
+2022-02-19T23:41:30.271236 read package to send and change status:10000000021 new_package 2022-02-19 23:41:24 
+2022-02-19T23:41:30.271457 read package to send and change status:10000000023 new_package 2022-02-19 23:41:25 
+2022-02-19T23:41:30.271623 read package to send and change status:10000000024 new_package 2022-02-19 23:41:25 
+2022-02-19T23:41:30.271761 read package to send and change status:10000000025 new_package 2022-02-19 23:41:26 
+2022-02-19T23:41:30.271907 read package to send and change status:10000000027 new_package 2022-02-19 23:41:26 
+2022-02-19T23:41:30.272118 read package to send and change status:10000000028 new_package 2022-02-19 23:41:27 
+2022-02-19T23:41:30.272329 read package to send and change status:10000000030 new_package 2022-02-19 23:41:27 
+2022-02-19T23:41:30.272556 read package to send and change status:10000000031 new_package 2022-02-19 23:41:28 
+2022-02-19T23:41:30.272803 read package to send and change status:10000000032 new_package 2022-02-19 23:41:28 
+2022-02-19T23:41:30.273032 read package to send and change status:10000000033 new_package 2022-02-19 23:41:28 
+2022-02-19T23:41:30.273335 read package to send and change status:10000000034 new_package 2022-02-19 23:41:29 
+2022-02-19T23:41:30.273567 read package to send and change status:10000000035 new_package 2022-02-19 23:41:29 
+2022-02-19T23:41:30.273831 read package to send and change status:10000000036 new_package 2022-02-19 23:41:29 
+2022-02-19T23:41:30.276700 add the record in table messages:  new message: 10000000019 overdue_package status: new_message
+2022-02-19T23:41:30.279162 add the record in table messages:  new message: 10000000021 overdue_package status: new_message
+2022-02-19T23:41:30.281421 add the record in table messages:  new message: 10000000025 delivered_package status: new_message
+2022-02-19T23:41:30.283791 add the record in table messages:  new message: 10000000031 delivered_package status: new_message
+2022-02-19T23:41:30.284943 change status in table packages: 10000000019 overdue_package 2022-02-19 23:41:24
+2022-02-19T23:41:30.285091 change status in table packages: 10000000021 overdue_package 2022-02-19 23:41:24
+2022-02-19T23:41:30.285194 change status in table packages: 10000000023 new_package 2022-02-19 23:41:25
+2022-02-19T23:41:30.285294 change status in table packages: 10000000024 new_package 2022-02-19 23:41:25
+2022-02-19T23:41:30.285380 change status in table packages: 10000000025 delivered_package 2022-02-19 23:41:26
+2022-02-19T23:41:30.285463 change status in table packages: 10000000027 new_package 2022-02-19 23:41:26
+2022-02-19T23:41:30.285554 change status in table packages: 10000000028 new_package 2022-02-19 23:41:27
+2022-02-19T23:41:30.285635 change status in table packages: 10000000030 new_package 2022-02-19 23:41:27
+2022-02-19T23:41:30.285716 change status in table packages: 10000000031 delivered_package 2022-02-19 23:41:28
+2022-02-19T23:41:30.285873 change status in table packages: 10000000032 new_package 2022-02-19 23:41:28
+2022-02-19T23:41:30.285958 change status in table packages: 10000000033 new_package 2022-02-19 23:41:28
+2022-02-19T23:41:30.286061 change status in table packages: 10000000034 new_package 2022-02-19 23:41:29
+2022-02-19T23:41:30.286143 change status in table packages: 10000000035 new_package 2022-02-19 23:41:29
+2022-02-19T23:41:30.286223 change status in table packages: 10000000036 new_package 2022-02-19 23:41:29
+2022-02-19T23:41:31.269715 read package to send and change status:10000000023 new_package 2022-02-19 23:41:25 
+2022-02-19T23:41:31.270047 read package to send and change status:10000000024 new_package 2022-02-19 23:41:25 
+2022-02-19T23:41:31.270266 read package to send and change status:10000000027 new_package 2022-02-19 23:41:26 
+2022-02-19T23:41:31.270450 read package to send and change status:10000000028 new_package 2022-02-19 23:41:27 
+2022-02-19T23:41:31.270625 read package to send and change status:10000000030 new_package 2022-02-19 23:41:27 
+2022-02-19T23:41:31.270817 read package to send and change status:10000000032 new_package 2022-02-19 23:41:28 
+2022-02-19T23:41:31.270985 read package to send and change status:10000000033 new_package 2022-02-19 23:41:28 
+2022-02-19T23:41:31.271148 read package to send and change status:10000000034 new_package 2022-02-19 23:41:29 
+2022-02-19T23:41:31.271344 read package to send and change status:10000000035 new_package 2022-02-19 23:41:29 
+2022-02-19T23:41:31.271514 read package to send and change status:10000000036 new_package 2022-02-19 23:41:29 
+2022-02-19T23:41:31.271701 read package to send and change status:10000000037 new_package 2022-02-19 23:41:30 
+2022-02-19T23:41:31.271873 read package to send and change status:10000000038 new_package 2022-02-19 23:41:30 
+2022-02-19T23:41:31.272043 read package to send and change status:10000000039 new_package 2022-02-19 23:41:30 
+2022-02-19T23:41:31.274749 add the record in table messages:  new message: 10000000023 overdue_package status: new_message
+2022-02-19T23:41:31.277220 add the record in table messages:  new message: 10000000024 overdue_package status: new_message
+2022-02-19T23:41:31.279785 add the record in table messages:  new message: 10000000028 delivered_package status: new_message
+2022-02-19T23:41:31.282481 add the record in table messages:  new message: 10000000034 delivered_package status: new_message
+2022-02-19T23:41:31.284915 add the record in table messages:  new message: 10000000035 delivered_package status: new_message
+2022-02-19T23:41:31.285903 change status in table packages: 10000000023 overdue_package 2022-02-19 23:41:25
+2022-02-19T23:41:31.286042 change status in table packages: 10000000024 overdue_package 2022-02-19 23:41:25
+2022-02-19T23:41:31.286142 change status in table packages: 10000000027 new_package 2022-02-19 23:41:26
+2022-02-19T23:41:31.286257 change status in table packages: 10000000028 delivered_package 2022-02-19 23:41:27
+2022-02-19T23:41:31.286345 change status in table packages: 10000000030 new_package 2022-02-19 23:41:27
+2022-02-19T23:41:31.286444 change status in table packages: 10000000032 new_package 2022-02-19 23:41:28
+2022-02-19T23:41:31.286531 change status in table packages: 10000000033 new_package 2022-02-19 23:41:28
+2022-02-19T23:41:31.286618 change status in table packages: 10000000034 delivered_package 2022-02-19 23:41:29
+2022-02-19T23:41:31.286711 change status in table packages: 10000000035 delivered_package 2022-02-19 23:41:29
+2022-02-19T23:41:31.286792 change status in table packages: 10000000036 new_package 2022-02-19 23:41:29
+2022-02-19T23:41:31.286986 change status in table packages: 10000000037 new_package 2022-02-19 23:41:30
+2022-02-19T23:41:31.287086 change status in table packages: 10000000038 new_package 2022-02-19 23:41:30
+2022-02-19T23:41:31.287175 change status in table packages: 10000000039 new_package 2022-02-19 23:41:30
+2022-02-19T23:41:32.270447 read package to send and change status:10000000027 new_package 2022-02-19 23:41:26 
+2022-02-19T23:41:32.270620 read package to send and change status:10000000030 new_package 2022-02-19 23:41:27 
+2022-02-19T23:41:32.270733 read package to send and change status:10000000032 new_package 2022-02-19 23:41:28 
+2022-02-19T23:41:32.270833 read package to send and change status:10000000033 new_package 2022-02-19 23:41:28 
+2022-02-19T23:41:32.270931 read package to send and change status:10000000036 new_package 2022-02-19 23:41:29 
+2022-02-19T23:41:32.271028 read package to send and change status:10000000037 new_package 2022-02-19 23:41:30 
+2022-02-19T23:41:32.271124 read package to send and change status:10000000038 new_package 2022-02-19 23:41:30 
+2022-02-19T23:41:32.271228 read package to send and change status:10000000039 new_package 2022-02-19 23:41:30 
+2022-02-19T23:41:32.271406 read package to send and change status:10000000040 new_package 2022-02-19 23:41:32 
+2022-02-19T23:41:32.271558 read package to send and change status:10000000041 new_package 2022-02-19 23:41:32 
+2022-02-19T23:41:32.271717 read package to send and change status:10000000042 new_package 2022-02-19 23:41:32 
+2022-02-19T23:41:32.274369 add the record in table messages:  new message: 10000000027 overdue_package status: new_message
+2022-02-19T23:41:32.276911 add the record in table messages:  new message: 10000000032 delivered_package status: new_message
+2022-02-19T23:41:32.279191 add the record in table messages:  new message: 10000000036 delivered_package status: new_message
+2022-02-19T23:41:32.281428 add the record in table messages:  new message: 10000000040 delivered_package status: new_message
+2022-02-19T23:41:32.282102 change status in table packages: 10000000027 overdue_package 2022-02-19 23:41:26
+2022-02-19T23:41:32.282227 change status in table packages: 10000000030 new_package 2022-02-19 23:41:27
+2022-02-19T23:41:32.282320 change status in table packages: 10000000032 delivered_package 2022-02-19 23:41:28
+2022-02-19T23:41:32.282405 change status in table packages: 10000000033 new_package 2022-02-19 23:41:28
+2022-02-19T23:41:32.282484 change status in table packages: 10000000036 delivered_package 2022-02-19 23:41:29
+2022-02-19T23:41:32.282561 change status in table packages: 10000000037 new_package 2022-02-19 23:41:30
+2022-02-19T23:41:32.282641 change status in table packages: 10000000038 new_package 2022-02-19 23:41:30
+2022-02-19T23:41:32.282716 change status in table packages: 10000000039 new_package 2022-02-19 23:41:30
+2022-02-19T23:41:32.282795 change status in table packages: 10000000040 delivered_package 2022-02-19 23:41:32
+2022-02-19T23:41:32.282868 change status in table packages: 10000000041 new_package 2022-02-19 23:41:32
+2022-02-19T23:41:32.282943 change status in table packages: 10000000042 new_package 2022-02-19 23:41:32
+2022-02-19T23:41:33.270285 read package to send and change status:10000000041 new_package 2022-02-19 23:41:32 
+2022-02-19T23:41:33.270638 read package to send and change status:10000000042 new_package 2022-02-19 23:41:32 
+2022-02-19T23:41:33.270831 read package to send and change status:10000000030 new_package 2022-02-19 23:41:27 
+2022-02-19T23:41:33.271288 read package to send and change status:10000000033 new_package 2022-02-19 23:41:28 
+2022-02-19T23:41:33.271524 read package to send and change status:10000000037 new_package 2022-02-19 23:41:30 
+2022-02-19T23:41:33.271687 read package to send and change status:10000000038 new_package 2022-02-19 23:41:30 
+2022-02-19T23:41:33.271835 read package to send and change status:10000000039 new_package 2022-02-19 23:41:30 
+2022-02-19T23:41:33.271978 read package to send and change status:10000000043 new_package 2022-02-19 23:41:33 
+2022-02-19T23:41:33.272115 read package to send and change status:10000000044 new_package 2022-02-19 23:41:33 
+2022-02-19T23:41:33.272255 read package to send and change status:10000000045 new_package 2022-02-19 23:41:33 
+2022-02-19T23:41:33.274929 add the record in table messages:  new message: 10000000030 overdue_package status: new_message
+2022-02-19T23:41:33.277334 add the record in table messages:  new message: 10000000037 delivered_package status: new_message
+2022-02-19T23:41:33.279770 add the record in table messages:  new message: 10000000039 delivered_package status: new_message
+2022-02-19T23:41:33.280566 change status in table packages: 10000000041 new_package 2022-02-19 23:41:32
+2022-02-19T23:41:33.280698 change status in table packages: 10000000042 new_package 2022-02-19 23:41:32
+2022-02-19T23:41:33.280791 change status in table packages: 10000000030 overdue_package 2022-02-19 23:41:27
+2022-02-19T23:41:33.280876 change status in table packages: 10000000033 new_package 2022-02-19 23:41:28
+2022-02-19T23:41:33.280956 change status in table packages: 10000000037 delivered_package 2022-02-19 23:41:30
+2022-02-19T23:41:33.281034 change status in table packages: 10000000038 new_package 2022-02-19 23:41:30
+2022-02-19T23:41:33.281109 change status in table packages: 10000000039 delivered_package 2022-02-19 23:41:30
+2022-02-19T23:41:33.281184 change status in table packages: 10000000043 new_package 2022-02-19 23:41:33
+2022-02-19T23:41:33.281257 change status in table packages: 10000000044 new_package 2022-02-19 23:41:33
+2022-02-19T23:41:33.281330 change status in table packages: 10000000045 new_package 2022-02-19 23:41:33
+2022-02-19T23:41:34.268648 read package to send and change status:10000000041 new_package 2022-02-19 23:41:32 
+2022-02-19T23:41:34.268726 read package to send and change status:10000000042 new_package 2022-02-19 23:41:32 
+2022-02-19T23:41:34.268771 read package to send and change status:10000000033 new_package 2022-02-19 23:41:28 
+2022-02-19T23:41:34.268809 read package to send and change status:10000000038 new_package 2022-02-19 23:41:30 
+2022-02-19T23:41:34.268845 read package to send and change status:10000000043 new_package 2022-02-19 23:41:33 
+2022-02-19T23:41:34.268882 read package to send and change status:10000000044 new_package 2022-02-19 23:41:33 
+2022-02-19T23:41:34.268919 read package to send and change status:10000000045 new_package 2022-02-19 23:41:33 
+2022-02-19T23:41:34.269981 add the record in table messages:  new message: 10000000033 overdue_package status: new_message
+2022-02-19T23:41:34.270356 change status in table packages: 10000000041 new_package 2022-02-19 23:41:32
+2022-02-19T23:41:34.270411 change status in table packages: 10000000042 new_package 2022-02-19 23:41:32
+2022-02-19T23:41:34.270451 change status in table packages: 10000000033 overdue_package 2022-02-19 23:41:28
+2022-02-19T23:41:34.270494 change status in table packages: 10000000038 new_package 2022-02-19 23:41:30
+2022-02-19T23:41:34.270528 change status in table packages: 10000000043 new_package 2022-02-19 23:41:33
+2022-02-19T23:41:34.270560 change status in table packages: 10000000044 new_package 2022-02-19 23:41:33
+2022-02-19T23:41:34.270591 change status in table packages: 10000000045 new_package 2022-02-19 23:41:33
+2022-02-19T23:41:35.270522 read package to send and change status:10000000041 new_package 2022-02-19 23:41:32 
+2022-02-19T23:41:35.270681 read package to send and change status:10000000042 new_package 2022-02-19 23:41:32 
+2022-02-19T23:41:35.270778 read package to send and change status:10000000046 new_package 2022-02-19 23:41:34 
+2022-02-19T23:41:35.270857 read package to send and change status:10000000047 new_package 2022-02-19 23:41:34 
+2022-02-19T23:41:35.270934 read package to send and change status:10000000048 new_package 2022-02-19 23:41:34 
+2022-02-19T23:41:35.271008 read package to send and change status:10000000038 new_package 2022-02-19 23:41:30 
+2022-02-19T23:41:35.271082 read package to send and change status:10000000043 new_package 2022-02-19 23:41:33 
+2022-02-19T23:41:35.271208 read package to send and change status:10000000044 new_package 2022-02-19 23:41:33 
+2022-02-19T23:41:35.271294 read package to send and change status:10000000045 new_package 2022-02-19 23:41:33 
+2022-02-19T23:41:35.273342 add the record in table messages:  new message: 10000000042 delivered_package status: new_message
+2022-02-19T23:41:35.275075 add the record in table messages:  new message: 10000000047 delivered_package status: new_message
+2022-02-19T23:41:35.277117 add the record in table messages:  new message: 10000000045 delivered_package status: new_message
+2022-02-19T23:41:35.277401 change status in table packages: 10000000041 new_package 2022-02-19 23:41:32
+2022-02-19T23:41:35.277568 change status in table packages: 10000000042 delivered_package 2022-02-19 23:41:32
+2022-02-19T23:41:35.277691 change status in table packages: 10000000046 new_package 2022-02-19 23:41:34
+2022-02-19T23:41:35.277811 change status in table packages: 10000000047 delivered_package 2022-02-19 23:41:34
+2022-02-19T23:41:35.277892 change status in table packages: 10000000048 new_package 2022-02-19 23:41:34
+2022-02-19T23:41:35.277957 change status in table packages: 10000000038 new_package 2022-02-19 23:41:30
+2022-02-19T23:41:35.278019 change status in table packages: 10000000043 new_package 2022-02-19 23:41:33
+2022-02-19T23:41:35.278080 change status in table packages: 10000000044 new_package 2022-02-19 23:41:33
+2022-02-19T23:41:35.278140 change status in table packages: 10000000045 delivered_package 2022-02-19 23:41:33
+2022-02-19T23:41:36.270164 read package to send and change status:10000000041 new_package 2022-02-19 23:41:32 
+2022-02-19T23:41:36.270349 read package to send and change status:10000000046 new_package 2022-02-19 23:41:34 
+2022-02-19T23:41:36.270457 read package to send and change status:10000000048 new_package 2022-02-19 23:41:34 
+2022-02-19T23:41:36.270674 read package to send and change status:10000000038 new_package 2022-02-19 23:41:30 
+2022-02-19T23:41:36.270824 read package to send and change status:10000000043 new_package 2022-02-19 23:41:33 
+2022-02-19T23:41:36.270969 read package to send and change status:10000000044 new_package 2022-02-19 23:41:33 
+2022-02-19T23:41:36.271113 read package to send and change status:10000000049 new_package 2022-02-19 23:41:35 
+2022-02-19T23:41:36.271313 read package to send and change status:10000000050 new_package 2022-02-19 23:41:35 
+2022-02-19T23:41:36.271466 read package to send and change status:10000000051 new_package 2022-02-19 23:41:35 
+2022-02-19T23:41:36.274374 add the record in table messages:  new message: 10000000046 delivered_package status: new_message
+2022-02-19T23:41:36.276376 add the record in table messages:  new message: 10000000048 delivered_package status: new_message
+2022-02-19T23:41:36.278614 add the record in table messages:  new message: 10000000038 overdue_package status: new_message
+2022-02-19T23:41:36.281204 add the record in table messages:  new message: 10000000049 delivered_package status: new_message
+2022-02-19T23:41:36.282019 change status in table packages: 10000000041 new_package 2022-02-19 23:41:32
+2022-02-19T23:41:36.282178 change status in table packages: 10000000046 delivered_package 2022-02-19 23:41:34
+2022-02-19T23:41:36.282298 change status in table packages: 10000000048 delivered_package 2022-02-19 23:41:34
+2022-02-19T23:41:36.282410 change status in table packages: 10000000038 overdue_package 2022-02-19 23:41:30
+2022-02-19T23:41:36.282514 change status in table packages: 10000000043 new_package 2022-02-19 23:41:33
+2022-02-19T23:41:36.282811 change status in table packages: 10000000044 new_package 2022-02-19 23:41:33
+2022-02-19T23:41:36.282920 change status in table packages: 10000000049 delivered_package 2022-02-19 23:41:35
+2022-02-19T23:41:36.283023 change status in table packages: 10000000050 new_package 2022-02-19 23:41:35
+2022-02-19T23:41:36.283124 change status in table packages: 10000000051 new_package 2022-02-19 23:41:35
+2022-02-19T23:41:37.269756 read package to send and change status:10000000041 new_package 2022-02-19 23:41:32 
+2022-02-19T23:41:37.269998 read package to send and change status:10000000043 new_package 2022-02-19 23:41:33 
+2022-02-19T23:41:37.270110 read package to send and change status:10000000044 new_package 2022-02-19 23:41:33 
+2022-02-19T23:41:37.270205 read package to send and change status:10000000050 new_package 2022-02-19 23:41:35 
+2022-02-19T23:41:37.270324 read package to send and change status:10000000051 new_package 2022-02-19 23:41:35 
+2022-02-19T23:41:37.270722 read package to send and change status:10000000052 new_package 2022-02-19 23:41:36 
+2022-02-19T23:41:37.270898 read package to send and change status:10000000053 new_package 2022-02-19 23:41:36 
+2022-02-19T23:41:37.271109 read package to send and change status:10000000054 new_package 2022-02-19 23:41:36 
+2022-02-19T23:41:37.274166 add the record in table messages:  new message: 10000000044 delivered_package status: new_message
+2022-02-19T23:41:37.275750 change status in table packages: 10000000041 new_package 2022-02-19 23:41:32
+2022-02-19T23:41:37.276028 change status in table packages: 10000000043 new_package 2022-02-19 23:41:33
+2022-02-19T23:41:37.276156 change status in table packages: 10000000044 delivered_package 2022-02-19 23:41:33
+2022-02-19T23:41:37.276273 change status in table packages: 10000000050 new_package 2022-02-19 23:41:35
+2022-02-19T23:41:37.276386 change status in table packages: 10000000051 new_package 2022-02-19 23:41:35
+2022-02-19T23:41:37.276496 change status in table packages: 10000000052 new_package 2022-02-19 23:41:36
+2022-02-19T23:41:37.276604 change status in table packages: 10000000053 new_package 2022-02-19 23:41:36
+2022-02-19T23:41:37.276752 change status in table packages: 10000000054 new_package 2022-02-19 23:41:36
+2022-02-19T23:41:38.270459 read package to send and change status:10000000041 new_package 2022-02-19 23:41:32 
+2022-02-19T23:41:38.270598 read package to send and change status:10000000043 new_package 2022-02-19 23:41:33 
+2022-02-19T23:41:38.270673 read package to send and change status:10000000050 new_package 2022-02-19 23:41:35 
+2022-02-19T23:41:38.270738 read package to send and change status:10000000051 new_package 2022-02-19 23:41:35 
+2022-02-19T23:41:38.270798 read package to send and change status:10000000052 new_package 2022-02-19 23:41:36 
+2022-02-19T23:41:38.270857 read package to send and change status:10000000053 new_package 2022-02-19 23:41:36 
+2022-02-19T23:41:38.270916 read package to send and change status:10000000054 new_package 2022-02-19 23:41:36 
+2022-02-19T23:41:38.271086 read package to send and change status:10000000055 new_package 2022-02-19 23:41:37 
+2022-02-19T23:41:38.271264 read package to send and change status:10000000056 new_package 2022-02-19 23:41:37 
+2022-02-19T23:41:38.271351 read package to send and change status:10000000057 new_package 2022-02-19 23:41:37 
+2022-02-19T23:41:38.273729 add the record in table messages:  new message: 10000000041 overdue_package status: new_message
+2022-02-19T23:41:38.274951 change status in table packages: 10000000041 overdue_package 2022-02-19 23:41:32
+2022-02-19T23:41:38.275133 change status in table packages: 10000000043 new_package 2022-02-19 23:41:33
+2022-02-19T23:41:38.275259 change status in table packages: 10000000050 new_package 2022-02-19 23:41:35
+2022-02-19T23:41:38.275497 change status in table packages: 10000000051 new_package 2022-02-19 23:41:35
+2022-02-19T23:41:38.275594 change status in table packages: 10000000052 new_package 2022-02-19 23:41:36
+2022-02-19T23:41:38.275663 change status in table packages: 10000000053 new_package 2022-02-19 23:41:36
+2022-02-19T23:41:38.275720 change status in table packages: 10000000054 new_package 2022-02-19 23:41:36
+2022-02-19T23:41:38.275774 change status in table packages: 10000000055 new_package 2022-02-19 23:41:37
+2022-02-19T23:41:38.275830 change status in table packages: 10000000056 new_package 2022-02-19 23:41:37
+2022-02-19T23:41:38.275886 change status in table packages: 10000000057 new_package 2022-02-19 23:41:37
+2022-02-19T23:41:39.270921 read package to send and change status:10000000043 new_package 2022-02-19 23:41:33 
+2022-02-19T23:41:39.271042 read package to send and change status:10000000050 new_package 2022-02-19 23:41:35 
+2022-02-19T23:41:39.271111 read package to send and change status:10000000051 new_package 2022-02-19 23:41:35 
+2022-02-19T23:41:39.271231 read package to send and change status:10000000052 new_package 2022-02-19 23:41:36 
+2022-02-19T23:41:39.271289 read package to send and change status:10000000053 new_package 2022-02-19 23:41:36 
+2022-02-19T23:41:39.271371 read package to send and change status:10000000054 new_package 2022-02-19 23:41:36 
+2022-02-19T23:41:39.271438 read package to send and change status:10000000055 new_package 2022-02-19 23:41:37 
+2022-02-19T23:41:39.271547 read package to send and change status:10000000056 new_package 2022-02-19 23:41:37 
+2022-02-19T23:41:39.271650 read package to send and change status:10000000057 new_package 2022-02-19 23:41:37 
+2022-02-19T23:41:39.271723 read package to send and change status:10000000058 new_package 2022-02-19 23:41:38 
+2022-02-19T23:41:39.271814 read package to send and change status:10000000059 new_package 2022-02-19 23:41:38 
+2022-02-19T23:41:39.271877 read package to send and change status:10000000060 new_package 2022-02-19 23:41:38 
+2022-02-19T23:41:39.273793 add the record in table messages:  new message: 10000000043 overdue_package status: new_message
+2022-02-19T23:41:39.275142 change status in table packages: 10000000043 overdue_package 2022-02-19 23:41:33
+2022-02-19T23:41:39.275235 change status in table packages: 10000000050 new_package 2022-02-19 23:41:35
+2022-02-19T23:41:39.275297 change status in table packages: 10000000051 new_package 2022-02-19 23:41:35
+2022-02-19T23:41:39.275358 change status in table packages: 10000000052 new_package 2022-02-19 23:41:36
+2022-02-19T23:41:39.275408 change status in table packages: 10000000053 new_package 2022-02-19 23:41:36
+2022-02-19T23:41:39.275460 change status in table packages: 10000000054 new_package 2022-02-19 23:41:36
+2022-02-19T23:41:39.275506 change status in table packages: 10000000055 new_package 2022-02-19 23:41:37
+2022-02-19T23:41:39.275550 change status in table packages: 10000000056 new_package 2022-02-19 23:41:37
+2022-02-19T23:41:39.275593 change status in table packages: 10000000057 new_package 2022-02-19 23:41:37
+2022-02-19T23:41:39.275635 change status in table packages: 10000000058 new_package 2022-02-19 23:41:38
+2022-02-19T23:41:39.275678 change status in table packages: 10000000059 new_package 2022-02-19 23:41:38
+2022-02-19T23:41:39.275721 change status in table packages: 10000000060 new_package 2022-02-19 23:41:38
+2022-02-19T23:41:40.272002 read package to send and change status:10000000050 new_package 2022-02-19 23:41:35 
+2022-02-19T23:41:40.272132 read package to send and change status:10000000051 new_package 2022-02-19 23:41:35 
+2022-02-19T23:41:40.272198 read package to send and change status:10000000052 new_package 2022-02-19 23:41:36 
+2022-02-19T23:41:40.272283 read package to send and change status:10000000053 new_package 2022-02-19 23:41:36 
+2022-02-19T23:41:40.272339 read package to send and change status:10000000054 new_package 2022-02-19 23:41:36 
+2022-02-19T23:41:40.272385 read package to send and change status:10000000055 new_package 2022-02-19 23:41:37 
+2022-02-19T23:41:40.272429 read package to send and change status:10000000056 new_package 2022-02-19 23:41:37 
+2022-02-19T23:41:40.272471 read package to send and change status:10000000057 new_package 2022-02-19 23:41:37 
+2022-02-19T23:41:40.272775 read package to send and change status:10000000058 new_package 2022-02-19 23:41:38 
+2022-02-19T23:41:40.272869 read package to send and change status:10000000059 new_package 2022-02-19 23:41:38 
+2022-02-19T23:41:40.272952 read package to send and change status:10000000060 new_package 2022-02-19 23:41:38 
+2022-02-19T23:41:40.273044 read package to send and change status:10000000061 new_package 2022-02-19 23:41:39 
+2022-02-19T23:41:40.273127 read package to send and change status:10000000062 new_package 2022-02-19 23:41:39 
+2022-02-19T23:41:40.273208 read package to send and change status:10000000063 new_package 2022-02-19 23:41:39 
+2022-02-19T23:41:40.276114 add the record in table messages:  new message: 10000000052 delivered_package status: new_message
+2022-02-19T23:41:40.278677 add the record in table messages:  new message: 10000000056 delivered_package status: new_message
+2022-02-19T23:41:40.280662 add the record in table messages:  new message: 10000000059 delivered_package status: new_message
+2022-02-19T23:41:40.282362 add the record in table messages:  new message: 10000000061 delivered_package status: new_message
+2022-02-19T23:41:40.282926 change status in table packages: 10000000050 new_package 2022-02-19 23:41:35
+2022-02-19T23:41:40.283011 change status in table packages: 10000000051 new_package 2022-02-19 23:41:35
+2022-02-19T23:41:40.283074 change status in table packages: 10000000052 delivered_package 2022-02-19 23:41:36
+2022-02-19T23:41:40.283130 change status in table packages: 10000000053 new_package 2022-02-19 23:41:36
+2022-02-19T23:41:40.283193 change status in table packages: 10000000054 new_package 2022-02-19 23:41:36
+2022-02-19T23:41:40.283300 change status in table packages: 10000000055 new_package 2022-02-19 23:41:37
+2022-02-19T23:41:40.283342 change status in table packages: 10000000056 delivered_package 2022-02-19 23:41:37
+2022-02-19T23:41:40.283428 change status in table packages: 10000000057 new_package 2022-02-19 23:41:37
+2022-02-19T23:41:40.283501 change status in table packages: 10000000058 new_package 2022-02-19 23:41:38
+2022-02-19T23:41:40.283823 change status in table packages: 10000000059 delivered_package 2022-02-19 23:41:38
+2022-02-19T23:41:40.283885 change status in table packages: 10000000060 new_package 2022-02-19 23:41:38
+2022-02-19T23:41:40.283929 change status in table packages: 10000000061 delivered_package 2022-02-19 23:41:39
+2022-02-19T23:41:40.283970 change status in table packages: 10000000062 new_package 2022-02-19 23:41:39
+2022-02-19T23:41:40.284011 change status in table packages: 10000000063 new_package 2022-02-19 23:41:39
+2022-02-19T23:41:41.272563 read package to send and change status:10000000050 new_package 2022-02-19 23:41:35 
+2022-02-19T23:41:41.272684 read package to send and change status:10000000051 new_package 2022-02-19 23:41:35 
+2022-02-19T23:41:41.272745 read package to send and change status:10000000053 new_package 2022-02-19 23:41:36 
+2022-02-19T23:41:41.272907 read package to send and change status:10000000054 new_package 2022-02-19 23:41:36 
+2022-02-19T23:41:41.272989 read package to send and change status:10000000055 new_package 2022-02-19 23:41:37 
+2022-02-19T23:41:41.273066 read package to send and change status:10000000057 new_package 2022-02-19 23:41:37 
+2022-02-19T23:41:41.273139 read package to send and change status:10000000058 new_package 2022-02-19 23:41:38 
+2022-02-19T23:41:41.273213 read package to send and change status:10000000060 new_package 2022-02-19 23:41:38 
+2022-02-19T23:41:41.273285 read package to send and change status:10000000062 new_package 2022-02-19 23:41:39 
+2022-02-19T23:41:41.273362 read package to send and change status:10000000063 new_package 2022-02-19 23:41:39 
+2022-02-19T23:41:41.273436 read package to send and change status:10000000064 new_package 2022-02-19 23:41:40 
+2022-02-19T23:41:41.273527 read package to send and change status:10000000065 new_package 2022-02-19 23:41:40 
+2022-02-19T23:41:41.273659 read package to send and change status:10000000066 new_package 2022-02-19 23:41:40 
+2022-02-19T23:41:41.276360 add the record in table messages:  new message: 10000000050 overdue_package status: new_message
+2022-02-19T23:41:41.278943 add the record in table messages:  new message: 10000000051 overdue_package status: new_message
+2022-02-19T23:41:41.281034 add the record in table messages:  new message: 10000000054 delivered_package status: new_message
+2022-02-19T23:41:41.283718 add the record in table messages:  new message: 10000000060 delivered_package status: new_message
+2022-02-19T23:41:41.286006 add the record in table messages:  new message: 10000000063 delivered_package status: new_message
+2022-02-19T23:41:41.288505 add the record in table messages:  new message: 10000000065 delivered_package status: new_message
+2022-02-19T23:41:41.289137 change status in table packages: 10000000050 overdue_package 2022-02-19 23:41:35
+2022-02-19T23:41:41.289246 change status in table packages: 10000000051 overdue_package 2022-02-19 23:41:35
+2022-02-19T23:41:41.289329 change status in table packages: 10000000053 new_package 2022-02-19 23:41:36
+2022-02-19T23:41:41.289417 change status in table packages: 10000000054 delivered_package 2022-02-19 23:41:36
+2022-02-19T23:41:41.289486 change status in table packages: 10000000055 new_package 2022-02-19 23:41:37
+2022-02-19T23:41:41.289554 change status in table packages: 10000000057 new_package 2022-02-19 23:41:37
+2022-02-19T23:41:41.289619 change status in table packages: 10000000058 new_package 2022-02-19 23:41:38
+2022-02-19T23:41:41.289691 change status in table packages: 10000000060 delivered_package 2022-02-19 23:41:38
+2022-02-19T23:41:41.289761 change status in table packages: 10000000062 new_package 2022-02-19 23:41:39
+2022-02-19T23:41:41.289894 change status in table packages: 10000000063 delivered_package 2022-02-19 23:41:39
+2022-02-19T23:41:41.289962 change status in table packages: 10000000064 new_package 2022-02-19 23:41:40
+2022-02-19T23:41:41.290029 change status in table packages: 10000000065 delivered_package 2022-02-19 23:41:40
+2022-02-19T23:41:41.290094 change status in table packages: 10000000066 new_package 2022-02-19 23:41:40
+2022-02-19T23:41:42.272182 read package to send and change status:10000000053 new_package 2022-02-19 23:41:36 
+2022-02-19T23:41:42.272295 read package to send and change status:10000000055 new_package 2022-02-19 23:41:37 
+2022-02-19T23:41:42.272361 read package to send and change status:10000000057 new_package 2022-02-19 23:41:37 
+2022-02-19T23:41:42.272426 read package to send and change status:10000000058 new_package 2022-02-19 23:41:38 
+2022-02-19T23:41:42.272482 read package to send and change status:10000000062 new_package 2022-02-19 23:41:39 
+2022-02-19T23:41:42.272534 read package to send and change status:10000000064 new_package 2022-02-19 23:41:40 
+2022-02-19T23:41:42.272585 read package to send and change status:10000000066 new_package 2022-02-19 23:41:40 
+2022-02-19T23:41:42.272636 read package to send and change status:10000000067 new_package 2022-02-19 23:41:41 
+2022-02-19T23:41:42.272847 read package to send and change status:10000000068 new_package 2022-02-19 23:41:41 
+2022-02-19T23:41:42.272927 read package to send and change status:10000000069 new_package 2022-02-19 23:41:41 
+2022-02-19T23:41:42.275931 add the record in table messages:  new message: 10000000053 overdue_package status: new_message
+2022-02-19T23:41:42.278943 add the record in table messages:  new message: 10000000069 delivered_package status: new_message
+2022-02-19T23:41:42.279244 change status in table packages: 10000000053 overdue_package 2022-02-19 23:41:36
+2022-02-19T23:41:42.279339 change status in table packages: 10000000055 new_package 2022-02-19 23:41:37
+2022-02-19T23:41:42.279402 change status in table packages: 10000000057 new_package 2022-02-19 23:41:37
+2022-02-19T23:41:42.279459 change status in table packages: 10000000058 new_package 2022-02-19 23:41:38
+2022-02-19T23:41:42.279510 change status in table packages: 10000000062 new_package 2022-02-19 23:41:39
+2022-02-19T23:41:42.279569 change status in table packages: 1000000006with database
+2022-02-19T23:41:29.838006 add the record in table packages:  +380969197167 69 +380667547781 Тарасов Павел Андреевич 
+2022-02-19T23:41:29.839043 add the record in table packages:  +380506177005 33 +380667842921 Фёдоров Никита Андреевич 
+2022-02-19T23:41:29.840137 add the record in table packages:  +380969197167 3 +380666747177 Воробьёв Пётр Андреевич 
+2022-02-19T23:41:29.868539  end connect with database
+2022-02-19T23:41:30.912437  start connect with database
+2022-02-19T23:41:30.915039 add the record in table packages:  +380503908581 3 +380661453763 Голубев Фёдор Петрович 
+2022-02-19T23:41:30.916007 add the record in table packages:  +380967005418 3 +380667153548 Голубев Павел Иванович 
+2022-02-19T23:41:30.916887 add the record in table packages:  +380967005418 66 +380661232839 Павлов Лев Егорович 
+2022-02-19T23:41:30.949706  end connect with database
+2022-02-19T23:41:32.009233  start connect with database
+2022-02-19T23:41:32.012204 add the record in table packages:  +380503908581 35 +380664418626 Кузнецов Степан Егорович 
+2022-02-19T23:41:32.013304 add the record in table packages:  +380509745099 3 +380664144654 Беляев Григорий Сергеевич 
+2022-02-19T23:41:32.014266 add the record in table packages:  +380506177005 39 +380669028132 Орлов Денис Филиппович 
+2022-02-19T23:41:32.092515  end connect with database
+2022-02-19T23:41:33.141320  start connect with database
+2022-02-19T23:41:33.143838 add the record in table packages:  +380509745099 76 +380662028433 Богданов Сергей Давидович 
+2022-02-19T23:41:33.144879 add the record in table packages:  +380506177005 35 +380666926436 Тарасов Валентин Егорович 
+2022-02-19T23:41:33.145780 add the record in table packages:  +380969197167 33 +380666453831 Киселёв Виктор Алексеевич 
+2022-02-19T23:41:33.219487  end connect with database
+2022-02-19T23:41:34.263273  start connect with database
+2022-02-19T23:41:34.266505 add the record in table packages:  +380967005418 35 +380667251476 Лебедев Вадим Федорович 
+2022-02-19T23:41:34.267674 add the record in table packages:  +380964300497 3 +380661367793 Козлов Антон Михайлович 
+2022-02-19T23:41:34.268732 add the record in table packages:  +380503908581 69 +380664700207 Богданов Тимур Янович 
+2022-02-19T23:41:34.334226  end connect with database
+2022-02-19T23:41:35.381567  start connect with database
+2022-02-19T23:41:35.384741 add the record in table packages:  +380967005418 66 +380660992244 Пономарёв Глеб Константинович 
+2022-02-19T23:41:35.385907 add the record in table packages:  +380967005418 66 +380662119248 Тарасов Игорь Вячеславович 
+2022-02-19T23:41:35.386993 add the record in table packages:  +380964300497 15 +380664295719 Фёдоров Андрей Матвеевич 
+2022-02-19T23:41:35.436879  end connect with database
+2022-02-19T23:41:36.482719  start connect with database
+2022-02-19T23:41:36.487670 add the record in table packages:  +380503908581 76 +380661308101 Белов Матвей Андреевич 
+2022-02-19T23:41:36.489359 add the record in table packages:  +380506177005 54 +380663438563 Тарасов Максим Михайлович 
+2022-02-19T23:41:36.490728 add the record in table packages:  +380509745099 76 +380661577317 Кузнецов Денис Богданович 
+2022-02-19T23:41:36.530687  end connect with database
+2022-02-19T23:41:37.579163  start connect with database
+2022-02-19T23:41:37.581650 add the record in table packages:  +380969197167 66 +380664743669 Кудрявцев Марк Владимирович 
+2022-02-19T23:41:37.582774 add the record in table packages:  +380969197167 33 +380666072296 Соловьёв Николай Ефимович 
+2022-02-19T23:41:37.583806 add the record in table packages:  +380509745099 54 +380669071012 Андреев Анатолий Юрьевич 
+2022-02-19T23:41:37.610175  end connect with database
+2022-02-19T23:41:38.652190  start connect with database
+2022-02-19T23:41:38.655674 add the record in table packages:  +380503908581 54 +380668733501 Фёдоров Вячеслав Матвеевич 
+2022-02-19T23:41:38.656901 add the record in table packages:  +380967005418 12 +380663065109 Сергеев Арсений Андреевич 
+2022-02-19T23:41:38.658077 add the record in table packages:  +380967005418 15 +380667135940 Борисов Артём Сергеевич 
+2022-02-19T23:41:38.693920  end connect with database
+2022-02-19T23:41:39.740354  start connect with database
+2022-02-19T23:41:39.742955 add the record in table packages:  +380964300497 15 +380663289532 Яковлев Илья Константинович 
+2022-02-19T23:41:39.743843 add the record in table packages:  +380964300497 3 +380668920060 Соколов Павел Иванович 
+2022-02-19T23:41:39.744562 add the record in table packages:  +380506177005 3 +380663251584 Макаров Глеб Матвеевич 
+2022-02-19T23:41:39.782666  end connect with database
+2022-02-19T23:41:40.826659  start connect with database
+2022-02-19T23:41:40.829004 add the record in table packages:  +380509745099 54 +380660378683 Иванов Павел Макарович 
+2022-02-19T23:41:40.829895 add the record in table packages:  +380969197167 66 +380666643227 Герасимов Олег Сергеевич 
+2022-02-19T23:41:40.830665 add the record in table packages:  +380967005418 69 +380666429146 Соколов Артём Сергеевич 
+2022-02-19T23:41:40.935755  end connect with database
+2022-02-19T23:41:41.984488  start connect with database
+2022-02-19T23:41:41.987614 add the record in table packages:  +380967005418 69 +380662414907 Соколов Виктор Русланович 
+2022-02-19T23:41:41.988809 add the record in table packages:  +380967005418 3 +380660971411 Фёдоров Андрей Сергеевич 
+2022-02-19T23:41:41.989889 add the record in table packages:  +380967005418 39 +380662965146 Куликов Павел Макарович 
+2022-02-19T23:41:42.037284  end connect with database
+2022-02-19T23:41:43.087414  start connect with database
+2022-02-19T23:41:43.090973 add the record in table packages:  +380969197167 35 +380667341992 Виноградов Лев Сергеевич 
+2022-02-19T23:41:43.092290 add the record in table packages:  +380509745099 69 +380660511900 Богданов Владимир Давидович 
+2022-02-19T23:41:43.093325 add the record in table packages:  +380509745099 66 +380665944575 Ковалёв Александр Богданович 
+2022-02-19T23:41:43.156360  end connect with database
+2022-02-19T23:41:44.198692  start connect with database
+2022-02-19T23:41:44.201633 add the record in table packages:  +380964300497 33 +380665259319 Тарасов Алексей Георгиевич 
+2022-02-19T23:41:44.202634 add the record in table packages:  +380964300497 33 +380661757665 Петров Артур Андреевич 
+2022-02-19T23:41:44.203513 add the record in table packages:  +380964300497 66 +380661552658 Фёдоров Константин Степанович 
+2022-02-19T23:41:44.277347  end connect with database
+2022-02-19T23:41:45.327427  start connect with database
+2022-02-19T23:41:45.336143 add the record in table packages:  +380964300497 35 +380666100283 Соловьёв Тимур Степанович 
+2022-02-19T23:41:45.337685 add the record in table packages:  +380506177005 3 +380667626549 Попов Валерий Янович 
+2022-02-19T23:41:45.339117 add the record in table packages:  +380506177005 69 +380667429979 Борисов Сергей Викторович 
+2022-02-19T23:41:45.374823  end connect with database
+2022-02-19T23:41:46.416775  start connect with database
+2022-02-19T23:41:46.419395 add the record in table packages:  +380969197167 69 +380666219129 Алексеев Артём Егорович 
+2022-02-19T23:41:46.420201 add the record i4 new_package 2022-02-19 23:41:40
+2022-02-19T23:41:42.279898 change status in table packages: 10000000066 new_package 2022-02-19 23:41:40
+2022-02-19T23:41:42.279966 change status in table packages: 10000000067 new_package 2022-02-19 23:41:41
+2022-02-19T23:41:42.280023 change status in table packages: 10000000068 new_package 2022-02-19 23:41:41
+2022-02-19T23:41:42.280082 change status in table packages: 10000000069 delivered_package 2022-02-19 23:41:41
+2022-02-19T23:41:43.272769 read package to send and change status:10000000055 new_package 2022-02-19 23:41:37 
+2022-02-19T23:41:43.272860 read package to send and change status:10000000057 new_package 2022-02-19 23:41:37 
+2022-02-19T23:41:43.272903 read package to send and change status:10000000058 new_package 2022-02-19 23:41:38 
+2022-02-19T23:41:43.272939 read package to send and change status:10000000062 new_package 2022-02-19 23:41:39 
+2022-02-19T23:41:43.272974 read package to send and change status:10000000064 new_package 2022-02-19 23:41:40 
+2022-02-19T23:41:43.273007 read package to send and change status:10000000066 new_package 2022-02-19 23:41:40 
+2022-02-19T23:41:43.273041 read package to send and change status:10000000067 new_package 2022-02-19 23:41:41 
+2022-02-19T23:41:43.273074 read package to send and change status:10000000068 new_package 2022-02-19 23:41:41 
+2022-02-19T23:41:43.273107 read package to send and change status:10000000070 new_package 2022-02-19 23:41:43 
+2022-02-19T23:41:43.273159 read package to send and change status:10000000071 new_package 2022-02-19 23:41:43 
+2022-02-19T23:41:43.273188 read package to send and change status:10000000072 new_package 2022-02-19 23:41:43 
+2022-02-19T23:41:43.275303 add the record in table messages:  new message: 10000000055 overdue_package status: new_message
+2022-02-19T23:41:43.277182 add the record in table messages:  new message: 10000000057 overdue_package status: new_message
+2022-02-19T23:41:43.280487 add the record in table messages:  new message: 10000000064 delivered_package status: new_message
+2022-02-19T23:41:43.282609 add the record in table messages:  new message: 10000000066 delivered_package status: new_message
+2022-02-19T23:41:43.284616 add the record in table messages:  new message: 10000000067 delivered_package status: new_message
+2022-02-19T23:41:43.286685 add the record in table messages:  new message: 10000000072 delivered_package status: new_message
+2022-02-19T23:41:43.286902 change status in table packages: 10000000055 overdue_package 2022-02-19 23:41:37
+2022-02-19T23:41:43.286949 change status in table packages: 10000000057 overdue_package 2022-02-19 23:41:37
+2022-02-19T23:41:43.286981 change status in table packages: 10000000058 new_package 2022-02-19 23:41:38
+2022-02-19T23:41:43.287010 change status in table packages: 10000000062 new_package 2022-02-19 23:41:39
+2022-02-19T23:41:43.287039 change status in table packages: 10000000064 delivered_package 2022-02-19 23:41:40
+2022-02-19T23:41:43.287158 change status in table packages: 10000000066 delivered_package 2022-02-19 23:41:40
+2022-02-19T23:41:43.287199 change status in table packages: 10000000067 delivered_package 2022-02-19 23:41:41
+2022-02-19T23:41:43.287227 change status in table packages: 10000000068 new_package 2022-02-19 23:41:41
+2022-02-19T23:41:43.287254 change status in table packages: 10000000070 new_package 2022-02-19 23:41:43
+2022-02-19T23:41:43.287281 change status in table packages: 10000000071 new_package 2022-02-19 23:41:43
+2022-02-19T23:41:43.287310 change status in table packages: 10000000072 delivered_package 2022-02-19 23:41:43
+2022-02-19T23:41:44.271722 read package to send and change status:10000000058 new_package 2022-02-19 23:41:38 
+2022-02-19T23:41:44.271759 read package to send and change status:10000000062 new_package 2022-02-19 23:41:39 
+2022-02-19T23:41:44.271771 read package to send and change status:10000000068 new_package 2022-02-19 23:41:41 
+2022-02-19T23:41:44.271780 read package to send and change status:10000000070 new_package 2022-02-19 23:41:43 
+2022-02-19T23:41:44.271788 read package to send and change status:10000000071 new_package 2022-02-19 23:41:43 
+2022-02-19T23:41:44.272436 add the record in table messages:  new message: 10000000058 overdue_package status: new_message
+2022-02-19T23:41:44.273036 add the record in table messages:  new message: 10000000070 delivered_package status: new_message
+2022-02-19T23:41:44.273171 change status in table packages: 10000000058 overdue_package 2022-02-19 23:41:38
+2022-02-19T23:41:44.273187 change status in table packages: 10000000062 new_package 2022-02-19 23:41:39
+2022-02-19T23:41:44.273213 change status in table packages: 10000000068 new_package 2022-02-19 23:41:41
+2022-02-19T23:41:44.273231 change status in table packages: 10000000070 delivered_package 2022-02-19 23:41:43
+2022-02-19T23:41:44.273247 change status in table packages: 10000000071 new_package 2022-02-19 23:41:43
+2022-02-19T23:41:45.272285 read package to send and change status:10000000073 new_package 2022-02-19 23:41:44 
+2022-02-19T23:41:45.272353 read package to send and change status:10000000074 new_package 2022-02-19 23:41:44 
+2022-02-19T23:41:45.272385 read package to send and change status:10000000075 new_package 2022-02-19 23:41:44 
+2022-02-19T23:41:45.272412 read package to send and change status:10000000062 new_package 2022-02-19 23:41:39 
+2022-02-19T23:41:45.272437 read package to send and change status:10000000068 new_package 2022-02-19 23:41:41 
+2022-02-19T23:41:45.272461 read package to send and change status:10000000071 new_package 2022-02-19 23:41:43 
+2022-02-19T23:41:45.275303 add the record in table messages:  new message: 10000000075 delivered_package status: new_message
+2022-02-19T23:41:45.277171 add the record in table messages:  new message: 10000000062 overdue_package status: new_message
+2022-02-19T23:41:45.279257 add the record in table messages:  new message: 10000000071 delivered_package status: new_message
+2022-02-19T23:41:45.279875 change status in table packages: 10000000073 new_package 2022-02-19 23:41:44
+2022-02-19T23:41:45.279957 change status in table packages: 10000000074 new_package 2022-02-19 23:41:44
+2022-02-19T23:41:45.280008 change status in table packages: 10000000075 delivered_package 2022-02-19 23:41:44
+2022-02-19T23:41:45.280052 change status in table packages: 10000000062 overdue_package 2022-02-19 23:41:39
+2022-02-19T23:41:45.280095 change status in table packages: 10000000068 new_package 2022-02-19 23:41:41
+2022-02-19T23:41:45.280137 change status in table packages: 10000000071 delivered_package 2022-02-19 23:41:43
+2022-02-19T23:41:46.272270 read package to send and change status:10000000073 new_package 2022-02-19 23:41:44 
+2022-02-19T23:41:46.272400 read package to send and change status:10000000074 new_package 2022-02-19 23:41:44 
+2022-02-19T23:41:46.272443 read package to send and change status:10000000068 new_package 2022-02-19 23:41:41 
+2022-02-19T23:41:46.272553 read package to send and change status:10000000076 new_package 2022-02-19 23:41:45 
+2022-02-19T23:41:46.272604 read package to send and change status:10000000077 new_package 2022-02-19 23:41:45 
+2022-02-19T23:41:46.272635 read package to send and change status:10000000078 new_package 2022-02-19 23:41:45 
+2022-02-19T23:41:46.274845 add the record in table messages:  new message: 10000000078 delivered_package status: new_message
+2022-02-19T23:41:46.275152 change status in table packages: 10000000073 new_package 2022-02-19 23:41:44
+2022-02-19T23:41:46.275239 change status in table packages: 10000000074 new_package 2022-02-19 23:41:44
+2022-02-19T23:41:46.275282 change status in table packages: 10000000068 new_package 2022-02-19 23:41:41
+2022-02-19T23:41:46.275310 change status in table packages: 10000000076 new_package 2022-02-19 23:41:45
+2022-02-19T23:41:46.275336 change status in table packages: 10000000077 new_package 2022-02-19 23:41:45
+2022-02-19T23:41:46.275362 change status in table packages: 10000000078 delivered_package 2022-02-19 23:41:45
+2022-02-19T23:41:47.273164 read package to send and change status:10000000076 new_package 2022-02-19 23:41:45 
+2022-02-19T23:41:47.273245 read package to send and change status:10000000077 new_package 2022-02-19 23:41:45 
+2022-02-19T23:41:47.273458 read package to send and change status:10000000073 new_package 2022-02-19 23:41:44 
+2022-02-19T23:41:47.273524 read package to send and change status:10000000074 new_package 2022-02-19 23:41:44 
+2022-02-19T23:41:47.273576 read package to send and change status:10000000068 new_package 2022-02-19 23:41:41 
+2022-02-19T23:41:47.273632 read package to send and change status:10000000079 new_package 2022-02-19 23:41:46 
+2022-02-19T23:41:47.273688 read package to send and change status:10000000080 new_package 2022-02-19 23:41:46 
+2022-02-19T23:41:47.273741 read package to send and change status:10000000081 new_package 2022-02-19 23:41:46 
+2022-02-19T23:41:47.275559 add the record in table messages:  new message: 10000000077 delivered_package status: new_message
+2022-02-19T23:41:47.277024 add the record in table messages:  new message: 10000000068 overdue_package status: new_message
+2022-02-19T23:41:47.277607 change status in table packages: 10000000076 new_package 2022-02-19 23:41:45
+2022-02-19T23:41:47.277653 change status in table packages: 10000000077 delivered_package 2022-02-19 23:41:45
+2022-02-19T23:41:47.277680 change status in table packages: 10000000073 new_package 2022-02-19 23:41:44
+2022-02-19T23:41:47.277703 change status in table packages: 10000000074 new_package 2022-02-19 23:41:44
+2022-02-19T23:41:47.277726 change status in table packages: 10000000068 overdue_package 2022-02-19 23:41:41
+2022-02-19T23:41:47.277748 change status in table packages: 10000000079 new_package 2022-02-19 23:41:46
+2022-02-19T23:41:47.277812 change status in table packages: 10000000080 new_package 2022-02-19 23:41:46
+2022-02-19T23:41:47.277851 change status in table packages: 10000000081 new_package 2022-02-19 23:41:46
+2022-02-19T23:41:48.273475 read package to send and change status:10000000076 new_package 2022-02-19 23:41:45 
+2022-02-19T23:41:48.273599 read package to send and change status:10000000073 new_package 2022-02-19 23:41:44 
+2022-02-19T23:41:48.273684 read package to send and change status:10000000074 new_package 2022-02-19 23:41:44 
+2022-02-19T23:41:48.273759 read package to send and change status:10000000079 new_package 2022-02-19 23:41:46 
+2022-02-19T23:41:48.273882 read package to send and change status:10000000080 new_package 2022-02-19 23:41:46 
+2022-02-19T23:41:48.273973 read package to send and change status:10000000081 new_package 2022-02-19 23:41:46 
+2022-02-19T23:41:48.274053 read package to send and change status:10000000082 new_package 2022-02-19 23:41:47 
+2022-02-19T23:41:48.274122 read package to send and change status:10000000083 new_package 2022-02-19 23:41:47 
+2022-02-19T23:41:48.274189 read package to send and change status:10000000084 new_package 2022-02-19 23:41:47 
+2022-02-19T23:41:48.276790 add the record in table messages:  new message: 10000000079 delivered_package status: new_message
+2022-02-19T23:41:48.278433 add the record in table messages:  new message: 10000000081 delivered_package status: new_message
+2022-02-19T23:41:48.279960 add the record in table messages:  new message: 10000000083 delivered_package status: new_message
+2022-02-19T23:41:48.282168 add the record in table messages:  new message: 10000000084 delivered_package status: new_message
+2022-02-19T23:41:48.282679 change status in table packages: 10000000076 new_package 2022-02-19 23:41:45
+2022-02-19T23:41:48.282783 change status in table packages: 10000000073 new_package 2022-02-19 23:41:44
+2022-02-19T23:41:48.282833 change status in table packages: 10000000074 new_package 2022-02-19 23:41:44
+2022-02-19T23:41:48.282859 change status in table packages: 10000000079 delivered_package 2022-02-19 23:41:46
+2022-02-19T23:41:48.282932 change status in table packages: 10000000080 new_package 2022-02-19 23:41:46
+2022-02-19T23:41:48.282997 change status in table packages: 10000000081 delivered_package 2022-02-19 23:41:46
+2022-02-19T23:41:48.283056 change status in table packages: 10000000082 new_package 2022-02-19 23:41:47
+2022-02-19T23:41:48.283096 change status in table packages: 10000000083 delivered_package 2022-02-19 23:41:47
+2022-02-19T23:41:48.283120 change status in table packages: 10000000084 delivered_package 2022-02-19 23:41:47
+2022-02-19T23:41:49.272616 read package to send and change status:10000000076 new_package 2022-02-19 23:41:45 
+2022-02-19T23:41:49.272718 read package to send and change status:10000000073 new_package 2022-02-19 23:41:44 
+2022-02-19T23:41:49.272756 read package to send and change status:10000000074 new_package 2022-02-19 23:41:44 
+2022-02-19T23:41:49.272797 read package to send and change status:10000000080 new_package 2022-02-19 23:41:46 
+2022-02-19T23:41:49.272845 read package to send and change status:10000000082 new_package 2022-02-19 23:41:47 
+2022-02-19T23:41:49.272890 read package to send and change status:10000000085 new_package 2022-02-19 23:41:48 
+2022-02-19T23:41:49.272937 read package to send and change status:10000000086 new_package 2022-02-19 23:41:48 
+2022-02-19T23:41:49.272984 read package to send and change status:10000000087 new_package 2022-02-19 23:41:48 
+2022-02-19T23:41:49.275458 add the record in table messages:  new message: 10000000073 delivered_package status: new_message
+2022-02-19T23:41:49.278124 add the record in table messages:  new message: 10000000086 delivered_package status: new_message
+2022-02-19T23:41:49.278670 change status in table packages: 10000000076 new_package 2022-02-19 23:41:45
+2022-02-19T23:41:49.278758 change status in table packages: 10000000073 delivered_package 2022-02-19 23:41:44
+2022-02-19T23:41:49.278811 change status in table packages: 10000000074 new_package 2022-02-19 23:41:44
+2022-02-19T23:41:49.278879 change status in table packages: 10000000080 new_package 2022-02-19 23:41:46
+2022-02-19T23:41:49.278934 change status in table packages: 10000000082 new_package 2022-02-19 23:41:47
+2022-02-19T23:41:49.278989 change status in table packages: 10000000085 new_package 2022-02-19 23:41:48
+2022-02-19T23:41:49.279041 change status in table packages: 10000000086 delivered_package 2022-02-19 23:41:48
+2022-02-19T23:41:49.279116 change status in table packages: 10000000087 new_package 2022-02-19 23:41:48
+2022-02-19T23:41:50.271942 read package to send and change status:10000000076 new_package 2022-02-19 23:41:45 
+2022-02-19T23:41:50.271990 read package to send and change status:10000000074 new_package 2022-02-19 23:41:44 
+2022-02-19T23:41:50.272020 read package to send and change status:10000000080 new_package 2022-02-19 23:41:46 
+2022-02-19T23:41:50.272041 read package to send and change status:10000000082 new_package 2022-02-19 23:41:47 
+2022-02-19T23:41:50.272062 read package to send and change status:10000000085 new_package 2022-02-19 23:41:48 
+2022-02-19T23:41:50.272083 read package to send and change status:10000000087 new_package 2022-02-19 23:41:48 
+2022-02-19T23:41:50.272104 read package to send and change status:10000000088 new_package 2022-02-19 23:41:49 
+2022-02-19T23:41:50.272124 read package to send and change status:10000000089 new_package 2022-02-19 23:41:49 
+2022-02-19T23:41:50.272146 read package to send and change status:10000000090 new_package 2022-02-19 23:41:49 
+2022-02-19T23:41:50.273238 add the record in table messages:  new message: 10000000074 overdue_package status: new_message
+2022-02-19T23:41:50.274341 add the record in table messages:  new message: 10000000090 delivered_package status: new_message
+2022-02-19T23:41:50.274428 change status in table packages: 10000000076 new_package 2022-02-19 23:41:45
+2022-02-19T23:41:50.274448 change status in table packages: 10000000074 overdue_package 2022-02-19 23:41:44
+2022-02-19T23:41:50.274471 change status in table packages: 10000000080 new_package 2022-02-19 23:41:46
+2022-02-19T23:41:50.274489 change status in table packages: 10000000082 new_package 2022-02-19 23:41:47
+2022-02-19T23:41:50.274511 change status in table packages: 10000000085 new_package 2022-02-19 23:41:48
+2022-02-19T23:41:50.274529 change status in table packages: 10000000087 new_package 2022-02-19 23:41:48
+2022-02-19T23:41:50.274545 change status in table packages: 10000000088 new_package 2022-02-19 23:41:49
+2022-02-19T23:41:50.274636 change status in table packages: 10000000089 new_package 2022-02-19 23:41:49
+2022-02-19T23:41:50.274663 change status in table packages: 10000000090 delivered_package 2022-02-19 23:41:49
+2022-02-19T23:41:51.273378 read package to send and change status:10000000076 new_package 2022-02-19 23:41:45 
+2022-02-19T23:41:51.273471 read package to send and change status:10000000080 new_package 2022-02-19 23:41:46 
+2022-02-19T23:41:51.273537 read package to send and change status:10000000082 new_package 2022-02-19 23:41:47 
+2022-02-19T23:41:51.273581 read package to send and change status:10000000085 new_package 2022-02-19 23:41:48 
+2022-02-19T23:41:51.273623 read package to send and change status:10000000087 new_package 2022-02-19 23:41:48 
+2022-02-19T23:41:51.273683 read package to send and change status:10000000088 new_package 2022-02-19 23:41:49 
+2022-02-19T23:41:51.273801 read package to send and change status:10000000089 new_package 2022-02-19 23:41:49 
+2022-02-19T23:41:51.273867 read package to send and change status:10000000091 new_package 2022-02-19 23:41:50 
+2022-02-19T23:41:51.273913 read package to send and change status:10000000092 new_package 2022-02-19 23:41:50 
+2022-02-19T23:41:51.273957 read package to send and change status:10000000093 new_package 2022-02-19 23:41:50 
+2022-02-19T23:41:51.275803 add the record in table messages:  new message: 10000000076 overdue_package status: new_message
+2022-02-19T23:41:51.277726 add the record in table messages:  new message: 10000000088 delivered_package status: new_message
+2022-02-19T23:41:51.279163 add the record in table messages:  new message: 10000000089 delivered_package status: new_message
+2022-02-19T23:41:51.280509 add the record in table messages:  new message: 10000000091 delivered_package status: new_message
+2022-02-19T23:41:51.281877 add the record in table messages:  new message: 10000000092 delivered_package status: new_message
+2022-02-19T23:41:51.282294 change status in table packages: 10000000076 overdue_package 2022-02-19 23:41:45
+2022-02-19T23:41:51.282421 change status in table packages: 10000000080 new_package 2022-02-19 23:41:46
+2022-02-19T23:41:51.282494 change status in table packages: 10000000082 new_package 2022-02-19 23:41:47
+2022-02-19T23:41:51.282530 change status in table packages: 10000000085 new_package 2022-02-19 23:41:48
+2022-02-19T23:41:51.282580 change status in table packages: 10000000087 new_package 2022-02-19 23:41:48
+2022-02-19T23:41:51.282618 change status in table packages: 10000000088 delivered_package 2022-02-19 23:41:49
+2022-02-19T23:41:51.282653 change status in table packages: 10000000089 delivered_package 2022-02-19 23:41:49
+2022-02-19T23:41:51.282725 change status in table packages: 10000000091 delivered_package 2022-02-19 23:41:50
+2022-02-19T23:41:51.282765 change status in table packages: 10000000092 delivered_package 2022-02-19 23:41:50
+2022-02-19T23:41:51.282812 change status in table packages: 10000000093 new_package 2022-02-19 23:41:50
+2022-02-19T23:41:52.272629 read package to send and change status:10000000080 new_package 2022-02-19 23:41:46 
+2022-02-19T23:41:52.272666 read package to send and change status:10000000082 new_package 2022-02-19 23:41:47 
+2022-02-19T23:41:52.272677 read package to send and change status:10000000085 new_package 2022-02-19 23:41:48 
+2022-02-19T23:41:52.272685 read package to send and change status:10000000087 new_package 2022-02-19 23:41:48 
+2022-02-19T23:41:52.272696 read package to send and change status:10000000093 new_package 2022-02-19 23:41:50 
+2022-02-19T23:41:52.272703 read package to send and change status:10000000094 new_package 2022-02-19 23:41:51 
+2022-02-19T23:41:52.272713 read package to send and change status:10000000095 new_package 2022-02-19 23:41:51 
+2022-02-19T23:41:52.272721 read package to send and change status:10000000096 new_package 2022-02-19 23:41:51 
+2022-02-19T23:41:52.273556 add the record in table messages:  new message: 10000000080 overdue_package status: new_message
+2022-02-19T23:41:52.274213 add the record in table messages:  new message: 10000000085 delivered_package status: new_message
+2022-02-19T23:41:52.274417 change status in table packages: 10000000080 overdue_package 2022-02-19 23:41:46
+2022-02-19T23:41:52.274429 change status in table packages: 10000000082 new_package 2022-02-19 23:41:47
+2022-02-19T23:41:52.274435 change status in table packages: 10000000085 delivered_package 2022-02-19 23:41:48
+2022-02-19T23:41:52.274443 change status in table packages: 10000000087 new_package 2022-02-19 23:41:48
+2022-02-19T23:41:52.274449 change status in table packages: 10000000093 new_package 2022-02-19 23:41:50
+2022-02-19T23:41:52.274456 change status in table packages: 10000000094 new_package 2022-02-19 23:41:51
+2022-02-19T23:41:52.274462 change status in table packages: 10000000095 new_package 2022-02-19 23:41:51
+2022-02-19T23:41:52.274467 change status in table packages: 10000000096 new_package 2022-02-19 23:41:51
+2022-02-19T23:41:53.273496 read package to send and change status:10000000082 new_package 2022-02-19 23:41:47 
+2022-02-19T23:41:53.273576 read package to send and change status:10000000087 new_package 2022-02-19 23:41:48 
+2022-02-19T23:41:53.273611 read package to send and change status:10000000093 new_package 2022-02-19 23:41:50 
+2022-02-19T23:41:53.273655 read package to send and change status:10000000094 new_package 2022-02-19 23:41:51 
+2022-02-19T23:41:53.273739 read package to send and change status:10000000095 new_package 2022-02-19 23:41:51 
+2022-02-19T23:41:53.273917 read package to send and change status:10000000096 new_package 2022-02-19 23:41:51 
+2022-02-19T23:41:53.273981 read package to send and change status:10000000097 new_package 2022-02-19 23:41:53 
+2022-02-19T23:41:53.274030 read package to send and change status:10000000098 new_package 2022-02-19 23:41:53 
+2022-02-19T23:41:53.274106 read package to send and change status:10000000099 new_package 2022-02-19 23:41:53 
+2022-02-19T23:41:53.276414 add the record in table messages:  new message: 10000000082 overdue_package status: new_message
+2022-02-19T23:41:53.278338 add the record in table messages:  new message: 10000000098 delivered_package status: new_message
+2022-02-19T23:41:53.280239 add the record in table messages:  new message: 10000000099 delivered_package status: new_message
+2022-02-19T23:41:53.280527 change status in table packages: 10000000082 overdue_package 2022-02-19 23:41:47
+2022-02-19T23:41:53.280596 change status in table packages: 10000000087 new_package 2022-02-19 23:41:48
+2022-02-19T23:41:53.280634 change status in table packages: 10000000093 new_package 2022-02-19 23:41:50
+2022-02-19T23:41:53.280667 change status in table packages: 10000000094 new_package 2022-02-19 23:41:51
+2022-02-19T23:41:53.280715 change status in table packages: 10000000095 new_package 2022-02-19 23:41:51
+2022-02-19T23:41:53.280748 change status in table packages: 10000000096 new_package 2022-02-19 23:41:51
+2022-02-19T23:41:53.280805 change status in table packages: 10000000097 new_package 2022-02-19 23:41:53
+2022-02-19T23:41:53.280842 change status in table packages: 10000000098 delivered_package 2022-02-19 23:41:53
+2022-02-19T23:41:53.280876 change status in table packages: 10000000099 delivered_package 2022-02-19 23:41:53
+2022-02-19T23:41:54.272945 read package to send and change status:10000000087 new_package 2022-02-19 23:41:48 
+2022-02-19T23:41:54.272991 read package to send and change status:10000000093 new_package 2022-02-19 23:41:50 
+2022-02-19T23:41:54.273021 read package to send and change status:10000000094 new_package 2022-02-19 23:41:51 
+2022-02-19T23:41:54.273046 read package to send and change status:10000000095 new_package 2022-02-19 23:41:51 
+2022-02-19T23:41:54.273063 read package to send and change status:10000000096 new_package 2022-02-19 23:41:51 
+2022-02-19T23:41:54.273086 read package to send and change status:10000000097 new_package 2022-02-19 23:41:53 
+2022-02-19T23:41:54.273104 read package to send and change status:10000000100 new_package 2022-02-19 23:41:54 
+2022-02-19T23:41:54.275676 add the record in table messages:  new message: 10000000087 overdue_package status: new_message
+2022-02-19T23:41:54.277254 add the record in table messages:  new message: 10000000095 delivered_package status: new_message
+2022-02-19T23:41:54.278701 add the record in table messages:  new message: 10000000097 delivered_package status: new_message
+2022-02-19T23:41:54.279176 change status in table packages: 10000000087 overdue_package 2022-02-19 23:41:48
+2022-02-19T23:41:54.279268 change status in table packages: 10000000093 new_package 2022-02-19 23:41:50
+2022-02-19T23:41:54.279291 change status in table packages: 10000000094 new_package 2022-02-19 23:41:51
+2022-02-19T23:41:54.279304 change status in table packages: 10000000095 delivered_package 2022-02-19 23:41:51
+2022-02-19T23:41:54.279325 change status in table packages: 10000000096 new_package 2022-02-19 23:41:51
+2022-02-19T23:41:54.279339 change status in table packages: 10000000097 delivered_package 2022-02-19 23:41:53
+2022-02-19T23:41:54.279372 change status in table packages: 10000000100 new_package 2022-02-19 23:41:54
+2022-02-19T23:41:55.274109 read package to send and change status:10000000093 new_package 2022-02-19 23:41:50 
+2022-02-19T23:41:55.274206 read package to send and change status:10000000094 new_package 2022-02-19 23:41:51 
+2022-02-19T23:41:55.274278 read package to send and change status:10000000096 new_package 2022-02-19 23:41:51 
+2022-02-19T23:41:55.274322 read package to send and change status:10000000100 new_package 2022-02-19 23:41:54 
+2022-02-19T23:41:55.276860 add the record in table messages:  new message: 10000000093 delivered_package status: new_message
+2022-02-19T23:41:55.290859 add the record in table messages:  new message: 10000000096 delivered_package status: new_message
+2022-02-19T23:41:55.292683 add the record in table messages:  new message: 10000000100 delivered_package status: new_message
+2022-02-19T23:41:55.292860 change status in table packages: 10000000093 delivered_package 2022-02-19 23:41:50
+2022-02-19T23:41:55.292889 change status in table packages: 10000000094 new_package 2022-02-19 23:41:51
+2022-02-19T23:41:55.292917 change status in table packages: 10000000096 delivered_package 2022-02-19 23:41:51
+2022-02-19T23:41:55.292944 change status in table packages: 10000000100 delivered_package 2022-02-19 23:41:54
+2022-02-19T23:41:56.273870 read package to send and change status:10000000094 new_package 2022-02-19 23:41:51 
+2022-02-19T23:41:56.274417 change status in table packages: 10000000094 new_package 2022-02-19 23:41:51
+2022-02-19T23:41:57.273238 read package to send and change status:10000000094 new_package 2022-02-19 23:41:51 
+2022-02-19T23:41:57.274773 add the record in table messages:  new message: 10000000094 overdue_package status: new_message
+2022-02-19T23:41:57.274946 change status in table packages: 10000000094 overdue_package 2022-02-19 23:41:51
+2022-02-19T23:42:07.303598  end connect with database
+2022-02-19T23:42:09.376566 read message to send and change status:messid: 10000000001 packid: 10000000002 delivered_package new_message
+2022-02-19T23:42:09.376636 read message to send and change status:messid: 10000000002 packid: 10000000003 delivered_package new_message
+2022-02-19T23:42:09.376659 read message to send and change status:messid: 10000000003 packid: 10000000001 overdue_package new_message
+2022-02-19T23:42:09.376675 read message to send and change status:messid: 10000000004 packid: 10000000006 delivered_package new_message
+2022-02-19T23:42:09.376695 read message to send and change status:messid: 10000000005 packid: 10000000009 delivered_package new_message
+2022-02-19T23:42:09.376709 read message to send and change status:messid: 10000000006 packid: 10000000005 delivered_package new_message
+2022-02-19T23:42:09.376726 read message to send and change status:messid: 10000000007 packid: 10000000007 delivered_package new_message
+2022-02-19T23:42:09.376740 read message to send and change status:messid: 10000000008 packid: 10000000008 delivered_package new_message
+2022-02-19T23:42:09.376757 read message to send and change status:messid: 10000000009 packid: 10000000011 delivered_package new_message
+2022-02-19T23:42:09.376771 read message to send and change status:messid: 10000000010 packid: 10000000013 delivered_package new_message
+2022-02-19T23:42:09.376785 read message to send and change status:messid: 10000000011 packid: 10000000017 delivered_package new_message
+2022-02-19T23:42:09.376803 read message to send and change status:messid: 10000000012 packid: 10000000018 delivered_package new_message
+2022-02-19T23:42:09.376817 read message to send and change status:messid: 10000000013 packid: 10000000004 overdue_package new_message
+2022-02-19T23:42:09.376835 read message to send and change status:messid: 10000000014 packid: 10000000015 delivered_package new_message
+2022-02-19T23:42:09.376849 read message to send and change status:messid: 10000000015 packid: 10000000016 delivered_package new_message
+2022-02-19T23:42:09.376868 read message to send and change status:messid: 10000000016 packid: 10000000010 overdue_package new_message
+2022-02-19T23:42:09.376886 read message to send and change status:messid: 10000000017 packid: 10000000012 overdue_package new_message
+2022-02-19T23:42:09.376900 read message to send and change status:messid: 10000000018 packid: 10000000014 delivered_package new_message
+2022-02-19T23:42:09.376917 read message to send and change status:messid: 10000000019 packid: 10000000020 delivered_package new_message
+2022-02-19T23:42:09.376931 read message to send and change status:messid: 10000000020 packid: 10000000022 delivered_package new_message
+2022-02-19T23:42:09.376945 read message to send and change status:messid: 10000000021 packid: 10000000026 delivered_package new_message
+2022-02-19T23:42:09.376963 read message to send and change status:messid: 10000000022 packid: 10000000029 delivered_package new_message
+2022-02-19T23:42:09.376980 read message to send and change status:messid: 10000000023 packid: 10000000019 overdue_package new_message
+2022-02-19T23:42:09.376998 read message to send and change status:messid: 10000000024 packid: 10000000021 overdue_package new_message
+2022-02-19T23:42:09.377012 read message to send and change status:messid: 10000000025 packid: 10000000025 delivered_package new_message
+2022-02-19T23:42:09.377025 read message to send and change status:messid: 10000000026 packid: 10000000031 delivered_package new_message
+2022-02-19T23:42:09.377051 read message to send and change status:messid: 10000000027 packid: 10000000023 overdue_package new_message
+2022-02-19T23:42:09.377070 read message to send and change status:messid: 10000000028 packid: 10000000024 overdue_package new_message
+2022-02-19T23:42:09.377092 read message to send and change status:messid: 10000000029 packid: 10000000028 delivered_package new_message
+2022-02-19T23:42:09.377106 read message to send and change status:messid: 10000000030 packid: 10000000034 delivered_package new_message
+2022-02-19T23:42:09.377124 read message to send and change status:messid: 10000000031 packid: 10000000035 delivered_package new_message
+2022-02-19T23:42:09.377137 read message to send and change status:messid: 10000000032 packid: 10000000027 overdue_package new_message
+2022-02-19T23:42:09.377155 read message to send and change status:messid: 10000000033 packid: 10000000032 delivered_package new_message
+2022-02-19T23:42:09.377169 read message to send and change status:messid: 10000000034 packid: 10000000036 delivered_package new_message
+2022-02-19T23:42:09.377183 read message to send and change status:messid: 10000000035 packid: 10000000040 delivered_package new_message
+2022-02-19T23:42:09.377200 read message to send and change status:messid: 10000000036 packid: 10000000030 overdue_package new_message
+2022-02-19T23:42:09.377214 read message to send and change status:messid: 10000000037 packid: 10000000037 delivered_package new_message
+2022-02-19T23:42:09.377232 read message to send and change status:messid: 10000000038 packid: 10000000039 delivered_package new_message
+2022-02-19T23:42:09.377246 read message to send and change status:messid: 10000000039 packid: 10000000033 overdue_package new_message
+2022-02-19T23:42:09.377260 read message to send and change status:messid: 10000000040 packid: 10000000042 delivered_package new_message
+2022-02-19T23:42:09.377277 read message to send and change status:messid: 10000000041 packid: 10000000047 delivered_package new_message
+2022-02-19T23:42:09.377291 read message to send and change status:messid: 10000000042 packid: 10000000045 delivered_package new_message
+2022-02-19T23:42:09.377308 read message to send and change status:messid: 10000000043 packid: 10000000046 delivered_package new_message
+2022-02-19T23:42:09.377322 read message to send and change status:messid: 10000000044 packid: 10000000048 delivered_package new_message
+2022-02-19T23:42:09.377335 read message to send and change status:messid: 10000000045 packid: 10000000038 overdue_package new_message
+2022-02-19T23:42:09.377448 read message to send and change status:messid: 10000000046 packid: 10000000049 delivered_package new_message
+2022-02-19T23:42:09.377489 read message to send and change status:messid: 10000000047 packid: 10000000044 delivered_package new_message
+2022-02-19T23:42:09.377512 read message to send and change status:messid: 10000000048 packid: 10000000041 overdue_package new_message
+2022-02-19T23:42:09.377527 read message to send and change status:messid: 10000000049 packid: 10000000043 overdue_package new_message
+2022-02-19T23:42:09.377545 read message to send and change status:messid: 10000000050 packid: 10000000052 delivered_package new_message
+2022-02-19T23:42:09.377559 read message to send and change status:messid: 10000000051 packid: 10000000056 delivered_package new_message
+2022-02-19T23:42:09.377573 read message to send and change status:messid: 10000000052 packid: 10000000059 delivered_package new_message
+2022-02-19T23:42:09.377595 read message to send and change status:messid: 10000000053 packid: 10000000061 delivered_package new_message
+2022-02-19T23:42:09.377609 read message to send and change status:messid: 10000000054 packid: 10000000050 overdue_package new_message
+2022-02-19T23:42:09.377627 read message to send and change status:messid: 10000000055 packid: 10000000051 overdue_package new_message
+2022-02-19T23:42:09.377644 read message to send and change status:messid: 10000000056 packid: 10000000054 delivered_package new_message
+2022-02-19T23:42:09.377675 read message to send and change status:messid: 10000000057 packid: 10000000060 delivered_package new_message
+2022-02-19T23:42:09.377694 read message to send and change status:messid: 10000000058 packid: 10000000063 delivered_package new_message
+2022-02-19T23:42:09.377708 read message to send and change status:messid: 10000000059 packid: 10000000065 delivered_package new_message
+2022-02-19T23:42:09.377727 read message to send and change status:messid: 10000000060 packid: 10000000053 overdue_package new_message
+2022-02-19T23:42:09.377741 read message to send and change status:messid: 10000000061 packid: 10000000069 delivered_package new_message
+2022-02-19T23:42:09.377886 read message to send and change status:messid: 10000000062 packid: 10000000055 overdue_package new_message
+2022-02-19T23:42:09.377917 read message to send and change status:messid: 10000000063 packid: 10000000057 overdue_package new_message
+2022-02-19T23:42:09.377942 read message to send and change status:messid: 10000000064 packid: 10000000064 delivered_package new_message
+2022-02-19T23:42:09.377976 read message to send and change status:messid: 10000000065 packid: 10000000066 delivered_package new_message
+2022-02-19T23:42:09.378006 read message to send and change status:messid: 10000000066 packid: 10000000067 delivered_package new_message
+2022-02-19T23:42:09.378040 read message to send and change status:messid: 10000000067 packid: 10000000072 delivered_package new_message
+2022-02-19T23:42:09.378066 read message to send and change status:messid: 10000000068 packid: 10000000058 overdue_package new_message
+2022-02-19T23:42:09.378090 read message to send and change status:messid: 10000000069 packid: 10000000070 delivered_package new_message
+2022-02-19T23:42:09.378105 read message to send and change status:messid: 10000000070 packid: 10000000075 delivered_package new_message
+2022-02-19T23:42:09.378125 read message to send and change status:messid: 10000000071 packid: 10000000062 overdue_package new_message
+2022-02-19T23:42:09.378143 read message to send and change status:messid: 10000000072 packid: 10000000071 delivered_package new_message
+2022-02-19T23:42:09.378159 read message to send and change status:messid: 10000000073 packid: 10000000078 delivered_package new_message
+2022-02-19T23:42:09.378177 read message to send and change status:messid: 10000000074 packid: 10000000077 delivered_package new_message
+2022-02-19T23:42:09.378191 read message to send and change status:messid: 10000000075 packid: 10000000068 overdue_package new_message
+2022-02-19T23:42:09.378208 read message to send and change status:messid: 10000000076 packid: 10000000079 delivered_package new_message
+2022-02-19T23:42:09.378225 read message to send and change status:messid: 10000000077 packid: 10000000081 delivered_package new_message
+2022-02-19T23:42:09.378239 read message to send and change status:messid: 10000000078 packid: 10000000083 delivered_package new_message
+2022-02-19T23:42:09.378257 read message to send and change status:messid: 10000000079 packid: 10000000084 delivered_package new_message
+2022-02-19T23:42:09.378271 read message to send and change status:messid: 10000000080 packid: 10000000073 delivered_package new_message
+2022-02-19T23:42:09.378291 read message to send and change status:messid: 10000000081 packid: 10000000086 delivered_package new_message
+2022-02-19T23:42:09.378306 read message to send and change status:messid: 10000000082 packid: 10000000074 overdue_package new_message
+2022-02-19T23:42:09.378320 read message to send and change status:messid: 10000000083 packid: 10000000090 delivered_package new_message
+2022-02-19T23:42:09.378349 read message to send and change status:messid: 10000000084 packid: 10000000076 overdue_package new_message
+2022-02-19T23:42:09.378364 read message to send and change status:messid: 10000000085 packid: 10000000088 delivered_package new_message
+2022-02-19T23:42:09.378382 read message to send and change status:messid: 10000000086 packid: 10000000089 delivered_package new_message
+2022-02-19T23:42:09.378396 read message to send and change status:messid: 10000000087 packid: 10000000091 delivered_package new_message
+2022-02-19T23:42:09.378410 read message to send and change status:messid: 10000000088 packid: 10000000092 delivered_package new_message
+2022-02-19T23:42:09.378428 read message to send and change status:messid: 10000000089 packid: 10000000080 overdue_package new_message
+2022-02-19T23:42:09.378442 read message to send and change status:messid: 10000000090 packid: 10000000085 delivered_package new_message
+2022-02-19T23:42:09.378464 read message to send and change status:messid: 10000000091 packid: 10000000082 overdue_package new_message
+2022-02-19T23:42:09.378479 read message to send and change status:messid: 10000000092 packid: 10000000098 delivered_package new_message
+2022-02-19T23:42:09.378492 read message to send and change status:messid: 10000000093 packid: 10000000099 delivered_package new_message
+2022-02-19T23:42:09.378510 read message to send and change status:messid: 10000000094 packid: 10000000087 overdue_package new_message
+2022-02-19T23:42:09.378524 read message to send and change status:messid: 10000000095 packid: 10000000095 delivered_package new_message
+2022-02-19T23:42:09.378542 read message to send and change status:messid: 10000000096 packid: 10000000097 delivered_package new_message
+2022-02-19T23:42:09.378557 read message to send and change status:messid: 10000000097 packid: 10000000093 delivered_package new_message
+2022-02-19T23:42:09.378571 read message to send and change status:messid: 10000000098 packid: 10000000096 delivered_package new_message
+2022-02-19T23:42:09.378591 read message to send and change status:messid: 10000000099 packid: 10000000100 delivered_package new_message
+2022-02-19T23:42:09.378606 read message to send and change status:messid: 10000000100 packid: 10000000094 overdue_package new_message
+2022-02-19T23:42:09.392620 change status in table messages: 10000000001 sent_message
+2022-02-19T23:42:09.392668 change status in table messages: 10000000002 sent_message
+2022-02-19T23:42:09.392687 change status in table messages: 10000000003 sent_message
+2022-02-19T23:42:09.392703 change status in table messages: 10000000004 sent_message
+2022-02-19T23:42:09.392715 change status in table messages: 10000000005 sent_message
+2022-02-19T23:42:09.392725 change status in table messages: 10000000006 sent_message
+2022-02-19T23:42:09.392740 change status in table messages: 10000000007 sent_message
+2022-02-19T23:42:09.392750 change status in table messages: 10000000008 sent_message
+2022-02-19T23:42:09.392761 change status in table messages: 10000000009 sent_message
+2022-02-19T23:42:09.392775 change status in table messages: 10000000010 sent_message
+2022-02-19T23:42:09.392786 change status in table messages: 10000000011 sent_message
+2022-02-19T23:42:09.392796 change status in table messages: 10000000012 sent_message
+2022-02-19T23:42:09.392811 change status in table messages: 10000000013 sent_message
+2022-02-19T23:42:09.392821 change status in table messages: 10000000014 sent_message
+2022-02-19T23:42:09.392831 change status in table messages: 10000000015 sent_message
+2022-02-19T23:42:09.392846 change status in table messages: 10000000016 sent_message
+2022-02-19T23:42:09.392856 change status in table messages: 10000000017 sent_message
+2022-02-19T23:42:09.392866 change status in table messages: 10000000018 sent_message
+2022-02-19T23:42:09.392881 change status in table messages: 10000000019 sent_message
+2022-02-19T23:42:09.392891 change status in table messages: 10000000020 sent_message
+2022-02-19T23:42:09.392906 change status in table messages: 10000000021 sent_message
+2022-02-19T23:42:09.392916 change status in table messages: 10000000022 sent_message
+2022-02-19T23:42:09.392927 change status in table messages: 10000000023 sent_message
+2022-02-19T23:42:09.392947 change status in table messages: 10000000024 sent_message
+2022-02-19T23:42:09.392957 change status in table messages: 10000000025 sent_message
+2022-02-19T23:42:09.392967 change status in table messages: 10000000026 sent_message
+2022-02-19T23:42:09.392982 change status in table messages: 10000000027 sent_message
+2022-02-19T23:42:09.392995 change status in table messages: 10000000028 sent_message
+2022-02-19T23:42:09.393005 change status in table messages: 10000000029 sent_message
+2022-02-19T23:42:09.393019 change status in table messages: 10000000030 sent_message
+2022-02-19T23:42:09.393029 change status in table messages: 10000000031 sent_message
+2022-02-19T23:42:09.393040 change status in table messages: 10000000032 sent_message
+2022-02-19T23:42:09.393054 change status in table messages: 10000000033 sent_message
+2022-02-19T23:42:09.393065 change status in table messages: 10000000034 sent_message
+2022-02-19T23:42:09.393157 change status in table messages: 10000000035 sent_message
+2022-02-19T23:42:09.393170 change status in table messages: 10000000036 sent_message
+2022-02-19T23:42:09.393180 change status in table messages: 10000000037 sent_message
+2022-02-19T23:42:09.393195 change status in table messages: 10000000038 sent_message
+2022-02-19T23:42:09.393205 change status in table messages: 10000000039 sent_message
+2022-02-19T23:42:09.393216 change status in table messages: 10000000040 sent_message
+2022-02-19T23:42:09.393229 change status in table messages: 10000000041 sent_message
+2022-02-19T23:42:09.393241 change status in table messages: 10000000042 sent_message
+2022-02-19T23:42:09.393251 change status in table messages: 10000000043 sent_message
+2022-02-19T23:42:09.393264 change status in table messages: 10000000044 sent_message
+2022-02-19T23:42:09.393273 change status in table messages: 10000000045 sent_message
+2022-02-19T23:42:09.393282 change status in table messages: 10000000046 sent_message
+2022-02-19T23:42:09.393295 change status in table messages: 10000000047 sent_message
+2022-02-19T23:42:09.393304 change status in table messages: 10000000048 sent_message
+2022-02-19T23:42:09.393315 change status in table messages: 10000000049 sent_message
+2022-02-19T23:42:09.393329 change status in table messages: 10000000050 sent_message
+2022-02-19T23:42:09.393339 change status in table messages: 10000000051 sent_message
+2022-02-19T23:42:09.393352 change status in table messages: 10000000052 sent_message
+2022-02-19T23:42:09.393361 change status in table messages: 10000000053 sent_message
+2022-02-19T23:42:09.393371 change status in table messages: 10000000054 sent_message
+2022-02-19T23:42:09.393384 change status in table messages: 10000000055 sent_message
+2022-02-19T23:42:09.393393 change status in table messages: 10000000056 sent_message
+2022-02-19T23:42:09.393404 change status in table messages: 10000000057 sent_message
+2022-02-19T23:42:09.393417 change status in table messages: 10000000058 sent_message
+2022-02-19T23:42:09.393426 change status in table messages: 10000000059 sent_message
+2022-02-19T23:42:09.393450 change status in table messages: 10000000060 sent_message
+2022-02-19T23:42:09.393460 change status in table messages: 10000000061 sent_message
+2022-02-19T23:42:09.393470 change status in table messages: 10000000062 sent_message
+2022-02-19T23:42:09.393483 change status in table messages: 10000000063 sent_message
+2022-02-19T23:42:09.393493 change status in table messages: 10000000064 sent_message
+2022-02-19T23:42:09.393502 change status in table messages: 10000000065 sent_message
+2022-02-19T23:42:09.393515 change status in table messages: 10000000066 sent_message
+2022-02-19T23:42:09.393524 change status in table messages: 10000000067 sent_message
+2022-02-19T23:42:09.393534 change status in table messages: 10000000068 sent_message
+2022-02-19T23:42:09.393547 change status in table messages: 10000000069 sent_message
+2022-02-19T23:42:09.393557 change status in table messages: 10000000070 sent_message
+2022-02-19T23:42:09.393567 change status in table messages: 10000000071 sent_message
+2022-02-19T23:42:09.393581 change status in table messages: 10000000072 sent_message
+2022-02-19T23:42:09.393591 change status in table messages: 10000000073 sent_message
+2022-02-19T23:42:09.393605 change status in table messages: 10000000074 sent_message
+2022-02-19T23:42:09.393615 change status in table messages: 10000000075 sent_message
+2022-02-19T23:42:09.393625 change status in table messages: 10000000076 sent_message
+2022-02-19T23:42:09.393638 change status in table messages: 10000000077 sent_message
+2022-02-19T23:42:09.393647 change status in table messages: 10000000078 sent_message
+2022-02-19T23:42:09.393657 change status in table messages: 10000000079 sent_message
+2022-02-19T23:42:09.393669 change status in table messages: 10000000080 sent_message
+2022-02-19T23:42:09.393679 change status in table messages: 10000000081 sent_message
+2022-02-19T23:42:09.393688 change status in table messages: 10000000082 sent_message
+2022-02-19T23:42:09.393701 change status in table messages: 10000000083 sent_message
+2022-02-19T23:42:09.393711 change status in table messages: 10000000084 sent_message
+2022-02-19T23:42:09.393721 change status in table messages: 10000000085 sent_message
+2022-02-19T23:42:09.393734 change status in table messages: 10000000086 sent_message
+2022-02-19T23:42:09.393744 change status in table messages: 10000000087 sent_message
+2022-02-19T23:42:09.393757 change status in table messages: 10000000088 sent_message
+2022-02-19T23:42:09.393786 change status in table messages: 10000000089 sent_message
+2022-02-19T23:42:09.393796 change status in table messages: 10000000090 sent_message
+2022-02-19T23:42:09.393810 change status in table messages: 10000000091 sent_message
+2022-02-19T23:42:09.393820 change status in table messages: 10000000092 sent_message
+2022-02-19T23:42:09.393829 change status in table messages: 10000000093 sent_message
+2022-02-19T23:42:09.393842 change status in table messages: 10000000094 sent_message
+2022-02-19T23:42:09.393852 change status in table messages: 10000000095 sent_message
+2022-02-19T23:42:09.393861 change status in table messages: 10000000096 sent_message
+2022-02-19T23:42:09.393875 change status in table messages: 10000000097 sent_message
+2022-02-19T23:42:09.393885 change status in table messages: 10000000098 sent_message
+2022-02-19T23:42:09.393895 change status in table messages: 10000000099 sent_message
+2022-02-19T23:42:09.393909 change status in table messages: 10000000100 sent_message
+2022-02-19T23:42:24.371897  end connect with database
+n table packages:  +380509745099 35 +380668863452 Богданов Вадим Ефимович 
+2022-02-19T23:41:46.421102 add the record in table packages:  +380964300497 76 +380663543167 Воробьёв Олег Алексеевич 
+2022-02-19T23:41:46.504994  end connect with database
+2022-02-19T23:41:47.546685  start connect with database
+2022-02-19T23:41:47.551715 add the record in table packages:  +380503908581 33 +380665927528 Соловьёв Артём Филиппович 
+2022-02-19T23:41:47.553155 add the record in table packages:  +380964300497 76 +380669831476 Титов Вадим Тимофеевич 
+2022-02-19T23:41:47.554581 add the record in table packages:  +380503908581 76 +380668766864 Лебедев Борис Федорович 
+2022-02-19T23:41:47.601321  end connect with database
+2022-02-19T23:41:48.665707  start connect with database
+2022-02-19T23:41:48.668206 add the record in table packages:  +380969197167 15 +380668899661 Фёдоров Максим Филиппович 
+2022-02-19T23:41:48.669247 add the record in table packages:  +380509745099 66 +380666549001 Романов Павел Викторович 
+2022-02-19T23:41:48.670182 add the record in table packages:  +380967005418 76 +380669098654 Орлов Иван Геннадьевич 
+2022-02-19T23:41:48.730442  end connect with database
+2022-02-19T23:41:49.774743  start connect with database
+2022-02-19T23:41:49.778508 add the record in table packages:  +380503908581 66 +380666117032 Беляев Иван Янович 
+2022-02-19T23:41:49.779649 add the record in table packages:  +380509745099 76 +380662403660 Орлов Виктор Кириллович 
+2022-02-19T23:41:49.780769 add the record in table packages:  +380967005418 39 +380666819308 Степанов Антон Ярославович 
+2022-02-19T23:41:49.826709  end connect with database
+2022-02-19T23:41:50.870687  start connect with database
+2022-02-19T23:41:50.876316 add the record in table packages:  +380503908581 15 +380661282401 Фёдоров Артур Ефимович 
+2022-02-19T23:41:50.878229 add the record in table packages:  +380969197167 15 +380667052261 Попов Андрей Егорович 
+2022-02-19T23:41:50.879951 add the record in table packages:  +380964300497 15 +380661313818 Гусев Евгений Федорович 
+2022-02-19T23:41:50.951554  end connect with database
+2022-02-19T23:41:51.993078  start connect with database
+2022-02-19T23:41:51.996071 add the record in table packages:  +380967005418 39 +380667614129 Куликов Артур Макарович 
+2022-02-19T23:41:51.997051 add the record in table packages:  +380964300497 69 +380669577827 Семёнов Александр Михайлович 
+2022-02-19T23:41:51.998287 add the record in table packages:  +380969197167 69 +380668378225 Баранов Марк Макарович 
+2022-02-19T23:41:52.030419  end connect with database
+2022-02-19T23:41:53.051243  start connect with database
+2022-02-19T23:41:53.054720 add the record in table packages:  +380506177005 76 +380665641909 Захаров Никита Васильевич 
+2022-02-19T23:41:53.056034 add the record in table packages:  +380509745099 33 +380665412305 Королёв Евгений Иванович 
+2022-02-19T23:41:53.058365 add the record in table packages:  +380509745099 54 +380665470667 Лебедев Виталий Викторович 
+2022-02-19T23:41:53.113402  end connect with database
+2022-02-19T23:41:54.154067  start connect with database
+2022-02-19T23:41:54.156439 add the record in table packages:  +380503908581 3 +380663309093 Фёдоров Андрей Янович 
+2022-02-19T23:41:54.193516  end connect with database
+2022-02-19T23:42:25.247724  start connect with database
+2022-02-19T23:42:25.270720 output clients on screen:100000001 +380967005418 Сорокина Алла Аркадьевна emailforpeople1@gmail.com 
+2022-02-19T23:42:25.271036 output clients on screen:100000002 +380509745099 Беляева Алиса Петровна emailforpeople2@gmail.com 
+2022-02-19T23:42:25.271121 output clients on screen:100000003 +380969197167 Козлова Яна Афанасьевна emailforpeople3@gmail.com 
+2022-02-19T23:42:25.271197 output clients on screen:100000004 +380506177005 Васильева Алёна Валериевна emailforpeople4@gmail.com 
+2022-02-19T23:42:25.271326 output clients on screen:100000005 +380964300497 Алексеева Алиса Владимировна emailforpeople5@gmail.com 
+2022-02-19T23:42:25.271455 output clients on screen:100000006 +380503908581 Сорокина Светлана Владимировна emailforpeople6@gmail.com 
+2022-02-19T23:42:25.279111 output postal_offices on screen:10001 12 Когда дорога представляет собой загадку, попробуй шагать наобум. Несись по ветру.
+2022-02-19T23:42:25.279279 output postal_offices on screen:10002 54 Надеюсь, все видели мой прыжок? Ибо я отказываюсь это повторять!
+2022-02-19T23:42:25.279432 output postal_offices on screen:10003 39 Сходят с ума только те, у кого он есть.
+2022-02-19T23:42:25.279563 output postal_offices on screen:10004 69 Я не сумасшедший, просто моя реальность отличается от твоей.
+2022-02-19T23:42:25.279705 output postal_offices on screen:10005 66 Я спешу на рандеву с судьбой по ту сторону горизонта!
+2022-02-19T23:42:25.279831 output postal_offices on screen:10006 3 Иногда отражение в зеркале более реально, чем сам объект.
+2022-02-19T23:42:25.279945 output postal_offices on screen:10007 76 Как бы ты ни смотрела, ты должна смотреть в правильном направлении.
+2022-02-19T23:42:25.280077 output postal_offices on screen:10008 35 Если Чеширский Кот улыбается, значит, это кому-нибудь нужно.
+2022-02-19T23:42:25.280237 output postal_offices on screen:10009 15 Я полон оптимизма. Человечество преодолело законы морали, почему бы ему не преодолеть законы физики?
+2022-02-19T23:42:25.280371 output postal_offices on screen:10010 33 Смотри, учись, действуй.
+2022-02-19T23:42:25.312644 output packages on screen:10000000002 +380969197167 33 +380663524713 Борисов Артём Ярославович delivered_package 2022-02-19 23:41:11.460151 2022-02-19 23:41:11 
+2022-02-19T23:42:25.312877 output packages on screen:10000000003 +380509745099 54 +380664722749 Макаров Борис Владимирович delivered_package 2022-02-19 23:41:11.460151 2022-02-19 23:41:11 
+2022-02-19T23:42:25.313012 output packages on screen:10000000001 +380506177005 35 +380667433533 Белов Дмитрий Владимирович overdue_package 2022-02-19 23:41:11.460151 2022-02-19 23:41:11 
+2022-02-19T23:42:25.313136 output packages on screen:10000000006 +380967005418 54 +380668539227 Титов Антон Кириллович delivered_package 2022-02-19 23:41:18.655542 2022-02-19 23:41:18 
+2022-02-19T23:42:25.313252 output packages on screen:10000000009 +380509745099 33 +380661753101 Сергеев Андрей Владимирович delivered_package 2022-02-19 23:41:19.820577 2022-02-19 23:41:19 
+2022-02-19T23:42:25.313379 output packages on screen:10000000005 +380509745099 66 +380669354896 Михайлов Марк Михайлович delivered_package 2022-02-19 23:41:18.655542 2022-02-19 23:41:18 
+2022-02-19T23:42:25.313499 output packages on screen:10000000007 +380509745099 12 +380665002811 Белов Лев Викторович delivered_package 2022-02-19 23:41:19.820577 2022-02-19 23:41:19 
+2022-02-19T23:42:25.313601 output packages on screen:10000000008 +380506177005 54 +380661243381 Гусев Виталий Кириллович delivered_package 2022-02-19 23:41:19.820577 2022-02-19 23:41:19 
+2022-02-19T23:42:25.313671 output packages on screen:10000000011 +380969197167 69 +380668521271 Пономарёв Андрей Тимофеевич delivered_package 2022-02-19 23:41:20.923929 2022-02-19 23:41:20 
+2022-02-19T23:42:25.313848 output packages on screen:10000000013 +380509745099 33 +380662564814 Захаров Роман Сергеевич delivered_package 2022-02-19 23:41:22.031317 2022-02-19 23:41:22 
+2022-02-19T23:42:25.313946 output packages on screen:10000000017 +380967005418 12 +380660640401 Попов Фёдор Русланович delivered_package 2022-02-19 23:41:23.134372 2022-02-19 23:41:23 
+2022-02-19T23:42:25.313998 output packages on screen:10000000018 +380967005418 66 +380664137377 Морозов Виталий Михайлович delivered_package 2022-02-19 23:41:23.134372 2022-02-19 23:41:23 
+2022-02-19T23:42:25.314057 output packages on screen:10000000004 +380964300497 3 +380667310869 Новиков Дмитрий Ефимович overdue_package 2022-02-19 23:41:18.655542 2022-02-19 23:41:18 
+2022-02-19T23:42:25.314107 output packages on screen:10000000015 +380503908581 15 +380665888693 Белов Василий Георгиевич delivered_package 2022-02-19 23:41:22.031317 2022-02-19 23:41:22 
+2022-02-19T23:42:25.314162 output packages on screen:10000000016 +380503908581 3 +380665037862 Макаров Леонид Алексеевич delivered_package 2022-02-19 23:41:23.134372 2022-02-19 23:41:23 
+2022-02-19T23:42:25.314208 output packages on screen:10000000010 +380509745099 33 +380663858979 Королёв Вадим Андреевич overdue_package 2022-02-19 23:41:20.923929 2022-02-19 23:41:20 
+2022-02-19T23:42:25.314257 output packages on screen:10000000012 +380506177005 12 +380669985790 Баранов Николай Данилович overdue_package 2022-02-19 23:41:20.923929 2022-02-19 23:41:20 
+2022-02-19T23:42:25.314308 output packages on screen:10000000014 +380964300497 15 +380663133846 Комаров Антон Филиппович delivered_package 2022-02-19 23:41:22.031317 2022-02-19 23:41:22 
+2022-02-19T23:42:25.314357 output packages on screen:10000000020 +380509745099 54 +380669991472 Ковалёв Вадим Янович delivered_package 2022-02-19 23:41:24.340688 2022-02-19 23:41:24 
+2022-02-19T23:42:25.314402 output packages on screen:10000000022 +380509745099 15 +380660173146 Макаров Илья Константинович delivered_package 2022-02-19 23:41:25.470183 2022-02-19 23:41:25 
+2022-02-19T23:42:25.314450 output packages on screen:10000000026 +380503908581 76 +380669385832 Герасимов Максим Ильич delivered_package 2022-02-19 23:41:26.560641 2022-02-19 23:41:26 
+2022-02-19T23:42:25.314504 output packages on screen:10000000029 +380964300497 76 +380668533740 Кудрявцев Арсений Геннадьевич delivered_package 2022-02-19 23:41:27.671927 2022-02-19 23:41:27 
+2022-02-19T23:42:25.314554 output packages on screen:10000000019 +380509745099 15 +380668502818 Гусев Денис Васильевич overdue_package 2022-02-19 23:41:24.340688 2022-02-19 23:41:24 
+2022-02-19T23:42:25.314598 output packages on screen:10000000021 +380503908581 69 +380665134073 Гусев Роман Иванович overdue_package 2022-02-19 23:41:24.340688 2022-02-19 23:41:24 
+2022-02-19T23:42:25.314647 output packages on screen:10000000025 +380506177005 3 +380667283154 Куликов Антон Михайлович delivered_package 2022-02-19 23:41:26.560641 2022-02-19 23:41:26 
+2022-02-19T23:42:25.314695 output packages on screen:10000000031 +380503908581 39 +380666889956 Белов Пётр Михайлович delivered_package 2022-02-19 23:41:28.754865 2022-02-19 23:41:28 
+2022-02-19T23:42:25.314750 output packages on screen:10000000023 +380503908581 33 +380665302595 Пономарёв Константин Егорович overdue_package 2022-02-19 23:41:25.470183 2022-02-19 23:41:25 
+2022-02-19T23:42:25.314872 output packages on screen:10000000024 +380509745099 66 +380669901534 Белов Иван Михайлович overdue_package 2022-02-19 23:41:25.470183 2022-02-19 23:41:25 
+2022-02-19T23:42:25.314990 output packages on screen:10000000028 +380509745099 33 +380662955223 Королёв Иван Викторович delivered_package 2022-02-19 23:41:27.671927 2022-02-19 23:41:27 
+2022-02-19T23:42:25.315105 output packages on screen:10000000034 +380969197167 69 +380667547781 Тарасов Павел Андреевич delivered_package 2022-02-19 23:41:29.835628 2022-02-19 23:41:29 
+2022-02-19T23:42:25.315212 output packages on screen:10000000035 +380506177005 33 +380667842921 Фёдоров Никита Андреевич delivered_package 2022-02-19 23:41:29.835628 2022-02-19 23:41:29 
+2022-02-19T23:42:25.315336 output packages on screen:10000000040 +380503908581 35 +380664418626 Кузнецов Степан Егорович delivered_package 2022-02-19 23:41:32.009968 2022-02-19 23:41:32 
+2022-02-19T23:42:25.315404 output packages on screen:10000000042 +380506177005 39 +380669028132 Орлов Денис Филиппович delivered_package 2022-02-19 23:41:32.009968 2022-02-19 23:41:32 
+2022-02-19T23:42:25.315557 output packages on screen:10000000041 +380509745099 3 +380664144654 Беляев Григорий Сергеевич overdue_package 2022-02-19 23:41:32.009968 2022-02-19 23:41:32 
+2022-02-19T23:42:25.315666 output packages on screen:10000000027 +380964300497 76 +380661046348 Соколов Фёдор Вячеславович overdue_package 2022-02-19 23:41:26.560641 2022-02-19 23:41:26 
+2022-02-19T23:42:25.315774 output packages on screen:10000000032 +380503908581 54 +380664461863 Яковлев Леонид Макарович delivered_package 2022-02-19 23:41:28.754865 2022-02-19 23:41:28 
+2022-02-19T23:42:25.315888 output packages on screen:10000000036 +380969197167 3 +380666747177 Воробьёв Пётр Андреевич delivered_package 2022-02-19 23:41:29.835628 2022-02-19 23:41:29 
+2022-02-19T23:42:25.316004 output packages on screen:10000000030 +380509745099 15 +380667455146 Соловьёв Леонид Кириллович overdue_package 2022-02-19 23:41:27.671927 2022-02-19 23:41:27 
+2022-02-19T23:42:25.316123 output packages on screen:10000000037 +380503908581 3 +380661453763 Голубев Фёдор Петрович delivered_package 2022-02-19 23:41:30.912967 2022-02-19 23:41:30 
+2022-02-19T23:42:25.316231 output packages on screen:10000000039 +380967005418 66 +380661232839 Павлов Лев Егорович delivered_package 2022-02-19 23:41:30.912967 2022-02-19 23:41:30 
+2022-02-19T23:42:25.316347 output packages on screen:10000000033 +380969197167 33 +380662743686 Романов Владимир Ефимович overdue_package 2022-02-19 23:41:28.754865 2022-02-19 23:41:28 
+2022-02-19T23:42:25.316464 output packages on screen:10000000047 +380964300497 3 +380661367793 Козлов Антон Михайлович delivered_package 2022-02-19 23:41:34.263915 2022-02-19 23:41:34 
+2022-02-19T23:42:25.316569 output packages on screen:10000000045 +380969197167 33 +380666453831 Киселёв Виктор Алексеевич delivered_package 2022-02-19 23:41:33.141923 2022-02-19 23:41:33 
+2022-02-19T23:42:25.316669 output packages on screen:10000000046 +380967005418 35 +380667251476 Лебедев Вадим Федорович delivered_package 2022-02-19 23:41:34.263915 2022-02-19 23:41:34 
+2022-02-19T23:42:25.316771 output packages on screen:10000000048 +380503908581 69 +380664700207 Богданов Тимур Янович delivered_package 2022-02-19 23:41:34.263915 2022-02-19 23:41:34 
+2022-02-19T23:42:25.316887 output packages on screen:10000000038 +380967005418 3 +380667153548 Голубев Павел Иванович overdue_package 2022-02-19 23:41:30.912967 2022-02-19 23:41:30 
+2022-02-19T23:42:25.316991 output packages on screen:10000000049 +380967005418 66 +380660992244 Пономарёв Глеб Константинович delivered_package 2022-02-19 23:41:35.382319 2022-02-19 23:41:35 
+2022-02-19T23:42:25.317096 output packages on screen:10000000044 +380506177005 35 +380666926436 Тарасов Валентин Егорович delivered_package 2022-02-19 23:41:33.141923 2022-02-19 23:41:33 
+2022-02-19T23:42:25.317424 output packages on screen:10000000043 +380509745099 76 +380662028433 Богданов Сергей Давидович overdue_package 2022-02-19 23:41:33.141923 2022-02-19 23:41:33 
+2022-02-19T23:42:25.317588 output packages on screen:10000000052 +380503908581 76 +380661308101 Белов Матвей Андреевич delivered_package 2022-02-19 23:41:36.483251 2022-02-19 23:41:36 
+2022-02-19T23:42:25.317734 output packages on screen:10000000056 +380969197167 33 +380666072296 Соловьёв Николай Ефимович delivered_package 2022-02-19 23:41:37.579609 2022-02-19 23:41:37 
+2022-02-19T23:42:25.317896 output packages on screen:10000000059 +380967005418 12 +380663065109 Сергеев Арсений Андреевич delivered_package 2022-02-19 23:41:38.652786 2022-02-19 23:41:38 
+2022-02-19T23:42:25.318040 output packages on screen:10000000061 +380964300497 15 +380663289532 Яковлев Илья Константинович delivered_package 2022-02-19 23:41:39.740817 2022-02-19 23:41:39 
+2022-02-19T23:42:25.318180 output packages on screen:10000000050 +380967005418 66 +380662119248 Тарасов Игорь Вячеславович overdue_package 2022-02-19 23:41:35.382319 2022-02-19 23:41:35 
+2022-02-19T23:42:25.318342 output packages on screen:10000000051 +380964300497 15 +380664295719 Фёдоров Андрей Матвеевич overdue_package 2022-02-19 23:41:35.382319 2022-02-19 23:41:35 
+2022-02-19T23:42:25.318481 output packages on screen:10000000054 +380509745099 76 +380661577317 Кузнецов Денис Богданович delivered_package 2022-02-19 23:41:36.483251 2022-02-19 23:41:36 
+2022-02-19T23:42:25.318628 output packages on screen:10000000060 +380967005418 15 +380667135940 Борисов Артём Сергеевич delivered_package 2022-02-19 23:41:38.652786 2022-02-19 23:41:38 
+2022-02-19T23:42:25.318765 output packages on screen:10000000063 +380506177005 3 +380663251584 Макаров Глеб Матвеевич delivered_package 2022-02-19 23:41:39.740817 2022-02-19 23:41:39 
+2022-02-19T23:42:25.318901 output packages on screen:10000000065 +380969197167 66 +380666643227 Герасимов Олег Сергеевич delivered_package 2022-02-19 23:41:40.827019 2022-02-19 23:41:40 
+2022-02-19T23:42:25.319055 output packages on screen:10000000053 +380506177005 54 +380663438563 Тарасов Максим Михайлович overdue_package 2022-02-19 23:41:36.483251 2022-02-19 23:41:36 
+2022-02-19T23:42:25.319194 output packages on screen:10000000069 +380967005418 39 +380662965146 Куликов Павел Макарович delivered_package 2022-02-19 23:41:41.985209 2022-02-19 23:41:41 
+2022-02-19T23:42:25.319332 output packages on screen:10000000055 +380969197167 66 +380664743669 Кудрявцев Марк Владимирович overdue_package 2022-02-19 23:41:37.579609 2022-02-19 23:41:37 
+2022-02-19T23:42:25.319473 output packages on screen:10000000057 +380509745099 54 +380669071012 Андреев Анатолий Юрьевич overdue_package 2022-02-19 23:41:37.579609 2022-02-19 23:41:37 
+2022-02-19T23:42:25.319606 output packages on screen:10000000064 +380509745099 54 +380660378683 Иванов Павел Макарович delivered_package 2022-02-19 23:41:40.827019 2022-02-19 23:41:40 
+2022-02-19T23:42:25.319747 output packages on screen:10000000066 +380967005418 69 +380666429146 Соколов Артём Сергеевич delivered_package 2022-02-19 23:41:40.827019 2022-02-19 23:41:40 
+2022-02-19T23:42:25.320088 output packages on screen:10000000067 +380967005418 69 +380662414907 Соколов Виктор Русланович delivered_package 2022-02-19 23:41:41.985209 2022-02-19 23:41:41 
+2022-02-19T23:42:25.320282 output packages on screen:10000000072 +380509745099 66 +380665944575 Ковалёв Александр Богданович delivered_package 2022-02-19 23:41:43.088101 2022-02-19 23:41:43 
+2022-02-19T23:42:25.320428 output packages on screen:10000000058 +380503908581 54 +380668733501 Фёдоров Вячеслав Матвеевич overdue_package 2022-02-19 23:41:38.652786 2022-02-19 23:41:38 
+2022-02-19T23:42:25.320631 output packages on screen:10000000070 +380969197167 35 +380667341992 Виноградов Лев Сергеевич delivered_package 2022-02-19 23:41:43.088101 2022-02-19 23:41:43 
+2022-02-19T23:42:25.320914 output packages on screen:10000000075 +380964300497 66 +380661552658 Фёдоров Константин Степанович delivered_package 2022-02-19 23:41:44.199248 2022-02-19 23:41:44 
+2022-02-19T23:42:25.321120 output packages on screen:10000000062 +380964300497 3 +380668920060 Соколов Павел Иванович overdue_package 2022-02-19 23:41:39.740817 2022-02-19 23:41:39 
+2022-02-19T23:42:25.321304 output packages on screen:10000000071 +380509745099 69 +380660511900 Богданов Владимир Давидович delivered_package 2022-02-19 23:41:43.088101 2022-02-19 23:41:43 
+2022-02-19T23:42:25.321637 output packages on screen:10000000078 +380506177005 69 +380667429979 Борисов Сергей Викторович delivered_package 2022-02-19 23:41:45.328339 2022-02-19 23:41:45 
+2022-02-19T23:42:25.321810 output packages on screen:10000000077 +380506177005 3 +380667626549 Попов Валерий Янович delivered_package 2022-02-19 23:41:45.328339 2022-02-19 23:41:45 
+2022-02-19T23:42:25.321959 output packages on screen:10000000076 +380964300497 35 +380666100283 Соловьёв Тимур Степанович overdue_package 2022-02-19 23:41:45.328339 2022-02-19 23:41:45 
+2022-02-19T23:42:25.322104 output packages on screen:10000000068 +380967005418 3 +380660971411 Фёдоров Андрей Сергеевич overdue_package 2022-02-19 23:41:41.985209 2022-02-19 23:41:41 
+2022-02-19T23:42:25.322248 output packages on screen:10000000079 +380969197167 69 +380666219129 Алексеев Артём Егорович delivered_package 2022-02-19 23:41:46.417062 2022-02-19 23:41:46 
+2022-02-19T23:42:25.322396 output packages on screen:10000000081 +380964300497 76 +380663543167 Воробьёв Олег Алексеевич delivered_package 2022-02-19 23:41:46.417062 2022-02-19 23:41:46 
+2022-02-19T23:42:25.322538 output packages on screen:10000000083 +380964300497 76 +380669831476 Титов Вадим Тимофеевич delivered_package 2022-02-19 23:41:47.547126 2022-02-19 23:41:47 
+2022-02-19T23:42:25.322672 output packages on screen:10000000084 +380503908581 76 +380668766864 Лебедев Борис Федорович delivered_package 2022-02-19 23:41:47.547126 2022-02-19 23:41:47 
+2022-02-19T23:42:25.322799 output packages on screen:10000000073 +380964300497 33 +380665259319 Тарасов Алексей Георгиевич delivered_package 2022-02-19 23:41:44.199248 2022-02-19 23:41:44 
+2022-02-19T23:42:25.322929 output packages on screen:10000000086 +380509745099 66 +380666549001 Романов Павел Викторович delivered_package 2022-02-19 23:41:48.666172 2022-02-19 23:41:48 
+2022-02-19T23:42:25.323092 output packages on screen:10000000074 +380964300497 33 +380661757665 Петров Артур Андреевич overdue_package 2022-02-19 23:41:44.199248 2022-02-19 23:41:44 
+2022-02-19T23:42:25.323225 output packages on screen:10000000090 +380967005418 39 +380666819308 Степанов Антон Ярославович delivered_package 2022-02-19 23:41:49.775356 2022-02-19 23:41:49 
+2022-02-19T23:42:25.323359 output packages on screen:10000000088 +380503908581 66 +380666117032 Беляев Иван Янович delivered_package 2022-02-19 23:41:49.775356 2022-02-19 23:41:49 
+2022-02-19T23:42:25.323502 output packages on screen:10000000089 +380509745099 76 +380662403660 Орлов Виктор Кириллович delivered_package 2022-02-19 23:41:49.775356 2022-02-19 23:41:49 
+2022-02-19T23:42:25.323648 output packages on screen:10000000091 +380503908581 15 +380661282401 Фёдоров Артур Ефимович delivered_package 2022-02-19 23:41:50.871317 2022-02-19 23:41:50 
+2022-02-19T23:42:25.323851 output packages on screen:10000000092 +380969197167 15 +380667052261 Попов Андрей Егорович delivered_package 2022-02-19 23:41:50.871317 2022-02-19 23:41:50 
+2022-02-19T23:42:25.323990 output packages on screen:10000000080 +380509745099 35 +380668863452 Богданов Вадим Ефимович overdue_package 2022-02-19 23:41:46.417062 2022-02-19 23:41:46 
+2022-02-19T23:42:25.324119 output packages on screen:10000000085 +380969197167 15 +380668899661 Фёдоров Максим Филиппович delivered_package 2022-02-19 23:41:48.666172 2022-02-19 23:41:48 
+2022-02-19T23:42:25.324258 output packages on screen:10000000082 +380503908581 33 +380665927528 Соловьёв Артём Филиппович overdue_package 2022-02-19 23:41:47.547126 2022-02-19 23:41:47 
+2022-02-19T23:42:25.324389 output packages on screen:10000000098 +380509745099 33 +380665412305 Королёв Евгений Иванович delivered_package 2022-02-19 23:41:53.051911 2022-02-19 23:41:53 
+2022-02-19T23:42:25.324525 output packages on screen:10000000099 +380509745099 54 +380665470667 Лебедев Виталий Викторович delivered_package 2022-02-19 23:41:53.051911 2022-02-19 23:41:53 
+2022-02-19T23:42:25.324661 output packages on screen:10000000087 +380967005418 76 +380669098654 Орлов Иван Геннадьевич overdue_package 2022-02-19 23:41:48.666172 2022-02-19 23:41:48 
+2022-02-19T23:42:25.324794 output packages on screen:10000000095 +380964300497 69 +380669577827 Семёнов Александр Михайлович delivered_package 2022-02-19 23:41:51.993477 2022-02-19 23:41:51 
+2022-02-19T23:42:25.324922 output packages on screen:10000000097 +380506177005 76 +380665641909 Захаров Никита Васильевич delivered_package 2022-02-19 23:41:53.051911 2022-02-19 23:41:53 
+2022-02-19T23:42:25.325078 output packages on screen:10000000093 +380964300497 15 +380661313818 Гусев Евгений Федорович delivered_package 2022-02-19 23:41:50.871317 2022-02-19 23:41:50 
+2022-02-19T23:42:25.325185 output packages on screen:10000000096 +380969197167 69 +380668378225 Баранов Марк Макарович delivered_package 2022-02-19 23:41:51.993477 2022-02-19 23:41:51 
+2022-02-19T23:42:25.325287 output packages on screen:10000000100 +380503908581 3 +380663309093 Фёдоров Андрей Янович delivered_package 2022-02-19 23:41:54.154503 2022-02-19 23:41:54 
+2022-02-19T23:42:25.325380 output packages on screen:10000000094 +380967005418 39 +380667614129 Куликов Артур Макарович overdue_package 2022-02-19 23:41:51.993477 2022-02-19 23:41:51 
+2022-02-19T23:42:25.339999 output messages on screen:10000000001 10000000002 delivered_package sent_message
+2022-02-19T23:42:25.340159 output messages on screen:10000000002 10000000003 delivered_package sent_message
+2022-02-19T23:42:25.340245 output messages on screen:10000000003 10000000001 overdue_package sent_message
+2022-02-19T23:42:25.340315 output messages on screen:10000000004 10000000006 delivered_package sent_message
+2022-02-19T23:42:25.340361 output messages on screen:10000000005 10000000009 delivered_package sent_message
+2022-02-19T23:42:25.340390 output messages on screen:10000000006 10000000005 delivered_package sent_message
+2022-02-19T23:42:25.340424 output messages on screen:10000000007 10000000007 delivered_package sent_message
+2022-02-19T23:42:25.340452 output messages on screen:10000000008 10000000008 delivered_package sent_message
+2022-02-19T23:42:25.340480 output messages on screen:10000000009 10000000011 delivered_package sent_message
+2022-02-19T23:42:25.340511 output messages on screen:10000000010 10000000013 delivered_package sent_message
+2022-02-19T23:42:25.340539 output messages on screen:10000000011 10000000017 delivered_package sent_message
+2022-02-19T23:42:25.340590 output messages on screen:10000000012 10000000018 delivered_package sent_message
+2022-02-19T23:42:25.340622 output messages on screen:10000000013 10000000004 overdue_package sent_message
+2022-02-19T23:42:25.340651 output messages on screen:10000000014 10000000015 delivered_package sent_message
+2022-02-19T23:42:25.340682 output messages on screen:10000000015 10000000016 delivered_package sent_message
+2022-02-19T23:42:25.340710 output messages on screen:10000000016 10000000010 overdue_package sent_message
+2022-02-19T23:42:25.340739 output messages on screen:10000000017 10000000012 overdue_package sent_message
+2022-02-19T23:42:25.340789 output messages on screen:10000000018 10000000014 delivered_package sent_message
+2022-02-19T23:42:25.340819 output messages on screen:10000000019 10000000020 delivered_package sent_message
+2022-02-19T23:42:25.340856 output messages on screen:10000000020 10000000022 delivered_package sent_message
+2022-02-19T23:42:25.340886 output messages on screen:10000000021 10000000026 delivered_package sent_message
+2022-02-19T23:42:25.340916 output messages on screen:10000000022 10000000029 delivered_package sent_message
+2022-02-19T23:42:25.340955 output messages on screen:10000000023 10000000019 overdue_package sent_message
+2022-02-19T23:42:25.340986 output messages on screen:10000000024 10000000021 overdue_package sent_message
+2022-02-19T23:42:25.341023 output messages on screen:10000000025 10000000025 delivered_package sent_message
+2022-02-19T23:42:25.341055 output messages on screen:10000000026 10000000031 delivered_package sent_message
+2022-02-19T23:42:25.341086 output messages on screen:10000000027 10000000023 overdue_package sent_message
+2022-02-19T23:42:25.341124 output messages on screen:10000000028 10000000024 overdue_package sent_message
+2022-02-19T23:42:25.341155 output messages on screen:10000000029 10000000028 delivered_package sent_message
+2022-02-19T23:42:25.341191 output messages on screen:10000000030 10000000034 delivered_package sent_message
+2022-02-19T23:42:25.341222 output messages on screen:10000000031 10000000035 delivered_package sent_message
+2022-02-19T23:42:25.341251 output messages on screen:10000000032 10000000027 overdue_package sent_message
+2022-02-19T23:42:25.341287 output messages on screen:10000000033 10000000032 delivered_package sent_message
+2022-02-19T23:42:25.341316 output messages on screen:10000000034 10000000036 delivered_package sent_message
+2022-02-19T23:42:25.341346 output messages on screen:10000000035 10000000040 delivered_package sent_message
+2022-02-19T23:42:25.341379 output messages on screen:10000000036 10000000030 overdue_package sent_message
+2022-02-19T23:42:25.341407 output messages on screen:10000000037 10000000037 delivered_package sent_message
+2022-02-19T23:42:25.341440 output messages on screen:10000000038 10000000039 delivered_package sent_message
+2022-02-19T23:42:25.341470 output messages on screen:10000000039 10000000033 overdue_package sent_message
+2022-02-19T23:42:25.341509 output messages on screen:10000000040 10000000042 delivered_package sent_message
+2022-02-19T23:42:25.341544 output messages on screen:10000000041 10000000047 delivered_package sent_message
+2022-02-19T23:42:25.341573 output messages on screen:10000000042 10000000045 delivered_package sent_message
+2022-02-19T23:42:25.341614 output messages on screen:10000000043 10000000046 delivered_package sent_message
+2022-02-19T23:42:25.341643 output messages on screen:10000000044 10000000048 delivered_package sent_message
+2022-02-19T23:42:25.341674 output messages on screen:10000000045 10000000038 overdue_package sent_message
+2022-02-19T23:42:25.341706 output messages on screen:10000000046 10000000049 delivered_package sent_message
+2022-02-19T23:42:25.341735 output messages on screen:10000000047 10000000044 delivered_package sent_message
+2022-02-19T23:42:25.341790 output messages on screen:10000000048 10000000041 overdue_package sent_message
+2022-02-19T23:42:25.341827 output messages on screen:10000000049 10000000043 overdue_package sent_message
+2022-02-19T23:42:25.341860 output messages on screen:10000000050 10000000052 delivered_package sent_message
+2022-02-19T23:42:25.342001 output messages on screen:10000000051 10000000056 delivered_package sent_message
+2022-02-19T23:42:25.342132 output messages on screen:10000000052 10000000059 delivered_package sent_message
+2022-02-19T23:42:25.342168 output messages on screen:10000000053 10000000061 delivered_package sent_message
+2022-02-19T23:42:25.342227 output messages on screen:10000000054 10000000050 overdue_package sent_message
+2022-02-19T23:42:25.342259 output messages on screen:10000000055 10000000051 overdue_package sent_message
+2022-02-19T23:42:25.342294 output messages on screen:10000000056 10000000054 delivered_package sent_message
+2022-02-19T23:42:25.342323 output messages on screen:10000000057 10000000060 delivered_package sent_message
+2022-02-19T23:42:25.342353 output messages on screen:10000000058 10000000063 delivered_package sent_message
+2022-02-19T23:42:25.342386 output messages on screen:10000000059 10000000065 delivered_package sent_message
+2022-02-19T23:42:25.342420 output messages on screen:10000000060 10000000053 overdue_package sent_message
+2022-02-19T23:42:25.342454 output messages on screen:10000000061 10000000069 delivered_package sent_message
+2022-02-19T23:42:25.342484 output messages on screen:10000000062 10000000055 overdue_package sent_message
+2022-02-19T23:42:25.342517 output messages on screen:10000000063 10000000057 overdue_package sent_message
+2022-02-19T23:42:25.342554 output messages on screen:10000000064 10000000064 delivered_package sent_message
+2022-02-19T23:42:25.342584 output messages on screen:10000000065 10000000066 delivered_package sent_message
+2022-02-19T23:42:25.342616 output messages on screen:10000000066 10000000067 delivered_package sent_message
+2022-02-19T23:42:25.342644 output messages on screen:10000000067 10000000072 delivered_package sent_message
+2022-02-19T23:42:25.342672 output messages on screen:10000000068 10000000058 overdue_package sent_message
+2022-02-19T23:42:25.342705 output messages on screen:10000000069 10000000070 delivered_package sent_message
+2022-02-19T23:42:25.342735 output messages on screen:10000000070 10000000075 delivered_package sent_message
+2022-02-19T23:42:25.342768 output messages on screen:10000000071 10000000062 overdue_package sent_message
+2022-02-19T23:42:25.342804 output messages on screen:10000000072 10000000071 delivered_package sent_message
+2022-02-19T23:42:25.342832 output messages on screen:10000000073 10000000078 delivered_package sent_message
+2022-02-19T23:42:25.342864 output messages on screen:10000000074 10000000077 delivered_package sent_message
+2022-02-19T23:42:25.342892 output messages on screen:10000000075 10000000068 overdue_package sent_message
+2022-02-19T23:42:25.342920 output messages on screen:10000000076 10000000079 delivered_package sent_message
+2022-02-19T23:42:25.342954 output messages on screen:10000000077 10000000081 delivered_package sent_message
+2022-02-19T23:42:25.342982 output messages on screen:10000000078 10000000083 delivered_package sent_message
+2022-02-19T23:42:25.343016 output messages on screen:10000000079 10000000084 delivered_package sent_message
+2022-02-19T23:42:25.343046 output messages on screen:10000000080 10000000073 delivered_package sent_message
+2022-02-19T23:42:25.343075 output messages on screen:10000000081 10000000086 delivered_package sent_message
+2022-02-19T23:42:25.343109 output messages on screen:10000000082 10000000074 overdue_package sent_message
+2022-02-19T23:42:25.343138 output messages on screen:10000000083 10000000090 delivered_package sent_message
+2022-02-19T23:42:25.343168 output messages on screen:10000000084 10000000076 overdue_package sent_message
+2022-02-19T23:42:25.343202 output messages on screen:10000000085 10000000088 delivered_package sent_message
+2022-02-19T23:42:25.343230 output messages on screen:10000000086 10000000089 delivered_package sent_message
+2022-02-19T23:42:25.343264 output messages on screen:10000000087 10000000091 delivered_package sent_message
+2022-02-19T23:42:25.343295 output messages on screen:10000000088 10000000092 delivered_package sent_message
+2022-02-19T23:42:25.343324 output messages on screen:10000000089 10000000080 overdue_package sent_message
+2022-02-19T23:42:25.343383 output messages on screen:10000000090 10000000085 delivered_package sent_message
+2022-02-19T23:42:25.343412 output messages on screen:10000000091 10000000082 overdue_package sent_message
+2022-02-19T23:42:25.343445 output messages on screen:10000000092 10000000098 delivered_package sent_message
+2022-02-19T23:42:25.343473 output messages on screen:10000000093 10000000099 delivered_package sent_message
+2022-02-19T23:42:25.343502 output messages on screen:10000000094 10000000087 overdue_package sent_message
+2022-02-19T23:42:25.343534 output messages on screen:10000000095 10000000095 delivered_package sent_message
+2022-02-19T23:42:25.343561 output messages on screen:10000000096 10000000097 delivered_package sent_message
+2022-02-19T23:42:25.343593 output messages on screen:10000000097 10000000093 delivered_package sent_message
+2022-02-19T23:42:25.343621 output messages on screen:10000000098 10000000096 delivered_package sent_message
+2022-02-19T23:42:25.343649 output messages on screen:10000000099 10000000100 delivered_package sent_message
+2022-02-19T23:42:25.343681 output messages on screen:10000000100 10000000094 overdue_package sent_message
+2022-02-19T23:42:25.345229  end connect with database

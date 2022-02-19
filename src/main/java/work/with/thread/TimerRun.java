@@ -82,7 +82,7 @@ public class TimerRun {
                 activeWorkFlag = false;
                 counter++;
             }
-            if(counter == 5) {
+            if(counter == 3) {
                 System.out.println("все сообщения перешли в финальный статус");
                 connectForSend.setDisconnect(timerWriteInFile, true);
                 try {

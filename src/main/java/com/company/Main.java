@@ -20,16 +20,19 @@ public class Main {
             WriteInFile generalWriteInFile = new WriteInFile("log.txt");
             new TimerRun(1, generalWriteInFile);
             new TimerRun(8, generalWriteInFile);
-            ReadFromFile generalReadFromFile = new ReadFromFile("test.txt", generalWriteInFile);
-            //запись данных в базу
+            ReadFromFile generalReadFromFile = new ReadFromFile("input_data.txt", generalWriteInFile);
+
             ArrayList<String> generalWorkWithString;
             Iterator<String> generalIter;
             ConnectWithDB generalConnectWithDB = new ConnectWithDB(generalWriteInFile);
             int counterForPackage = 0;
+            ArrayList<PostalOffices> postalOfficesArrayList = new ArrayList<>();
+            boolean postalOfficesPull = true;
             //цикл начало
             while(true){
                 generalWorkWithString = readFile(generalReadFromFile);
                 generalIter =  generalWorkWithString.iterator();
+
                 if(!generalIter.hasNext()){
                     break;
                 } else{
@@ -41,9 +44,14 @@ public class Main {
                                 PostalClient postalClient = new PostalClient(generalConnectWithDB, generalWorkWithString, generalWriteInFile);
                                 break;
                             case "REGISTRPOSTALOFFICE":
-                                PostalOffices postalOffice = new PostalOffices(generalConnectWithDB, generalWorkWithString, generalWriteInFile);
+                                postalOfficesArrayList.add(new PostalOffices(generalIter.next(), generalIter.next()));
+//                                PostalOffices postalOffice = new PostalOffices(generalConnectWithDB, generalWorkWithString, generalWriteInFile);
                                 break;
                             case "REGISTRPACKAGE":
+                                if(postalOfficesPull) {
+                                    PostalOffices postalOffice = new PostalOffices(generalConnectWithDB, postalOfficesArrayList, generalWriteInFile);
+                                    postalOfficesPull = false;
+                                }
                                 PostalPackage postalPackage = new PostalPackage(generalConnectWithDB, generalWorkWithString, generalWriteInFile);
                                 counterForPackage++;
                                 if(counterForPackage % 3 == 0) {
@@ -72,6 +80,7 @@ public class Main {
                     break;
                 }
             }
+
             //просто вычитка в самом конце
             ConnectWithDB connectForRead = new ConnectWithDB(generalWriteInFile);
             System.out.println("Клиенты: ");
