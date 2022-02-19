@@ -93,23 +93,27 @@ public class PostalPackage {
         boolean flag = false;
         DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
         LocalDateTime ndt = LocalDateTime.now();
+        String tmpForTime = " ";
         for(int i = 0; i < statusPackage.size(); i++){
             flag = true;
+            tmpForTime = " ";
             LocalDateTime dateTime = LocalDateTime.parse(statusPackage.get(i).date_change_status,dateTimeFormatter);
             int sec1 = ndt.getSecond();
             int sec2 = dateTime.getSecond();
             if((sec1-sec2) <= 5){
                 int myRand = (int)(Math.random()*5);
                 if(myRand == 3){
+                    tmpForTime += ndt;
                     PostalPackage tmp = new PostalPackage(statusPackage.get(i).id_package,
-                            "delivered_package",statusPackage.get(i).date_change_status, generalWriteInFile);
+                            "delivered_package",tmpForTime, generalWriteInFile);
                     statusPackage.set(i, tmp);
                     PostalNotification postalNotification = new PostalNotification(connectForSend,
                             statusPackage.get(i).id_package, "delivered_package", generalWriteInFile);
                 }
             } else{
+                tmpForTime += ndt;
                 PostalPackage tmp = new PostalPackage(statusPackage.get(i).id_package,
-                        "overdue_package",statusPackage.get(i).date_change_status, generalWriteInFile);
+                        "overdue_package",tmpForTime, generalWriteInFile);
                 statusPackage.set(i, tmp);
                 PostalNotification postalNotification = new PostalNotification(connectForSend,
                         statusPackage.get(i).id_package, "overdue_package", generalWriteInFile);
