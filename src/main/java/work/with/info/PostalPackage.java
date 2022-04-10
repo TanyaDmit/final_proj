@@ -78,10 +78,6 @@ public class PostalPackage {
                 tmpLink = (idPackage+" "+ statusP+" " +dateOfCreate+" ");
                 generalWriteInFile.writeInFile("read package to send and change status:" + tmpLink);
             }
-//            Iterator<PostalPackage> statusIter = statusPackage.iterator();
-//            while(statusIter.hasNext()){
-//                PostalPackage.coutPostalPackage(statusIter.next());
-//            }
         } catch(SQLException eSQL){
             System.out.println("error when we read from packages");
             generalWriteInFile.writeInFile("error when we read from packages");

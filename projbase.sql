@@ -1,4 +1,4 @@
-drop table if exists packages;
+drop table if exists packages cascade;
 
 --table for client
 drop table if exists clients;
@@ -49,7 +49,7 @@ create table packages(
 	first_name varchar(50),
 	patronymic varchar(50),
 	status varchar(20),
-	date_of_create timestamp,
+	date_of_create timestamp not null default now(),
 	date_change_status timestamp not null default now()
 );
 
@@ -62,9 +62,9 @@ from packages;
 
 
 --table for messages
---drop table if exists messages;
+drop table if exists messages;
 
-drop sequence if exists messages_id;
+drop sequence if exists messages_id cascade;
 
 create sequence messages_id start 10000000001;
 
